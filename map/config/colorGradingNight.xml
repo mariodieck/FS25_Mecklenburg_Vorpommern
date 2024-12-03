@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<colorGrading shadowsMaxLuminance = "0.01" highlightsMinLuminance = "0.75">
+    <global>
+        <saturation rgb="0.9 0.9 1.15" scale="1"/>
+        <contrast rgb="1 1 1" scale="1.16"/>
+        <gamma rgb="1 1 1" scale="1"/>
+        <gain rgb="0.95 0.95 1.0" scale="1.42"/>
+    </global>
+    <shadows>
+        <saturation rgb="1 1 1.1" scale="1"/>
+        <contrast rgb="1 1 1" scale="1.1"/>
+        <gamma rgb="1 1 1.05" scale="1.25"/>
+        <gain rgb="0.95 1.00 1.15" scale="1.5"/>
+    </shadows>
+    <midtones>
+        <saturation rgb="1 1 1" scale="1"/>
+        <contrast rgb="1 1 1" scale="1"/>
+        <gamma rgb="1 1 1" scale="1"/>
+        <gain rgb="1 1 1" scale="1.17"/>
+    </midtones>
+    <highlights>
+        <saturation rgb="1 1 1" scale="1"/>
+        <contrast rgb="1 1 1" scale="1"/>
+        <gamma rgb="1 1 1" scale="1"/>
+        <gain rgb="1 1 1" scale="1.1"/>
+    </highlights>
+</colorGrading>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="aiLicensePlatesDE" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="aiLicensePlatesDE_diffuse.png" />
+    <File fileId="2" filename="aiLicensePlatesDE_normal.png" />
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="3" filename="$data/shared/default_vmask.png" />
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png" />
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png" />
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png" />
+    <File fileId="11" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png" />
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png" />
+    <File fileId="9" filename="$data/shared/licensePlates/licensePlatesEUBody_normal.png" />
+    <File fileId="10" filename="$data/shared/licensePlates/licensePlatesEUBody_vmask.png" />
+    <File fileId="8" filename="$data/shared/white_diffuse.png" />
+  </Files>
+
+  <Materials>
+    <Material name="aiLicensePlatesDE_metalPainted_mat" materialId="2" customShaderId="4" customShaderVariation="vmaskUV2" alphaBlending="true">
+      <CustomParameter name="alphaBlendingClipThreshold" value="1"/>
+      <Custommap name="detailDiffuse" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailSpecular" fileId="7"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="licensePlatesEUBody_plasticPaintedBlack_mat" materialId="1" customShaderId="4">
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+      <Custommap name="detailDiffuse" fileId="11"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="aiLicensePlatesDE.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="licensePlate01" nodeId="1">
+      <Shape name="licensePlateFront" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="2">
+        <Shape name="diffuse_decal" shapeId="2" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="4">
+        <Shape name="diffuse_decal" shapeId="4" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="5"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate02" nodeId="6">
+      <Shape name="licensePlateFront" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="7">
+        <Shape name="diffuse_decal" shapeId="6" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="8"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="9">
+        <Shape name="diffuse_decal" shapeId="8" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="10"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate03" nodeId="11">
+      <Shape name="licensePlateFront" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="12">
+        <Shape name="diffuse_decal" shapeId="10" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="13"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="14">
+        <Shape name="diffuse_decal" shapeId="12" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="15"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate04" nodeId="16">
+      <Shape name="licensePlateFront" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="17">
+        <Shape name="diffuse_decal" shapeId="14" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="18"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="19">
+        <Shape name="diffuse_decal" shapeId="16" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="20"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate05" nodeId="21">
+      <Shape name="licensePlateFront" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="22">
+        <Shape name="diffuse_decal" shapeId="18" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="23"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="24">
+        <Shape name="diffuse_decal" shapeId="20" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="25"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate06" nodeId="26">
+      <Shape name="licensePlateFront" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="27">
+        <Shape name="diffuse_decal" shapeId="22" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="28"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="23" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="29">
+        <Shape name="diffuse_decal" shapeId="24" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="30"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate07" nodeId="31">
+      <Shape name="licensePlateFront" shapeId="25" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="32">
+        <Shape name="diffuse_decal" shapeId="26" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="33"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="27" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="34">
+        <Shape name="diffuse_decal" shapeId="28" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="35"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate08" nodeId="36">
+      <Shape name="licensePlateFront" shapeId="29" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="37">
+        <Shape name="diffuse_decal" shapeId="30" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="38"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="31" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="39">
+        <Shape name="diffuse_decal" shapeId="32" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="40"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate09" nodeId="41">
+      <Shape name="licensePlateFront" shapeId="33" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="42">
+        <Shape name="diffuse_decal" shapeId="34" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="43"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="35" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="44">
+        <Shape name="diffuse_decal" shapeId="36" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="45"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate10" nodeId="46">
+      <Shape name="licensePlateFront" shapeId="37" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="47">
+        <Shape name="diffuse_decal" shapeId="38" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="48"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="39" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="49">
+        <Shape name="diffuse_decal" shapeId="40" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="50"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate11" nodeId="51">
+      <Shape name="licensePlateFront" shapeId="41" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="52">
+        <Shape name="diffuse_decal" shapeId="42" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="53"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="43" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="54">
+        <Shape name="diffuse_decal" shapeId="44" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="55"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate12" nodeId="56">
+      <Shape name="licensePlateFront" shapeId="45" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="57">
+        <Shape name="diffuse_decal" shapeId="46" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="58"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="47" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="59">
+        <Shape name="diffuse_decal" shapeId="48" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="60"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate13" nodeId="61">
+      <Shape name="licensePlateFront" shapeId="49" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="62">
+        <Shape name="diffuse_decal" shapeId="50" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="63"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="51" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="64">
+        <Shape name="diffuse_decal" shapeId="52" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="65"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate14" nodeId="66">
+      <Shape name="licensePlateFront" shapeId="53" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="67">
+        <Shape name="diffuse_decal" shapeId="54" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="68"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="55" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="69">
+        <Shape name="diffuse_decal" shapeId="56" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="70"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate15" nodeId="71">
+      <Shape name="licensePlateFront" shapeId="57" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="72">
+        <Shape name="diffuse_decal" shapeId="58" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="73"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="59" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="74">
+        <Shape name="diffuse_decal" shapeId="60" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="75"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate16" nodeId="76">
+      <Shape name="licensePlateFront" shapeId="61" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="77">
+        <Shape name="diffuse_decal" shapeId="62" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="78"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="63" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="79">
+        <Shape name="diffuse_decal" shapeId="64" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="80"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate17" nodeId="81">
+      <Shape name="licensePlateFront" shapeId="65" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="82">
+        <Shape name="diffuse_decal" shapeId="66" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="83"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="67" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="84">
+        <Shape name="diffuse_decal" shapeId="68" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="85"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate18" nodeId="86">
+      <Shape name="licensePlateFront" shapeId="69" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="87">
+        <Shape name="diffuse_decal" shapeId="70" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="88"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="71" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="89">
+        <Shape name="diffuse_decal" shapeId="72" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="90"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate19" nodeId="91">
+      <Shape name="licensePlateFront" shapeId="73" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="92">
+        <Shape name="diffuse_decal" shapeId="74" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="93"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="75" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="94">
+        <Shape name="diffuse_decal" shapeId="76" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="95"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate20" nodeId="96">
+      <Shape name="licensePlateFront" shapeId="77" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="97">
+        <Shape name="diffuse_decal" shapeId="78" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="98"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="79" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="99">
+        <Shape name="diffuse_decal" shapeId="80" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="100"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate21" nodeId="101">
+      <Shape name="licensePlateFront" shapeId="81" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="102">
+        <Shape name="diffuse_decal" shapeId="82" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="103"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="83" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="104">
+        <Shape name="diffuse_decal" shapeId="84" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="105"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate22" nodeId="106">
+      <Shape name="licensePlateFront" shapeId="85" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="107">
+        <Shape name="diffuse_decal" shapeId="86" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="108"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="87" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="109">
+        <Shape name="diffuse_decal" shapeId="88" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="110"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate23" nodeId="111">
+      <Shape name="licensePlateFront" shapeId="89" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="112">
+        <Shape name="diffuse_decal" shapeId="90" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="113"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="91" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="114">
+        <Shape name="diffuse_decal" shapeId="92" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="115"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate24" nodeId="116">
+      <Shape name="licensePlateFront" shapeId="93" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="117">
+        <Shape name="diffuse_decal" shapeId="94" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="118"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="95" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="119">
+        <Shape name="diffuse_decal" shapeId="96" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="120"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate25" nodeId="121">
+      <Shape name="licensePlateFront" shapeId="97" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="122">
+        <Shape name="diffuse_decal" shapeId="98" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="123"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="99" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="124">
+        <Shape name="diffuse_decal" shapeId="100" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="125"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate26" nodeId="126">
+      <Shape name="licensePlateFront" shapeId="101" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="127">
+        <Shape name="diffuse_decal" shapeId="102" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="128"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="103" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="129">
+        <Shape name="diffuse_decal" shapeId="104" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="130"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate27" nodeId="131">
+      <Shape name="licensePlateFront" shapeId="105" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="132">
+        <Shape name="diffuse_decal" shapeId="106" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="133"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="107" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="134">
+        <Shape name="diffuse_decal" shapeId="108" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="135"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate28" nodeId="136">
+      <Shape name="licensePlateFront" shapeId="109" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="137">
+        <Shape name="diffuse_decal" shapeId="110" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="138"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="111" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="139">
+        <Shape name="diffuse_decal" shapeId="112" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="140"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate29" nodeId="141">
+      <Shape name="licensePlateFront" shapeId="113" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="142">
+        <Shape name="diffuse_decal" shapeId="114" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="143"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="115" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="144">
+        <Shape name="diffuse_decal" shapeId="116" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="145"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate30" nodeId="146">
+      <Shape name="licensePlateFront" shapeId="117" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="147">
+        <Shape name="diffuse_decal" shapeId="118" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="148"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="119" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="149">
+        <Shape name="diffuse_decal" shapeId="120" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="150"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate31" nodeId="151">
+      <Shape name="licensePlateFront" shapeId="121" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="152">
+        <Shape name="diffuse_decal" shapeId="122" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="153"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="123" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="154">
+        <Shape name="diffuse_decal" shapeId="124" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="155"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate32" nodeId="156">
+      <Shape name="licensePlateFront" shapeId="125" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="157">
+        <Shape name="diffuse_decal" shapeId="126" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="158"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="127" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="159">
+        <Shape name="diffuse_decal" shapeId="128" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="160"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate33" nodeId="161">
+      <Shape name="licensePlateFront" shapeId="129" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="162">
+        <Shape name="diffuse_decal" shapeId="130" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="163"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="131" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="164">
+        <Shape name="diffuse_decal" shapeId="132" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="165"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate34" nodeId="166">
+      <Shape name="licensePlateFront" shapeId="133" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="167">
+        <Shape name="diffuse_decal" shapeId="134" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="168"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="135" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="169">
+        <Shape name="diffuse_decal" shapeId="136" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="170"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate35" nodeId="171">
+      <Shape name="licensePlateFront" shapeId="137" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="172">
+        <Shape name="diffuse_decal" shapeId="138" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="173"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="139" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="174">
+        <Shape name="diffuse_decal" shapeId="140" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="175"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate36" nodeId="176">
+      <Shape name="licensePlateFront" shapeId="141" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="177">
+        <Shape name="diffuse_decal" shapeId="142" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="178"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="143" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="179">
+        <Shape name="diffuse_decal" shapeId="144" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="180"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate37" nodeId="181">
+      <Shape name="licensePlateFront" shapeId="145" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="182">
+        <Shape name="diffuse_decal" shapeId="146" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="183"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="147" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="184">
+        <Shape name="diffuse_decal" shapeId="148" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="185"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate38" nodeId="186">
+      <Shape name="licensePlateFront" shapeId="149" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="187">
+        <Shape name="diffuse_decal" shapeId="150" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="188"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="151" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="189">
+        <Shape name="diffuse_decal" shapeId="152" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="190"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate39" nodeId="191">
+      <Shape name="licensePlateFront" shapeId="153" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="192">
+        <Shape name="diffuse_decal" shapeId="154" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="193"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="155" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="194">
+        <Shape name="diffuse_decal" shapeId="156" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="195"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate40" nodeId="196">
+      <Shape name="licensePlateFront" shapeId="157" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="197">
+        <Shape name="diffuse_decal" shapeId="158" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="198"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="159" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="199">
+        <Shape name="diffuse_decal" shapeId="160" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="200"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate41" nodeId="201">
+      <Shape name="licensePlateFront" shapeId="161" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="202">
+        <Shape name="diffuse_decal" shapeId="162" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="203"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="163" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="204">
+        <Shape name="diffuse_decal" shapeId="164" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="205"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate42" nodeId="206">
+      <Shape name="licensePlateFront" shapeId="165" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="207">
+        <Shape name="diffuse_decal" shapeId="166" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="208"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="167" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="209">
+        <Shape name="diffuse_decal" shapeId="168" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="210"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate43" nodeId="211">
+      <Shape name="licensePlateFront" shapeId="169" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="212">
+        <Shape name="diffuse_decal" shapeId="170" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="213"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="171" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="214">
+        <Shape name="diffuse_decal" shapeId="172" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="215"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate44" nodeId="216">
+      <Shape name="licensePlateFront" shapeId="173" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="217">
+        <Shape name="diffuse_decal" shapeId="174" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="218"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="175" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="219">
+        <Shape name="diffuse_decal" shapeId="176" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="220"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="licensePlate45" nodeId="221">
+      <Shape name="licensePlateFront" shapeId="177" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="222">
+        <Shape name="diffuse_decal" shapeId="178" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="223"/>
+      </Shape>
+      <Shape name="licensePlateBack" shapeId="179" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="224">
+        <Shape name="diffuse_decal" shapeId="180" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2" nodeId="225"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

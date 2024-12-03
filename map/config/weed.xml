@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/weed.xsd">
+    <weed>
+        <infoLayer filename="map/data/infoLayer_weed.png" firstChannel="0" numChannels="1">
+            <blockingState value="1" firstChannel="0" numChannels="1" />
+        </infoLayer>
+    </weed>
+</map>

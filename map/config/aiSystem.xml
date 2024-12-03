@@ -1,0 +1,4 @@
+<aiSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/aiSystem.xsd">
+    <maxSlopeAngle>20</maxSlopeAngle>
+    <vehicleMaxHeight>5</vehicleMaxHeight>
+</aiSystem>

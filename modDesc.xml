@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="93">
+    <author>DtP Mario | DtP Thomas</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Mecklenburg Vorpommern</en>
+        <de>Mecklenburg Vorpommern</de>
+    </title>
+    <description>
+        <en><![CDATA[Mecklenburg Vorpommern is a coastal country in the northeast of the Federal Republic of Germany. Its geography is determined by the affiliation to the North German Plain, characteristic landscape form is the hilly flat land with forests and lakes.
+]]></en>
+        <de><![CDATA[Mecklenburg Vorpommern ist ein Küstenland im Nordosten der Bundesrepublik Deutschland. Seine Geografie wird durch die Zugehörigkeit zur norddeutschen Tiefebene bestimmt, charakteristische Landschaftsform ist das hügelige Flachland mit Wäldern und Seen.
+]]></de>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+    <maps>
+        <map id="TemplateMap" className="Mission00" filename="$dataS/scripts/mission00.lua" configFilename="map/map.xml" defaultVehiclesXMLFilename="map/config/vehicles.xml" defaultHandToolsXMLFilename="map/config/handTools.xml" defaultPlaceablesXMLFilename="map/config/placeables.xml" defaultItemsXMLFilename="map/config/items.xml">
+            <title>
+                <en>Mecklenburg Vorpommern</en>
+                <de>Mecklenburg Vorpommern</de>
+            </title>
+            <description>
+                <en>Mecklenburg Vorpommern is a coastal country in the northeast of the Federal Republic of Germany. Its geography is determined by the affiliation to the North German Plain, characteristic landscape form is the hilly flat land with forests and lakes.</en>
+                <de>Mecklenburg Vorpommern ist ein Küstenland im Nordosten der Bundesrepublik Deutschland. Seine Geografie wird durch die Zugehörigkeit zur norddeutschen Tiefebene bestimmt, charakteristische Landschaftsform ist das hügelige Flachland mit Wäldern und Seen.</de>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+</modDesc>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="deadwoodSpots.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="deadwoodMissionSpots" nodeId="135214">
+      <TransformGroup name="spot1" translation="-726.542 108.759 -730.566" nodeId="135215"/>
+      <TransformGroup name="spot2" translation="-710.789 61.1694 -532.391" nodeId="135216"/>
+      <TransformGroup name="spot3" translation="467.313 105.819 -872.387" nodeId="135217"/>
+      <TransformGroup name="spot4" translation="638.868 92.6904 -778.787" nodeId="135218"/>
+      <TransformGroup name="spot5" translation="725.884 90.5341 -591.244" nodeId="135219"/>
+      <TransformGroup name="spot6" translation="750.111 84.728 -387.494" nodeId="135220"/>
+      <TransformGroup name="spot7" translation="787.768 90.8217 -176.705" nodeId="135221"/>
+      <TransformGroup name="spot8" translation="795.97 77.5717 60.0994" nodeId="135222"/>
+      <TransformGroup name="spot9" translation="633.517 69.7535 885.426" nodeId="135224"/>
+      <TransformGroup name="spot10" translation="524.419 66.1497 320.592" nodeId="135225"/>
+      <TransformGroup name="spot11" translation="-455.909 59.4857 880.662" nodeId="135226"/>
+      <TransformGroup name="spot12" translation="-860.765 79.6373 730.079" nodeId="135227"/>
+      <TransformGroup name="spot13" translation="-814.995 56.8846 531.826" nodeId="135228"/>
+      <TransformGroup name="spot14" translation="-743.304 56.9914 392.011" nodeId="135229"/>
+      <TransformGroup name="spot15" translation="-943.254 78.353 510.178" nodeId="135230"/>
+      <TransformGroup name="spot16" translation="-693.208 57.3095 213.712" nodeId="135231"/>
+      <TransformGroup name="spot17" translation="-910.719 59.2628 -1.46163" nodeId="135232"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="135215">
+      <Attribute name="radius" type="float" value="95"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135216">
+      <Attribute name="radius" type="float" value="75"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135217">
+      <Attribute name="radius" type="float" value="90"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135218">
+      <Attribute name="radius" type="float" value="90"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135219">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135220">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135221">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135222">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135224">
+      <Attribute name="radius" type="float" value="50"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135225">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135226">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135227">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135228">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135229">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135230">
+      <Attribute name="radius" type="float" value="60"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135231">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135232">
+      <Attribute name="radius" type="float" value="80"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="4096" height="4096" imageFilename="map/pda_map.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mission00.xsd">
+    <filename>map/map.i3d</filename>
+    <vertexBufferMemoryUsage>77373696</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>17213696</indexBufferMemoryUsage>
+    <textureMemoryUsage>629276672</textureMemoryUsage>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="map/config/storeItems.xml" />
+
+    <guidedTours>
+        <!-- <guidedTour name="intro" filename="$data/maps/mapEU/guidedTour/guidedTour_intro.xml" /> -->
+    </guidedTours>
+
+    <sounds filename="map/sounds.xml" />
+    <environment filename="map/config/environment.xml" />
+    <weed filename="map/config/weed.xml" />
+    <fieldGround filename="map/config/fieldGround.xml" />
+    <farmlands filename="map/config/farmlands.xml" />
+    <fields filename="map/config/fields.xml" />
+    <aiSystem filename="map/config/aiSystem.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="$dataS/character/animalFood.xml" />
+    </animals>
+
+    <npcs filename="$data/maps/maps_npcs.xml" />
+    <wildlife filename="$data/animals/wildlife/wildlife.xml" />
+
+    <licensePlates filename="licensePlates/licensePlatesDE.xml"/>
+    <collectibles filename="map/config/collectibles.xml" />
+
+    <helpline filename="$dataS/helpLine.xml" />
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+    <!--<missions vehicleFilename="$dataS/missionVehicles.xml">
+        <deadwoodMission treeType="DEADWOOD">
+            <spots filename="map/missions/deadwoodSpots.i3d" />
+        </deadwoodMission>
+        <treeTransportMission treeType="TRANSPORT">
+            <spots filename="map/missions/transportSpots.i3d" />
+        </treeTransportMission>
+        <destructibleRockMission>
+            <spots filename="map/missions/destructibleRocksSpots.i3d" />
+            <marker filename="$data/shared/assets/marker/rockMissionFlag.i3d" />
+        </destructibleRockMission>
+    </missions>-->
+
+    <treeTypes maxNumTrees="20000" />
+    <bales filename="$data/maps/maps_bales.xml"/>
+    <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
+
+    <fruitTypes>
+        <fruitType filename="$data/foliage/meadow/meadowEU/meadow.xml"/>
+    </fruitTypes>
+
+    <fruitTypeCategories>
+        <fruitTypeCategory name="MOWER">MEADOW</fruitTypeCategory>
+    </fruitTypeCategories>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBelts/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/waterSimulationMaterialHolder.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/objects/bales/wrapBale_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+    </additionalFiles>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="forestPlants" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="waterPlants" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <groundTypeMappings>
+        <!-- Base -->
+        <groundTypeMapping type="dirt"         title="$l10n_groundType_dirt" layer="DIRT" />
+        <!-- Standard -->
+        <groundTypeMapping type="asphalt"      title="$l10n_groundType_asphalt" layer="TARMAC" />
+        <groundTypeMapping type="gravel"       title="$l10n_groundType_gravel" layer="GRAVEL" />
+        <groundTypeMapping type="grass"        title="$l10n_groundType_grass" layer="GRASS" />
+        <groundTypeMapping type="sand"         title="$l10n_groundType_sand" layer="SAND" />
+        <groundTypeMapping type="animalMud"    title="$l10n_groundType_animalMud" layer="MUD" />
+        <groundTypeMapping type="concrete"     title="$l10n_groundType_concrete" layer="CONCRETEINDUSTRIAL" />
+        <!-- Special -->
+        <groundTypeMapping type="forestGround" title="$l10n_groundType_forestGround" layer="FORESTMOSSGROUND" />
+        <groundTypeMapping type="tiles01" title="$l10n_groundType_flagstones" layer="GRASSPAVEMENT" />
+        <groundTypeMapping type="tiles02" title="$l10n_groundType_plates" layer="SIDEWALKTILES" />
+    </groundTypeMappings>
+
+    <precisionFarming>
+        <soilMap filename="map/data/soilMap.grle"/>
+    </precisionFarming>
+</map>

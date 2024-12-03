@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<environment dayNightCycle="true" startHour="8">
+    <latitude>40.6</latitude>
+
+    <map filename="map/data/infoLayer_environment.png" numChannels="2" >
+        <isInCity value="1" />
+        <isNearWater value="2" />
+        <isInTunnel value="3" />
+    </map>
+
+    <lighting>
+        <envMap basePath="map/envMaps/">
+            <timeProbe timeHours="0" />
+            <timeProbe timeHours="2" />
+            <timeProbe timeHours="3" />
+            <timeProbe timeHours="4" />
+            <timeProbe timeHours="5" />
+            <timeProbe timeHours="5.5" />
+            <timeProbe timeHours="6" />
+            <timeProbe timeHours="6.1" />
+            <timeProbe timeHours="6.2" />
+            <timeProbe timeHours="6.3" />
+            <timeProbe timeHours="6.4" />
+            <timeProbe timeHours="6.5" />
+            <timeProbe timeHours="6.6" />
+            <timeProbe timeHours="6.7" />
+            <timeProbe timeHours="6.8" />
+            <timeProbe timeHours="6.9" />
+            <timeProbe timeHours="7" />
+            <timeProbe timeHours="8" />
+            <timeProbe timeHours="10" />
+            <timeProbe timeHours="12" />
+            <timeProbe timeHours="14" />
+            <timeProbe timeHours="16" />
+            <timeProbe timeHours="17" />
+            <timeProbe timeHours="18" />
+            <timeProbe timeHours="18.5" />
+            <timeProbe timeHours="19" />
+            <timeProbe timeHours="19.1" />
+            <timeProbe timeHours="19.2" />
+            <timeProbe timeHours="19.3" />
+            <timeProbe timeHours="19.4" />
+            <timeProbe timeHours="19.5" />
+            <timeProbe timeHours="19.6" />
+            <timeProbe timeHours="19.7" />
+            <timeProbe timeHours="19.8" />
+            <timeProbe timeHours="19.9" />
+            <timeProbe timeHours="20" />
+            <timeProbe timeHours="20.5" />
+            <timeProbe timeHours="21" />
+            <timeProbe timeHours="22" />
+        </envMap>
+
+
+        <envAlbedoGroundColors>
+            <spring value="0.2 0.2 0.2"/>
+            <summer value="0.2 0.2 0.2"/>
+            <autumn value="0.2 0.2 0.2"/>
+            <winter value="0.2 0.2 0.2"/>
+            <snow   value="0.2 0.2 0.2"/>
+        </envAlbedoGroundColors>
+
+        <!--
+            When used to convert with the daylight system:
+
+            6 => nightEnd
+            7 => dayStart
+            19 => dayEnd
+            20 => nightStart
+        -->
+
+        <colorGrading>
+            <key timeHours="0"  filename="map/config/colorGradingNight.xml" />
+            <key timeHours="5"  filename="map/config/colorGradingNight.xml" />
+            <key timeHours="6"  filename="map/config/colorGrading.xml" />
+            <key timeHours="20" filename="map/config/colorGrading.xml" />
+            <key timeHours="22" filename="map/config/colorGradingNight.xml" />
+            <key timeHours="24" filename="map/config/colorGradingNight.xml" />
+        </colorGrading>
+
+        <autoExposure>
+            <!-- key luminance, minExposure, maxExposure -->
+            <key value="0.15 -0.5 1.25" time="0" />
+            <key value="0.15 -1.0 1.5"  time="5" />
+            <key value="0.17 -0.5 0.65" time="8" />
+            <key value="0.19 -1.0 0.85" time="18" />
+            <key value="0.15 -1.0 1.5"  time="21" />
+            <key value="0.15 -0.5 1.25" time="24" />
+        </autoExposure>
+
+        <fixedExposure>
+            <key value="0.5" time="0" />
+            <key value="0.8" time="6" />
+            <key value="0.9" time="8" />
+            <key value="1.3" time="12" />
+            <key value="0.8" time="18" />
+            <key value="0.5" time="20" />
+        </fixedExposure>
+
+        <sunRotation heightAngleLimitRotation="60" heightAngleLimitRotationStart="56" heightAngleLimitRotationEnd="80">
+            <key value="0"   time="0" />
+            <key value="80"  time="6.5" />
+            <key value="-80" time="6.5" /> <!-- sunrise 6 -->
+            <key value="0"   time="12" />
+            <key value="80"  time="19.5" />
+            <key value="-80" time="19.5" /> <!-- sunset 20 -->
+            <key value="0"   time="24" />
+        </sunRotation>
+
+        <lightScatteringRotation>
+            <!-- primary and secondary -->
+            <key value="0 -180"   time="0" />
+            <key value="80 -80"    time="6.5" /> <!-- switch, sunrise ~6 -->
+            <key value="-80 80"     time="6.5" />
+            <key value="0 180"    time="12" />
+            <key value="0 -180"   time="12" />
+            <key value="80 -80"    time="19.5" /> <!-- switch, sunset ~20 -->
+            <key value="-80 80"     time="19.5" />
+            <key value="0 180"    time="24" />
+        </lightScatteringRotation>
+
+        <primaryDynamicLightingScale>
+            <key value="1" time="0" />
+            <key value="1" time="6.2" />
+            <key value="0.0" time="6.5" />  <!-- sunrise switch -->
+            <key value="1" time="6.8" />
+            <key value="1" time="19.2" />
+            <key value="0.0" time="19.5" /> <!-- sunset switch -->
+            <key value="1" time="19.8" />
+            <key value="1" time="24" />
+        </primaryDynamicLightingScale>
+
+        <primaryExtraterrestrialColor>
+            <key value="0.04 0.07 0.11" time="0" />
+            <key value="0.04 0.07 0.11" time="6.5" />
+            <key value="1.0 1.0 1.0"    time="6.5" />  <!-- sunrise switch -->
+            <key value="1.0 1.0 1.0"    time="19.5" /> <!-- sunset switch -->
+            <key value="0.04 0.07 0.11" time="19.5" />
+            <key value="0.04 0.07 0.11" time="24" />
+        </primaryExtraterrestrialColor>
+
+        <secondaryExtraterrestrialColor>
+            <key value="0.0 0.0 0.0"    time="0" />
+            <key value="0.0 0.0 0.0"    time="5" />
+            <key value="1.0 1.0 1.0"    time="6.5" />
+            <key value="0.04 0.07 0.11" time="6.5" />  <!-- sunrise switch (secondary becomes moon) -->
+            <key value="0.0 0.0 0.0"    time="7" />
+            <key value="0.0 0.0 0.0"    time="18.5" />
+            <key value="0.04 0.07 0.11" time="19.5" /> <!-- sunset switch (secondary becomes sun) -->
+            <key value="1.0 1.0 1.0"    time="19.5" />
+            <key value="0.0 0.0 0.0"    time="21" />
+            <key value="0.0 0.0 0.0"    time="24" />
+        </secondaryExtraterrestrialColor>
+
+        <asymmetryFactor>
+            <key value="0.8" time="0" />
+            <key value="0.5" time="8" />
+            <key value="0.5" time="20" />
+            <key value="0.8" time="24" />
+        </asymmetryFactor>
+
+        <sunBrightnessScale>
+            <key value="0.0" time="0" />
+            <key value="0.0" time="5.5" />
+            <key value="0.01" time="6" />
+            <key value="2" time="8" />
+            <key value="8" time="12" />
+            <key value="2" time="18" />
+            <key value="0.01" time="20" />
+            <key value="0.0" time="20.5" />
+            <key value="0.0" time="24" />
+        </sunBrightnessScale>
+
+        <sunSizeScale>
+            <key value="1000" time="0" />
+            <key value="3000" time="6" />
+            <key value="10000" time="7" />
+            <key value="25000" time="12" />
+            <key value="10000" time="19" />
+            <key value="3000" time="20" />
+            <key value="1000" time="24" />
+        </sunSizeScale>
+
+        <moonBrightnessScale>
+            <key value="1" time="0" />
+            <key value="0.5" time="7" />
+            <key value="0.0" time="7.5" />
+            <key value="0.0" time="18.5" />
+            <key value="0.5" time="19" />
+            <key value="1" time="24" />
+        </moonBrightnessScale>
+
+        <moonSizeScale>
+            <key value="36" time="0" />
+            <key value="36" time="24" />
+        </moonSizeScale>
+
+        <sunIsPrimary>
+            <key value="0" time="0" />
+            <key value="0" time="6.5" />
+            <key value="1" time="6.5" />
+            <key value="1" time="19.5" />
+            <key value="0" time="19.5" />
+            <key value="0" time="24" />
+        </sunIsPrimary>
+
+        <cloudGroundAlbedo>
+            <key value="0.1 0.12 0.35"  time="0" />
+            <key value="0.65 0.45 0.1" time="6" />
+            <key value="0.3 0.3 1.6"   time="12" />
+            <key value="2 1.5 1"       time="18" />
+            <key value="0.1 0.12 0.2"  time="24" />
+        </cloudGroundAlbedo>
+
+        <bloom magnitude="1.2" threshold="0.85" />
+
+        <toneMapping slope="1" toe="0.4" shoulder="1.0" blackClip="0" whiteClip="0.04" />
+
+        <lensFlare intensity="0.5" saturation="1.1" sizeX="0.016" sizeY="0.13" minThreshold="1" maxThreshold="2" scaleX="1" scaleY="1" intensityScale="1" positionJitter="1" checkerboard="1" rotationSpeed="1"/>
+    </lighting>
+
+    <weather>
+        <envMap>
+            <cloudProbe presetId="SUNNY_BLUE_SKY"/>
+            <cloudProbe presetId="CLOUDY_LIGHT"/>
+            <cloudProbe presetId="RAIN_2"/>
+        </envMap>
+
+        <twister filename="$data/sky/twister.xml" />
+
+        <rain>
+            <types>
+                <type id="RAIN" filename="$data/sky/rain.i3d">
+                    <settings spawnBoxWidth="30" spawnBoxDepth="50" spawnBoxHeight="30" behindCameraBuffer="0.1" cameraVelocityMultiplier="0" />
+                </type>
+                <type id="HAIL" filename="$data/sky/hail.i3d">
+                    <settings spawnBoxWidth="30" spawnBoxDepth="50" spawnBoxHeight="30" behindCameraBuffer="0.1" cameraVelocityMultiplier="0" />
+                </type>
+                <type id="SNOW" filename="$data/sky/snow.i3d">
+                    <settings spawnBoxWidth="30" spawnBoxDepth="50" spawnBoxHeight="30" behindCameraBuffer="0.1" cameraVelocityMultiplier="0" />
+                </type>
+                <type id="DUST" filename="$data/sky/dust.i3d">
+                    <settings spawnBoxWidth="30" spawnBoxDepth="50" spawnBoxHeight="30" behindCameraBuffer="0.1" cameraVelocityMultiplier="0" />
+                </type>
+            </types>
+
+            <presets>
+                <preset id="RAIN_LIGHT" typeId="RAIN" rainfallScale="0.1">
+                    <general maxDropsMultiplier="0.1" spawnVelocity="0.0 -8.0 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="0.35" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+                <preset id="RAIN" typeId="RAIN" rainfallScale="0.45" >
+                    <general maxDropsMultiplier="0.5" spawnVelocity="0.0 -8.0 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="1.0" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+                <preset id="RAIN_HEAVY" typeId="RAIN" rainfallScale="1">
+                    <general maxDropsMultiplier="1.0" spawnVelocity="0.0 -8.0 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="1.0" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+                <preset id="HAIL" typeId="HAIL" hailfallScale="1">
+                    <general maxDropsMultiplier="1.0" spawnVelocity="0.0 -10.0 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" maxBounces="2" bounceRestitution="0.5" bounceRandomFactor="1.0" />
+                    <turbulence value="1.0" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+                <preset id="SNOW_DUST" typeId="SNOW">
+                    <general maxDropsMultiplier="0.005" spawnVelocity="0.0 -0.85 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="0.35" timeScale="1.0" pulseDuration="2.0" frequency="5.0"/>
+                </preset>
+                <preset id="SNOW" typeId="SNOW" snowfallScale="1">
+                    <general maxDropsMultiplier="0.8" spawnVelocity="0.0 -1.5 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="0.2" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+                <preset id="SNOW_WINDY" typeId="SNOW" snowfallScale="1">
+                    <general maxDropsMultiplier="1.0" spawnVelocity="0.0 -3.0 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="0.3" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+                <preset id="DUST" typeId="DUST">
+                    <general maxDropsMultiplier="0.005" spawnVelocity="0.0 -0.25 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="0.25" timeScale="1.0" pulseDuration="2.0" frequency="5.0"/>
+                </preset>
+                <preset id="DUST_WINDY" typeId="DUST">
+                    <general maxDropsMultiplier="0.005" spawnVelocity="0.0 -0.50 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="0.35" timeScale="1.0" pulseDuration="2.0" frequency="5.0"/>
+                </preset>
+                <preset id="RAIN_TWISTER" typeId="RAIN" rainfallScale="0.7">
+                    <general maxDropsMultiplier="1.0" spawnVelocity="0.0 -8.0 0.0" mostConcentratedDistance="5.0" distributionPower="3.2" />
+                    <turbulence value="1.0" timeScale="0.5" pulseDuration="2.0" frequency="0.01"/>
+                </preset>
+            </presets>
+        </rain>
+
+        <clouds>
+            <presets>
+                <!-- SUNNY Blue Sky -->
+                <preset id="SUNNY_BLUE_SKY" envMapCloudProbeIndex="1">
+                    <cloudType type="15" precipitation="0" densityScale="0.01">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="1400" />
+                        <curlNoise tiling="4096" hHeightFractionModifier="1" modifier="5"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.9" edge1="1"/>
+                        <noise0 weight="0.314507" edge0="0.09" edge1="0.99"/>
+                        <noise1 weight="0.525494" edge0="0" edge1="0.88"/>
+                        <noise2 weight="0.16" edge0="0" edge1="0.9"/>
+                        <erosionWeight weight="0.15"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.01"/>
+                    <groundAlbedo color="0.5 0.5 0.75"/>
+                </preset>
+                <!-- SUNNY Light Clouds 1 -->
+                <preset id="SUNNY_LIGHT_CLOUDS_1" envMapCloudProbeIndex="1">
+                    <cloudType type="13" precipitation="0" densityScale="0.011">
+                        <baseShape tiling="1400"/>
+                        <erosion tiling="800"/>
+                        <curlNoise tiling="4096" heightFractionModifier="1" modifier="300"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.45" edge1="0.97"/>
+                        <noise0 weight="0.740887" edge0="0.2" edge1="0.99"/>
+                        <noise1 weight="0.18" edge0="0" edge1="0.9"/>
+                        <noise2 weight="0.0791135" edge0="0.15" edge1="0.9"/>
+                        <erosionWeight weight="0.17"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.07"/>
+                    <groundAlbedo color="0.5 0.5 0.65"/>
+                </preset>
+                <!-- SUNNY Light Clouds 2 -->
+                <preset id="SUNNY_LIGHT_CLOUDS_2" envMapCloudProbeIndex="1">
+                    <cloudType type="15" precipitation="0" densityScale="0.011">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="1200" />
+                        <curlNoise tiling="4096" heightFractionModifier="2" modifier="350"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.57" edge1="0.94"/>
+                        <noise0 weight="0.608035" edge0="0.09" edge1="0.99"/>
+                        <noise1 weight="0.341965" edge0="0.31" edge1="0.78"/>
+                        <noise2 weight="0.05" edge0="0.09" edge1="1"/>
+                        <erosionWeight weight="0.34"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.16"/>
+                    <groundAlbedo color="0.5 0.5 0.65"/>
+                </preset>
+                <!-- SUNNY Light Clouds 3 -->
+                <preset id="SUNNY_LIGHT_CLOUDS_3" envMapCloudProbeIndex="1">
+                    <cloudType type="14" precipitation="0" densityScale="0.012">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="900" />
+                        <curlNoise tiling="4096" heightFractionModifier="9" modifier="375"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.54" edge1="1"/>
+                        <noise0 weight="0.314507" edge0="0.14" edge1="0.96"/>
+                        <noise1 weight="0.525494" edge0="0.11" edge1="0.88"/>
+                        <noise2 weight="0.16" edge0="0" edge1="0.81"/>
+                        <erosionWeight weight="0.26"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.18"/>
+                    <groundAlbedo color="0.5 0.5 0.75"/>
+                </preset>
+                <!-- CLOUDY 1 -->
+                <preset id="CLOUDY_LIGHT" envMapCloudProbeIndex="2">
+                    <cloudType type="12" precipitation="0" densityScale="0.018">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="900" />
+                        <curlNoise tiling="4096" heightFractionModifier="2" modifier="144"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.33" edge1="1"/>
+                        <noise0 weight="0.393432" edge0="0.03" edge1="0.89"/>
+                        <noise1 weight="0.576558" edge0="0" edge1="0.9"/>
+                        <noise2 weight="0.0300095" edge0="0.15" edge1="0.9"/>
+                        <erosionWeight weight="0.2"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.18"/>
+                    <groundAlbedo color="0.5 0.5 0.75"/>
+                </preset>
+                <!-- CLOUDY 2 -->
+                <preset id="CLOUDY" envMapCloudProbeIndex="2">
+                    <cloudType type="5" precipitation="0" densityScale="0.032">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="1200" />
+                        <curlNoise tiling="4096" heightFractionModifier="4" modifier="200"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.07" edge1="1"/>
+                        <noise0 weight="0.314507" edge0="0.22" edge1="0.99"/>
+                        <noise1 weight="0.525494" edge0="0.17" edge1="0.94"/>
+                        <noise2 weight="0.16" edge0="0.08" edge1="1"/>
+                        <erosionWeight weight="0.2"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.2"/>
+                    <groundAlbedo color="0.5 0.5 0.75"/>
+                </preset>
+                <!-- CLOUDY 3 -->
+                <preset id="CLOUDY_DENSE" envMapCloudProbeIndex="2">
+                    <cloudType type="2" precipitation="0" densityScale="0.036">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="1200" />
+                        <curlNoise tiling="4096" heightFractionModifier="5" modifier="230"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.05" edge1="0.8"/>
+                        <noise0 weight="0.1705" edge0="0" edge1="0.82"/>
+                        <noise1 weight="0.33002" edge0="0.29" edge1="0.96"/>
+                        <noise2 weight="0.49948" edge0="0.21" edge1="0.95"/>
+                        <erosionWeight weight="0.3"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.18"/>
+                    <groundAlbedo color="0.5 0.5 0.65"/>
+                </preset>
+                <!-- CLOUDY 4 -->
+                <preset id="CLOUDY_MEDIUM" envMapCloudProbeIndex="2">
+                    <cloudType type="6" precipitation="0" densityScale="0.0255">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="2100" />
+                        <curlNoise tiling="4096" heightFractionModifier="2" modifier="350"/>
+                    </cloudType>
+                    <globalCoverage>
+                    <combinedNoise edge0="0.16" edge1="0.78"/>
+                        <noise0 weight="0.365127" edge0="0.24" edge1="0.92"/>
+                        <noise1 weight="0.269025" edge0="0.21" edge1="1"/>
+                        <noise2 weight="0.365848" edge0="0.25" edge1="1"/>
+                        <erosionWeight weight="0.3"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.12"/>
+                    <groundAlbedo color="0.5 0.5 0.95"/>
+                </preset>
+                <!-- RAIN 1-->
+                <preset id="RAIN_1" envMapCloudProbeIndex="3">
+                    <cloudType type="15" precipitation="0.47" densityScale="0.030">
+                        <baseShape tiling="1400"/>
+                        <erosion tiling="1100"/>
+                        <curlNoise tiling="4096" heightFractionModifier="7" modifier="450"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.05" edge1="0.99"/>
+                        <noise0 weight="0.280007" edge0="0.26" edge1="0.93"/>
+                        <noise1 weight="0.388325" edge0="0.09" edge1="0.76"/>
+                        <noise2 weight="0.331668" edge0="0.33" edge1="0.96"/>
+                        <erosionWeight weight="0.22"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.05"/>
+                    <groundAlbedo color="0.45 0.45 0.55"/>
+                </preset>
+                <!-- RAIN 2-->
+                <preset id="RAIN_2" envMapCloudProbeIndex="3">
+                    <cloudType type="6" precipitation="0.84" densityScale="0.035">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="1500" />
+                        <curlNoise tiling="4096" heightFractionModifier="1" modifier="300"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.18" edge1="1"/>
+                        <noise0 weight="0.311911" edge0="0.22" edge1="0.78"/>
+                        <noise1 weight="0.504882" edge0="0.15" edge1="0.88"/>
+                        <noise2 weight="0.183207" edge0="0.15" edge1="0.83"/>
+                        <erosionWeight weight="0.22"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.1"/>
+                    <groundAlbedo color="0.35 0.35 0.35"/>
+                </preset>
+                <!-- RAIN 3-->
+                <preset id="RAIN_3" envMapCloudProbeIndex="3">
+                    <cloudType type="10" precipitation="0.91" densityScale="0.04">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="1300" />
+                        <curlNoise tiling="4096" heightFractionModifier="3" modifier="400"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.21" edge1="1"/>
+                        <noise0 weight="0.330003" edge0="0.11" edge1="0.97"/>
+                        <noise1 weight="0.551391" edge0="0.04" edge1="1"/>
+                        <noise2 weight="0.118606" edge0="0.24" edge1="1"/>
+                        <erosionWeight weight="0.12"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.11"/>
+                    <groundAlbedo color="0.3 0.3 0.3"/>
+                </preset>
+                <!-- RAIN 4-->
+                <preset id="RAIN_4" envMapCloudProbeIndex="3">
+                    <cloudType type="6" precipitation="0.97" densityScale="0.125">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="2500" />
+                        <curlNoise tiling="4096" heightFractionModifier="5" modifier="350"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0.05" edge1="0.99"/>
+                        <noise0 weight="0.343146" edge0="0.2" edge1="1"/>
+                        <noise1 weight="0.247782" edge0="0.09" edge1="0.9"/>
+                        <noise2 weight="0.409072" edge0="0.39" edge1="1"/>
+                        <erosionWeight weight="0.135"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.2"/>
+                    <groundAlbedo color="0.05 0.05 0.05" />
+                </preset>
+                <!-- TWISTER 4-->
+                <preset id="TWISTER_1" envMapCloudProbeIndex="3">
+                    <cloudType type="10" precipitation="0.1" densityScale="0.05">
+                        <baseShape tiling="1400" />
+                        <erosion tiling="4900" />
+                        <curlNoise tiling="4096" heightFractionModifier="2" modifier="375"/>
+                    </cloudType>
+                    <globalCoverage>
+                        <combinedNoise edge0="0" edge1="1"/>
+                        <noise0 weight="0.298721" edge0="0.2" edge1="1"/>
+                        <noise1 weight="0.215703" edge0="0.09" edge1="0.9"/>
+                        <noise2 weight="0.485577" edge0="0.4" edge1="1"/>
+                        <erosionWeight weight="0.07"/>
+                    </globalCoverage>
+                    <cirrusCoverage weight="0.4"/>
+                    <groundAlbedo color="-1 -1 -1"/>
+                </preset>
+            </presets>
+        </clouds>
+
+        <season name="spring">
+            <object typeName="SUN" class="WeatherObject" weight="18">
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="14" maxTemperature="18">
+                    <clouds presetId="SUNNY_BLUE_SKY"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="4" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="12" maxTemperature="17">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_1"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="8" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="11" maxTemperature="16">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_2"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="10" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="10" maxTemperature="15">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_3"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="13" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="CLOUDY" class="WeatherObject" weight="18">
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="11" maxTemperature="16">
+                    <clouds presetId="CLOUDY_LIGHT"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="17" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="10" maxTemperature="15">
+                    <clouds presetId="CLOUDY"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="21" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="9" maxTemperature="14">
+                    <clouds presetId="CLOUDY_MEDIUM"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="24" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="8" maxTemperature="13">
+                    <clouds presetId="CLOUDY_DENSE"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="28" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="RAIN" class="WeatherObject" weight="14">
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="9" maxTemperature="15">
+                    <clouds presetId="RAIN_1"/>
+                    <rain presetId="RAIN_LIGHT"/>
+                    <wind speed="38" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="8" maxTemperature="14">
+                    <clouds presetId="RAIN_2"/>
+                    <rain presetId="RAIN"/>
+                    <wind speed="44" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="7" maxTemperature="13">
+                    <clouds presetId="RAIN_3"/>
+                    <rain presetId="RAIN_HEAVY"/>
+                    <wind speed="57" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="6" maxTemperature="12">
+                    <clouds presetId="RAIN_4"/>
+                    <rain presetId="RAIN_HEAVY"/>
+                    <wind speed="68" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="HAIL" class="WeatherObjectHail" weight="5">
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="9" maxTemperature="15">
+                    <clouds presetId="RAIN_1"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="38" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="8" maxTemperature="14">
+                    <clouds presetId="RAIN_2"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="44" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="7" maxTemperature="13">
+                    <clouds presetId="RAIN_3"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="57" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="6" maxTemperature="12">
+                    <clouds presetId="RAIN_4"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="68" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="TWISTER" class="WeatherObjectTwister" weight="1">
+                <variation weight="1" minHours="3" maxHours="6" minTemperature="6" maxTemperature="13">
+                    <clouds presetId="TWISTER_1"/>
+                    <rain presetId="RAIN_TWISTER"/>
+                    <wind speed="120" cirrusSpeedFactor="0.80"/>
+                    <twister metersPerHour="150" />
+                </variation>
+            </object>
+
+            <fog>
+                <groundFog>
+                    <coverageEdge0 min="0.05" max="0.4" />
+                    <coverageEdge1 min="0.6" max="1" />
+                    <extraHeight min="4" max="15" />
+                    <groundLevelDensity min="0.05" max="0.25" />
+                    <minValleyDepth min="3" max="8" />
+                    <startDayTimeMinutes min="180" max="280" />
+                    <endDayTimeMinutes min="480" max="600" />
+                    <weatherTypes>
+                        <weatherType name="SUN" />
+                        <weatherType name="CLOUDY" />
+                    </weatherTypes>
+                </groundFog>
+                <heightFog>
+                    <groundLevelDensity min="0.05" max="0.2" />
+                    <maxHeight min="420" max="600" />
+                </heightFog>
+            </fog>
+        </season>
+        <season name="summer">
+            <object typeName="SUN" class="WeatherObject" weight="20">
+                <variation weight="3" minHours="6" maxHours="12" minTemperature="24" maxTemperature="34">
+                    <clouds presetId="SUNNY_BLUE_SKY"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="4" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="20" maxTemperature="31">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_1"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="8" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="19" maxTemperature="29">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_2"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="10" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="19" maxTemperature="29">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_3"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="13" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="CLOUDY" class="WeatherObject" weight="16">
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="18" maxTemperature="27">
+                    <clouds presetId="CLOUDY_LIGHT"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="17" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="17" maxTemperature="26">
+                    <clouds presetId="CLOUDY"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="21" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="16" maxTemperature="25">
+                    <clouds presetId="CLOUDY_MEDIUM"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="24" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="16" maxTemperature="25">
+                    <clouds presetId="CLOUDY_DENSE"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="28" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="RAIN" class="WeatherObject" weight="12">
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="15" maxTemperature="24">
+                    <clouds presetId="RAIN_1"/>
+                    <rain presetId="RAIN_LIGHT"/>
+                    <wind speed="38" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="15" maxTemperature="24">
+                    <clouds presetId="RAIN_2"/>
+                    <rain presetId="RAIN"/>
+                    <wind speed="44" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="14" maxTemperature="23">
+                    <clouds presetId="RAIN_3"/>
+                    <rain presetId="RAIN_HEAVY"/>
+                    <wind speed="57" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="13" maxTemperature="22">
+                    <clouds presetId="RAIN_4"/>
+                    <rain presetId="RAIN_HEAVY"/>
+                    <wind speed="68" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="HAIL" class="WeatherObjectHail" weight="5">
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="9" maxTemperature="15">
+                    <clouds presetId="RAIN_1"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="38" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="8" maxTemperature="14">
+                    <clouds presetId="RAIN_2"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="44" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="7" maxTemperature="13">
+                    <clouds presetId="RAIN_3"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="57" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="6" maxTemperature="12">
+                    <clouds presetId="RAIN_4"/>
+                    <rain presetId="HAIL"/>
+                    <wind speed="68" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="TWISTER" class="WeatherObjectTwister" weight="1">
+                <variation weight="1" minHours="3" maxHours="6" minTemperature="6" maxTemperature="13">
+                    <clouds presetId="TWISTER_1"/>
+                    <rain presetId="RAIN_TWISTER"/>
+                    <wind speed="120" cirrusSpeedFactor="0.80"/>
+                    <twister metersPerHour="150" />
+                </variation>
+            </object>
+
+            <fog>
+                <groundFog>
+                    <coverageEdge0 min="0.05" max="0.4" />
+                    <coverageEdge1 min="0.6" max="1" />
+                    <extraHeight min="4" max="15" />
+                    <groundLevelDensity min="0.01" max="0.05" />
+                    <minValleyDepth min="3" max="8" />
+                    <startDayTimeMinutes min="180" max="280" />
+                    <endDayTimeMinutes min="480" max="600" />
+                    <weatherTypes>
+                        <weatherType name="SUN" />
+                        <weatherType name="CLOUDY" />
+                    </weatherTypes>
+                </groundFog>
+                <heightFog>
+                    <groundLevelDensity min="0.05" max="0.2" />
+                    <maxHeight min="420" max="600" />
+                </heightFog>
+            </fog>
+        </season>
+        <season name="autumn">
+            <object typeName="SUN" class="WeatherObject" weight="8">
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="15" maxTemperature="25">
+                    <clouds presetId="SUNNY_BLUE_SKY"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="4" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="14" maxTemperature="24">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_1"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="8" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="13" maxTemperature="23">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_2"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="10" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="13" maxTemperature="23">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_3"/>
+                    <rain presetId="DUST"/>
+                    <wind speed="13" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="CLOUDY" class="WeatherObject" weight="10">
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="9" maxTemperature="20">
+                    <clouds presetId="CLOUDY_LIGHT"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="17" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="8" maxTemperature="19">
+                    <clouds presetId="CLOUDY"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="21" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="8" maxTemperature="20">
+                    <clouds presetId="CLOUDY_MEDIUM"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="24" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="7" maxTemperature="17">
+                    <clouds presetId="CLOUDY_DENSE"/>
+                    <rain presetId="DUST_WINDY"/>
+                    <wind speed="28" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="RAIN" class="WeatherObject" weight="6">
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="7" maxTemperature="18">
+                    <clouds presetId="RAIN_1"/>
+                    <rain presetId="RAIN_LIGHT"/>
+                    <wind speed="38" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="6" maxTemperature="15">
+                    <clouds presetId="RAIN_2"/>
+                    <rain presetId="RAIN"/>
+                    <wind speed="44" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="6" maxTemperature="15">
+                    <clouds presetId="RAIN_3"/>
+                    <rain presetId="RAIN_HEAVY"/>
+                    <wind speed="57" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="5" maxTemperature="14">
+                    <clouds presetId="RAIN_4"/>
+                    <rain presetId="RAIN_HEAVY"/>
+                    <wind speed="68" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+
+            <fog>
+                <groundFog>
+                    <coverageEdge0 min="0.05" max="0.4" />
+                    <coverageEdge1 min="0.6" max="1" />
+                    <extraHeight min="4" max="15" />
+                    <groundLevelDensity min="0.05" max="0.25" />
+                    <minValleyDepth min="3" max="8" />
+                    <startDayTimeMinutes min="180" max="280" />
+                    <endDayTimeMinutes min="480" max="600" />
+                    <weatherTypes>
+                        <weatherType name="SUN" />
+                        <weatherType name="CLOUDY" />
+                    </weatherTypes>
+                </groundFog>
+                <heightFog>
+                    <groundLevelDensity min="0.05" max="0.2" />
+                    <maxHeight min="420" max="600" />
+                </heightFog>
+            </fog>
+        </season>
+        <season name="winter">
+            <object typeName="SUN" class="WeatherObject" weight="4">
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="-6" maxTemperature="10">
+                    <clouds presetId="SUNNY_BLUE_SKY"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="4" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="6" maxHours="12" minTemperature="-5" maxTemperature="7">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_1"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="8" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="-6" maxTemperature="6">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_2"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="10" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="8" maxHours="12" minTemperature="-5" maxTemperature="5">
+                    <clouds presetId="SUNNY_LIGHT_CLOUDS_3"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="13" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="CLOUDY" class="WeatherObject" weight="7">
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="-6" maxTemperature="7">
+                    <clouds presetId="CLOUDY_LIGHT"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="17" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="-7" maxTemperature="6">
+                    <clouds presetId="CLOUDY"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="21" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="-8" maxTemperature="6">
+                    <clouds presetId="CLOUDY_MEDIUM"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="24" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="5" maxHours="10" minTemperature="-9" maxTemperature="5">
+                    <clouds presetId="CLOUDY_DENSE"/>
+                    <rain presetId="SNOW_DUST"/>
+                    <wind speed="28" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+            <object typeName="SNOW" class="WeatherObject" weight="5">
+                <variation weight="1" minHours="4" maxHours="8" minTemperature="-8" maxTemperature="5">
+                    <clouds presetId="RAIN_1"/>
+                    <rain presetId="SNOW"/>
+                    <wind speed="8" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="4" maxHours="8" minTemperature="-9" maxTemperature="4">
+                    <clouds presetId="RAIN_2"/>
+                    <rain presetId="SNOW"/>
+                    <wind speed="18" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="4" maxHours="8" minTemperature="-10" maxTemperature="3">
+                    <clouds presetId="RAIN_3"/>
+                    <rain presetId="SNOW_WINDY"/>
+                    <wind speed="37" cirrusSpeedFactor="0.80"/>
+                </variation>
+                <variation weight="1" minHours="1" maxHours="3" minTemperature="-11" maxTemperature="2">
+                    <clouds presetId="RAIN_4"/>
+                    <rain presetId="SNOW_WINDY"/>
+                    <wind speed="68" cirrusSpeedFactor="0.80"/>
+                </variation>
+            </object>
+
+            <fog>
+                <groundFog>
+                    <coverageEdge0 min="0.05" max="0.4" />
+                    <coverageEdge1 min="0.6" max="1" />
+                    <extraHeight min="4" max="15" />
+                    <groundLevelDensity min="0.01" max="0.05" />
+                    <minValleyDepth min="3" max="8" />
+                    <startDayTimeMinutes min="180" max="280" />
+                    <endDayTimeMinutes min="480" max="600" />
+                    <weatherTypes>
+                        <weatherType name="SUN" />
+                        <weatherType name="CLOUDY" />
+                    </weatherTypes>
+                </groundFog>
+                <heightFog>
+                    <groundLevelDensity min="0.05" max="0.2" />
+                    <maxHeight min="420" max="600" />
+                </heightFog>
+            </fog>
+
+        </season>
+    </weather>
+</environment>
