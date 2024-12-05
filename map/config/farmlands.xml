@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <map>
     <farmlands densityMapFilename="map/data/infoLayer_farmlands.grle" numChannels="6" pricePerHa="19500">
-        <farmland id="1"  	priceScale="1" npcName="NPC_DE_01" /> <!-- komplette Map -->
+        <farmland id="1"  	priceScale="1" npcName="NPC_DE_01" /> 
 		<farmland id="2"  	priceScale="1" npcName="NPC_DE_01" /> <!-- Feld 1 -->
 		<farmland id="3"  	priceScale="1" npcName="NPC_DE_02" defaultFarmProperty="true" /> <!-- Wiese Kuhweide -->
 		<farmland id="4"  	priceScale="1" npcName="NPC_DE_02" defaultFarmProperty="true" /> <!-- Kuhweide und Maisfeld -->

@@ -476,8 +476,8 @@
     <File fileId="420" filename="data/infoLayer_placementCollisionGenerated.png"/>
     <File fileId="417" filename="data/infoLayer_tipCollision.png"/>
     <File fileId="418" filename="data/infoLayer_tipCollisionGenerated.png"/>
-    <File fileId="493" filename="data/masks/BLOCKMASK.png"/>
-    <File fileId="492" filename="data/masks/GEN_roadsMask.png"/>
+    <File fileId="515" filename="data/masks/BLOCKMASK.png"/>
+    <File fileId="514" filename="data/masks/GEN_roadsMask.png"/>
     <File fileId="95" filename="data/mud01_weight.png"/>
     <File fileId="98" filename="data/mud02_weight.png"/>
     <File fileId="101" filename="data/rock01_weight.png"/>
@@ -496,22 +496,108 @@
     <File fileId="132" filename="data/tarmac02_weight.png"/>
     <File fileId="123" filename="data/tarmacDirt01_weight.png"/>
     <File fileId="126" filename="data/tarmacDirt02_weight.png"/>
+    <File fileId="503" filename="models/streets/BetonStreifen.png"/>
+    <File fileId="492" filename="models/streets/ConcreteBare_diffuse.png"/>
+    <File fileId="498" filename="models/streets/FloorsRegular_diffuse.png"/>
+    <File fileId="511" filename="models/streets/Road_51.dds"/>
+    <File fileId="499" filename="models/streets/TJunction.png"/>
+    <File fileId="501" filename="models/streets/TJunctionX.png"/>
+    <File fileId="497" filename="models/streets/entry_traffic_circle.png"/>
+    <File fileId="506" filename="models/streets/feldweg_diffuse.dds"/>
+    <File fileId="507" filename="models/streets/feldweg_normal.dds"/>
+    <File fileId="504" filename="models/streets/halaMontiSystemzem.png"/>
+    <File fileId="513" filename="models/streets/lane_TJunction.png"/>
+    <File fileId="512" filename="models/streets/lane_diffuse.png"/>
+    <File fileId="493" filename="models/streets/portuguese_tiles.png"/>
+    <File fileId="502" filename="models/streets/road.dds"/>
+    <File fileId="505" filename="models/streets/road1.dds"/>
+    <File fileId="496" filename="models/streets/road2_traffic_circle.png"/>
+    <File fileId="508" filename="models/streets/road_normal.dds"/>
+    <File fileId="494" filename="models/streets/road_traffic_circle.png"/>
+    <File fileId="495" filename="models/streets/verge.png"/>
+    <File fileId="500" filename="models/streets/verge_normal.dds"/>
+    <File fileId="509" filename="models/streets/wald_diffuse.dds"/>
+    <File fileId="510" filename="models/streets/wald_normal.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="groundDetailHeight_mat" materialId="12858" customShaderId="478">
+    <Material name="BGARightEdge_mat" materialId="5">
+      <Texture fileId="495"/>
+      <Normalmap fileId="500"/>
+    </Material>
+    <Material name="concrete_diffuse" materialId="6">
+      <Texture fileId="492"/>
+    </Material>
+    <Material name="entry_traffic_circle" materialId="7">
+      <Texture fileId="497"/>
+    </Material>
+    <Material name="feldweg_mat" materialId="8">
+      <Texture fileId="506"/>
+      <Normalmap fileId="507"/>
+    </Material>
+    <Material name="floorregular_diffuse" materialId="9">
+      <Texture fileId="498"/>
+    </Material>
+    <Material name="groundDetailHeight_mat" materialId="10" customShaderId="478">
       <Texture fileId="476"/>
       <Normalmap fileId="477"/>
       <Custommap name="heightNoiseMap" fileId="479"/>
     </Material>
-    <Material name="lambert1" materialId="12859" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="11" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="terrainMaterial_mat" materialId="12860" customShaderId="2">
+    <Material name="lambert2" materialId="12">
+      <Texture fileId="504"/>
     </Material>
-    <Material name="UnnamedMaterial" materialId="12861" diffuseColor="1 1 1 1">
+    <Material name="lambert5" materialId="13">
+      <Texture fileId="511"/>
     </Material>
-    <Material name="warningStripes_mat" materialId="12862">
+    <Material name="lane_diffuse" materialId="14">
+      <Texture fileId="512"/>
+    </Material>
+    <Material name="lane_TJunction" materialId="15">
+      <Texture fileId="513"/>
+    </Material>
+    <Material name="portuguese_tiles" materialId="16">
+      <Texture fileId="493"/>
+    </Material>
+    <Material name="rightEdge_diffuse" materialId="17">
+      <Texture fileId="503"/>
+    </Material>
+    <Material name="rightEdge_diffuse" materialId="18">
+      <Texture fileId="495"/>
+    </Material>
+    <Material name="road2_traffic_circle" materialId="19">
+      <Texture fileId="496"/>
+    </Material>
+    <Material name="road_diffuse" materialId="20">
+      <Texture fileId="502"/>
+    </Material>
+    <Material name="road_diffuse" materialId="21">
+      <Texture fileId="505"/>
+    </Material>
+    <Material name="road_mat" materialId="22">
+      <Texture fileId="502"/>
+      <Normalmap fileId="508"/>
+    </Material>
+    <Material name="road_traffic_circle" materialId="23">
+      <Texture fileId="494"/>
+    </Material>
+    <Material name="terrainMaterial_mat" materialId="24" customShaderId="2">
+    </Material>
+    <Material name="TJunction_Diffuse" materialId="25">
+      <Texture fileId="499"/>
+    </Material>
+    <Material name="TJunction_Diffuse" materialId="26">
+      <Texture fileId="501"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="27" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="wald_mat" materialId="28">
+      <Texture fileId="509"/>
+      <Normalmap fileId="510"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="29">
       <Texture fileId="487"/>
       <Normalmap fileId="488"/>
       <Glossmap fileId="489"/>
@@ -523,9 +609,9 @@
   </Shapes>
 
   <Scene>
-    <Camera name="persp" translation="-99.5596 441.141 -1666.35" rotation="131.953 -78.9966 -180" visibility="false" nodeId="12874" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
-    <Light name="sun" translation="0 400 0" rotation="-47.2604 -28.1861 0" objectMask="0x83ff0000" nodeId="12875" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-1024,-128,-1024" lastShadowMapSplitBboxMax="1024,148,1024" range="10000" scattering="true"/>
-    <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="12877" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="12860" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
+    <Camera name="persp" translation="201.627 114.061 -394.824" rotation="146.849 -69.7389 180" visibility="false" nodeId="85" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
+    <Light name="sun" translation="0 400 0" rotation="-47.2604 -28.1861 0" objectMask="0x83ff0000" nodeId="86" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-1024,-128,-1024" lastShadowMapSplitBboxMax="1024,148,1024" range="10000" scattering="true"/>
+    <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="88" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="24" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
         <OccluderLod occLodLevel="0" occFaceCount="100" occMaxHausdorffDistance="7" occMaxHausdorffDistanceExtra="9" occMinHorizontalDistance="1" />
         <OccluderLod occLodLevel="1" occFaceCount="20" occMaxHausdorffDistance="25" occMaxHausdorffDistanceExtra="30" occMinHorizontalDistance="1" />
@@ -878,7 +964,7 @@
           <DistanceTexture match="13;*;1" fileId="473"/>
           <DistanceTexture match="14;*;1" fileId="474"/>
         </DetailLayer>
-        <DetailLayer name="terrainDetailHeight" densityMapId="475" numDensityMapChannels="12" compressionChannels="6" cellSize="8" objectMask="0xff00ff" decalLayer="2" materialId="12858" viewDistance="75" blendOutDistance="5" densityMapShaderNames="terrainFillMap" combinedValuesChannels="0 6 0" heightFirstChannel="6" heightNumChannels="6" maxHeight="4"/>
+        <DetailLayer name="terrainDetailHeight" densityMapId="475" numDensityMapChannels="12" compressionChannels="6" cellSize="8" objectMask="0xff00ff" decalLayer="2" materialId="10" viewDistance="75" blendOutDistance="5" densityMapShaderNames="terrainFillMap" combinedValuesChannels="0 6 0" heightFirstChannel="6" heightNumChannels="6" maxHeight="4"/>
         <DisplacementLayer name="terrainDisplacement" size="16384" tileSize="16" numChannels="6" cellSize="8" viewDistance="25" blendOutDistance="5" maxHeight="0.2" densityMapShaderNames="terrainDisplacementMap"/>
         <FoliageSystem cellSize="8" graphicsCellScale="2" objectMask="16711935" decalLayer="0">
           <FoliageMultiLayer densityMapId="480" numChannels="10" numTypeIndexChannels="5" compressionChannels="5">
@@ -923,162 +1009,270 @@
           </FoliageMultiLayer>
         </FoliageSystem>
       </Layers>
-      <ProceduralPlacementMasks blockMaskFileId="493">
-        <Mask name="GEN_roadsMask" fileId="492" />
+      <ProceduralPlacementMasks blockMaskFileId="515">
+        <Mask name="GEN_roadsMask" fileId="514" />
       </ProceduralPlacementMasks>
     </TerrainTransformGroup>
-    <TransformGroup name="careerStartPoint" translation="45.0493 92.5019 -842.852" rotation="0 -57 0" nodeId="12896"/>
-    <TransformGroup name="gameplay" nodeId="12897">
-      <TransformGroup name="vehicleShop" nodeId="12898">
-        <Shape name="vehicleShopTrigger" translation="34.9891 92.4397 -790.967" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="12899" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12859">
-          <ReferenceNode name="markerIconShopping" referenceId="485" nodeId="12903"/>
-          <TransformGroup name="vehicleShopPlayerSpawn" translation="0.5 0 3" rotation="-1.10402e-14 60 -2.30303e-08" nodeId="12906"/>
+    <TransformGroup name="careerStartPoint" translation="45.0493 92.5019 -842.852" rotation="0 -57 0" nodeId="107"/>
+    <TransformGroup name="gameplay" nodeId="108">
+      <TransformGroup name="vehicleShop" nodeId="109">
+        <Shape name="vehicleShopTrigger" translation="34.9891 92.4397 -790.967" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="110" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+          <ReferenceNode name="markerIconShopping" referenceId="485" nodeId="114"/>
+          <TransformGroup name="vehicleShopPlayerSpawn" translation="0.5 0 3" rotation="-1.10402e-14 60 -2.30303e-08" nodeId="117"/>
         </Shape>
-        <TransformGroup name="storeSpawnPlace1Start" translation="39.3787 92.4397 -773.654" nodeId="12907">
-          <TransformGroup name="storeSpawnPlace1End" translation="0 0 -40" nodeId="12908"/>
+        <TransformGroup name="storeSpawnPlace1Start" translation="39.3787 92.4397 -773.654" nodeId="118">
+          <TransformGroup name="storeSpawnPlace1End" translation="0 0 -40" nodeId="119"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="animalLoadingTriggers" nodeId="12909">
-        <Shape name="animalLoadingTriggerDealer" translation="65.0415 92.5019 -816.138" scale="10 4 15" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="12910" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12859"/>
-        <ReferenceNode name="markerIconAnimals" translation="64.1142 92.5019 -817.529" referenceId="486" nodeId="12913"/>
+      <TransformGroup name="animalLoadingTriggers" nodeId="120">
+        <Shape name="animalLoadingTriggerDealer" translation="65.0415 92.5019 -816.138" scale="10 4 15" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="121" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+        <ReferenceNode name="markerIconAnimals" translation="64.1142 92.5019 -817.529" referenceId="486" nodeId="124"/>
       </TransformGroup>
-      <TransformGroup name="splines" nodeId="12916">
-        <TransformGroup name="pedestrianSystem" nodeId="12917">
-          <Shape name="pedestrianSpline01" rotation="-6.83019e-06 -0 0" shapeId="3" visibility="false" nodeId="12918" castsShadows="false" receiveShadows="false"/>
-          <TransformGroup name="staticGroups" nodeId="12920">
-            <TransformGroup name="standardStatic" nodeId="12921">
-              <TransformGroup name="npcPos" translation="32.1481 92.4325 -850.997" rotation="-4.25672e-18 -0 -4.86815e-11" nodeId="12922"/>
+      <TransformGroup name="splines" nodeId="127">
+        <TransformGroup name="pedestrianSystem" nodeId="128">
+          <Shape name="pedestrianSpline01" rotation="-6.83019e-06 -0 0" shapeId="3" visibility="false" nodeId="129" castsShadows="false" receiveShadows="false"/>
+          <TransformGroup name="staticGroups" nodeId="131">
+            <TransformGroup name="standardStatic" nodeId="132">
+              <TransformGroup name="npcPos" translation="32.1481 92.4325 -850.997" rotation="-4.25672e-18 -0 -4.86815e-11" nodeId="133"/>
             </TransformGroup>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="trafficSystem" nodeId="12923">
-          <TransformGroup name="parkedCars" nodeId="12924">
-            <TransformGroup name="parkedCar" translation="31.4986 92.4358 -824.844" rotation="-0 -90 0" nodeId="12925"/>
+        <TransformGroup name="trafficSystem" nodeId="134">
+          <TransformGroup name="parkedCars" nodeId="135">
+            <TransformGroup name="parkedCar" translation="31.4986 92.4358 -824.844" rotation="-0 -90 0" nodeId="136"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="ai" nodeId="12926">
-          <Shape name="straight_87" shapeId="4" visibility="false" nodeId="12927" castsShadows="false" receiveShadows="false"/>
+        <TransformGroup name="ai" nodeId="137">
+          <Shape name="straight_87" shapeId="4" visibility="false" nodeId="138" castsShadows="false" receiveShadows="false"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="fields" nodeId="12928">
-        <TransformGroup name="field1" translation="-37.5981 50 -881.454" nodeId="12929">
-          <TransformGroup name="polygonPoints" nodeId="12930">
-            <TransformGroup name="point1" translation="357.509 38.9439 -993.79" nodeId="12931"/>
-            <TransformGroup name="point2" translation="358.549 38.99 -908.31" rotation="0 154.969 0" nodeId="12932"/>
-            <TransformGroup name="point3" translation="357.28 39.2133 -833.444" rotation="0 237.29 0" nodeId="12933"/>
-            <TransformGroup name="point4" translation="357.49 38.3967 -802.553" rotation="0 49.8641 0" nodeId="12934"/>
-            <TransformGroup name="point5" translation="350.383 38.2126 -796.728" rotation="0 69.6115 0" nodeId="12935"/>
-            <TransformGroup name="point6" translation="338.561 38.3164 -795.785" rotation="0 32.2321 0" nodeId="12936"/>
-            <TransformGroup name="point7" translation="283.853 38.6925 -813.395" rotation="0 171.926 0" nodeId="12937"/>
-            <TransformGroup name="point8" translation="250.04 38.969 -823.586" rotation="0 208.592 0" nodeId="12938"/>
-            <TransformGroup name="point9" translation="169.602 39.3658 -866.001" rotation="0 277.722 0" nodeId="12939"/>
-            <TransformGroup name="point10" translation="162.321 39.3707 -878.084" rotation="0 76.2393 0" nodeId="12940"/>
-            <TransformGroup name="point11" translation="158.982 39.3987 -944.752" rotation="0 101.239 0" nodeId="12941"/>
-            <TransformGroup name="point12" translation="158.353 39.4286 -971.483" rotation="0 345.021 0" nodeId="12942"/>
-            <TransformGroup name="point13" translation="161.525 39.3663 -994.054" rotation="0 184.546 0" nodeId="12943"/>
-            <TransformGroup name="point14" translation="357.509 38.9439 -993.79" rotation="0 309.395 0" nodeId="12944"/>
+      <TransformGroup name="fields" nodeId="139">
+        <TransformGroup name="field1" translation="-37.5981 50 -881.454" nodeId="140">
+          <TransformGroup name="polygonPoints" nodeId="141">
+            <TransformGroup name="point1" translation="357.509 38.9439 -993.79" nodeId="142"/>
+            <TransformGroup name="point2" translation="358.549 38.99 -908.31" rotation="0 154.969 0" nodeId="143"/>
+            <TransformGroup name="point3" translation="357.28 39.2133 -833.444" rotation="0 237.29 0" nodeId="144"/>
+            <TransformGroup name="point4" translation="357.49 38.3967 -802.553" rotation="0 49.8641 0" nodeId="145"/>
+            <TransformGroup name="point5" translation="350.383 38.2126 -796.728" rotation="0 69.6115 0" nodeId="146"/>
+            <TransformGroup name="point6" translation="338.561 38.3164 -795.785" rotation="0 32.2321 0" nodeId="147"/>
+            <TransformGroup name="point7" translation="283.853 38.6925 -813.395" rotation="0 171.926 0" nodeId="148"/>
+            <TransformGroup name="point8" translation="250.04 38.969 -823.586" rotation="0 208.592 0" nodeId="149"/>
+            <TransformGroup name="point9" translation="169.602 39.3658 -866.001" rotation="0 277.722 0" nodeId="150"/>
+            <TransformGroup name="point10" translation="162.321 39.3707 -878.084" rotation="0 76.2393 0" nodeId="151"/>
+            <TransformGroup name="point11" translation="158.982 39.3987 -944.752" rotation="0 101.239 0" nodeId="152"/>
+            <TransformGroup name="point12" translation="158.353 39.4286 -971.483" rotation="0 345.021 0" nodeId="153"/>
+            <TransformGroup name="point13" translation="161.525 39.3663 -994.054" rotation="0 184.546 0" nodeId="154"/>
+            <TransformGroup name="point14" translation="357.509 38.9439 -993.79" rotation="0 309.395 0" nodeId="155"/>
           </TransformGroup>
-          <TransformGroup name="nameIndicator" translation="251.835 40.4415 -915.51" nodeId="12945">
-            <Note name="Note" nodeId="12946" text="field1&amp;#xA;3.32 ha" color="4278190080" fixedSize="true"/>
+          <TransformGroup name="nameIndicator" translation="251.835 40.4415 -915.51" nodeId="156">
+            <Note name="Note" nodeId="157" text="field1&amp;#xA;3.32 ha" color="4278190080" fixedSize="true"/>
           </TransformGroup>
-          <TransformGroup name="teleportIndicator" translation="169.022 39.3658 -870.549" nodeId="12947"/>
+          <TransformGroup name="teleportIndicator" translation="169.022 39.3658 -870.549" nodeId="158"/>
         </TransformGroup>
-        <TransformGroup name="field2" nodeId="12948">
-          <TransformGroup name="polygonPoints" nodeId="12949">
-            <TransformGroup name="point1" translation="111.088 89.427 -1894.89" rotation="0 232.604 0" nodeId="12950"/>
-            <TransformGroup name="point2" translation="111.894 89.3969 -1554.73" rotation="0 35.1065 0" nodeId="12951"/>
-            <TransformGroup name="point3" translation="107.01 89.4163 -1544.75" rotation="0 93.0788 0" nodeId="12952"/>
-            <TransformGroup name="point4" translation="43.5789 89 -1507.55" rotation="0 271.227 0" nodeId="12953"/>
-            <TransformGroup name="point5" translation="1.66212 89 -1477.8" rotation="0 288.478 0" nodeId="12954"/>
-            <TransformGroup name="point6" translation="-18.7533 89 -1463.4" rotation="0 0.166855 0" nodeId="12955"/>
-            <TransformGroup name="point7" translation="-52.6439 89 -1464.63" rotation="0 155.52 0" nodeId="12956"/>
-            <TransformGroup name="point8" translation="-83.2445 89 -1465.92" rotation="0 73.2669 0" nodeId="12957"/>
-            <TransformGroup name="point9" translation="-212.029 89.762 -1508.39" rotation="0 203.584 0" nodeId="12958"/>
-            <TransformGroup name="point10" translation="-249.197 90.572 -1515.55" rotation="0 64.8334 0" nodeId="12959"/>
-            <TransformGroup name="point11" translation="-256.072 90.5034 -1517.35" rotation="0 29.0588 0" nodeId="12960"/>
-            <TransformGroup name="point12" translation="-381.717 87.8254 -1514.46" rotation="0 191.406 0" nodeId="12961"/>
-            <TransformGroup name="point13" translation="-382.779 87.975 -1519.03" rotation="0 134.061 0" nodeId="12962"/>
-            <TransformGroup name="point14" translation="-384.325 90.8359 -1549.56" rotation="0 248.968 0" nodeId="12963"/>
-            <TransformGroup name="point15" translation="-411.345 91.9315 -1611.36" rotation="0 330.822 0" nodeId="12964"/>
-            <TransformGroup name="point16" translation="-409.727 92.4952 -1625" rotation="0 217.705 0" nodeId="12965"/>
-            <TransformGroup name="point17" translation="-398.086 93.5543 -1651.26" rotation="0 306.869 0" nodeId="12966"/>
-            <TransformGroup name="point18" translation="-401.367 90.9075 -1682.09" rotation="0 257.493 0" nodeId="12967"/>
-            <TransformGroup name="point19" translation="-402.824 89.8812 -1690.65" rotation="0 266.948 0" nodeId="12968"/>
-            <TransformGroup name="point20" translation="-426.283 86.8367 -1735.77" rotation="0 211.575 0" nodeId="12969"/>
-            <TransformGroup name="point21" translation="-427.598 87.488 -1751.6" rotation="0 211.79 0" nodeId="12970"/>
-            <TransformGroup name="point22" translation="-422.395 88.3293 -1761" rotation="0 274.044 0" nodeId="12971"/>
-            <TransformGroup name="point23" translation="-412.436 89.3185 -1766.81" rotation="0 330.093 0" nodeId="12972"/>
-            <TransformGroup name="point24" translation="-392.204 91.2308 -1774.77" rotation="0 245.207 0" nodeId="12973"/>
-            <TransformGroup name="point25" translation="-377.336 91.5447 -1792.63" rotation="0 293.576 0" nodeId="12974"/>
-            <TransformGroup name="point26" translation="-380.056 89.6287 -1810.97" rotation="0 58.9447 0" nodeId="12975"/>
-            <TransformGroup name="point27" translation="-374.168 89.7064 -1817.79" rotation="0 186.774 0" nodeId="12976"/>
-            <TransformGroup name="point28" translation="-295.178 95.5194 -1814.48" rotation="0 229.169 0" nodeId="12977"/>
-            <TransformGroup name="point29" translation="-271.562 93.3932 -1803.79" rotation="0 182.989 0" nodeId="12978"/>
-            <TransformGroup name="point30" translation="-255.112 92.1802 -1787.53" rotation="0 64.0352 0" nodeId="12979"/>
-            <TransformGroup name="point31" translation="-239.636 92.1299 -1779.78" rotation="0 87.2749 0" nodeId="12980"/>
-            <TransformGroup name="point32" translation="-215.25 91.8165 -1787.69" rotation="0 294.394 0" nodeId="12981"/>
-            <TransformGroup name="point33" translation="-205.447 90.7985 -1799.25" rotation="0 122.597 0" nodeId="12982"/>
-            <TransformGroup name="point34" translation="-195.994 90.4887 -1821.85" rotation="0 358.994 0" nodeId="12983"/>
-            <TransformGroup name="point35" translation="-182.944 89.9517 -1846.36" rotation="0 219.301 0" nodeId="12984"/>
-            <TransformGroup name="point36" translation="-165.047 88.6337 -1861.65" rotation="0 15.6429 0" nodeId="12985"/>
-            <TransformGroup name="point37" translation="-97.6054 84.3027 -1883.97" rotation="0 42.0851 0" nodeId="12986"/>
-            <TransformGroup name="point38" translation="-36.669 83.978 -1894.65" rotation="0 269.228 0" nodeId="12987"/>
-            <TransformGroup name="point39" translation="28.9373 84.7401 -1898.61" nodeId="12988"/>
-            <TransformGroup name="point40" translation="56.616 89.357 -1901.33" nodeId="12989"/>
-            <TransformGroup name="point41" translation="92.2423 89.3631 -1904.92" rotation="0 18.8176 0" nodeId="12990"/>
+        <TransformGroup name="field2" nodeId="159">
+          <TransformGroup name="polygonPoints" nodeId="160">
+            <TransformGroup name="point1" translation="111.088 89.427 -1894.89" rotation="0 232.604 0" nodeId="161"/>
+            <TransformGroup name="point2" translation="111.894 89.3969 -1554.73" rotation="0 35.1065 0" nodeId="162"/>
+            <TransformGroup name="point3" translation="107.01 89.4163 -1544.75" rotation="0 93.0788 0" nodeId="163"/>
+            <TransformGroup name="point4" translation="43.5789 89 -1507.55" rotation="0 271.227 0" nodeId="164"/>
+            <TransformGroup name="point5" translation="1.66212 89 -1477.8" rotation="0 288.478 0" nodeId="165"/>
+            <TransformGroup name="point6" translation="-18.7533 89 -1463.4" rotation="0 0.166855 0" nodeId="166"/>
+            <TransformGroup name="point7" translation="-52.6439 89 -1464.63" rotation="0 155.52 0" nodeId="167"/>
+            <TransformGroup name="point8" translation="-83.2445 89 -1465.92" rotation="0 73.2669 0" nodeId="168"/>
+            <TransformGroup name="point9" translation="-212.029 89.762 -1508.39" rotation="0 203.584 0" nodeId="169"/>
+            <TransformGroup name="point10" translation="-249.197 90.572 -1515.55" rotation="0 64.8334 0" nodeId="170"/>
+            <TransformGroup name="point11" translation="-256.072 90.5034 -1517.35" rotation="0 29.0588 0" nodeId="171"/>
+            <TransformGroup name="point12" translation="-381.717 87.8254 -1514.46" rotation="0 191.406 0" nodeId="172"/>
+            <TransformGroup name="point13" translation="-382.779 87.975 -1519.03" rotation="0 134.061 0" nodeId="173"/>
+            <TransformGroup name="point14" translation="-384.325 90.8359 -1549.56" rotation="0 248.968 0" nodeId="174"/>
+            <TransformGroup name="point15" translation="-411.345 91.9315 -1611.36" rotation="0 330.822 0" nodeId="175"/>
+            <TransformGroup name="point16" translation="-409.727 92.4952 -1625" rotation="0 217.705 0" nodeId="176"/>
+            <TransformGroup name="point17" translation="-398.086 93.5543 -1651.26" rotation="0 306.869 0" nodeId="177"/>
+            <TransformGroup name="point18" translation="-401.367 90.9075 -1682.09" rotation="0 257.493 0" nodeId="178"/>
+            <TransformGroup name="point19" translation="-402.824 89.8812 -1690.65" rotation="0 266.948 0" nodeId="179"/>
+            <TransformGroup name="point20" translation="-426.283 86.8367 -1735.77" rotation="0 211.575 0" nodeId="180"/>
+            <TransformGroup name="point21" translation="-427.598 87.488 -1751.6" rotation="0 211.79 0" nodeId="181"/>
+            <TransformGroup name="point22" translation="-422.395 88.3293 -1761" rotation="0 274.044 0" nodeId="182"/>
+            <TransformGroup name="point23" translation="-412.436 89.3185 -1766.81" rotation="0 330.093 0" nodeId="183"/>
+            <TransformGroup name="point24" translation="-392.204 91.2308 -1774.77" rotation="0 245.207 0" nodeId="184"/>
+            <TransformGroup name="point25" translation="-377.336 91.5447 -1792.63" rotation="0 293.576 0" nodeId="185"/>
+            <TransformGroup name="point26" translation="-380.056 89.6287 -1810.97" rotation="0 58.9447 0" nodeId="186"/>
+            <TransformGroup name="point27" translation="-374.168 89.7064 -1817.79" rotation="0 186.774 0" nodeId="187"/>
+            <TransformGroup name="point28" translation="-295.178 95.5194 -1814.48" rotation="0 229.169 0" nodeId="188"/>
+            <TransformGroup name="point29" translation="-271.562 93.3932 -1803.79" rotation="0 182.989 0" nodeId="189"/>
+            <TransformGroup name="point30" translation="-255.112 92.1802 -1787.53" rotation="0 64.0352 0" nodeId="190"/>
+            <TransformGroup name="point31" translation="-239.636 92.1299 -1779.78" rotation="0 87.2749 0" nodeId="191"/>
+            <TransformGroup name="point32" translation="-215.25 91.8165 -1787.69" rotation="0 294.394 0" nodeId="192"/>
+            <TransformGroup name="point33" translation="-205.447 90.7985 -1799.25" rotation="0 122.597 0" nodeId="193"/>
+            <TransformGroup name="point34" translation="-195.994 90.4887 -1821.85" rotation="0 358.994 0" nodeId="194"/>
+            <TransformGroup name="point35" translation="-182.944 89.9517 -1846.36" rotation="0 219.301 0" nodeId="195"/>
+            <TransformGroup name="point36" translation="-165.047 88.6337 -1861.65" rotation="0 15.6429 0" nodeId="196"/>
+            <TransformGroup name="point37" translation="-97.6054 84.3027 -1883.97" rotation="0 42.0851 0" nodeId="197"/>
+            <TransformGroup name="point38" translation="-36.669 83.978 -1894.65" rotation="0 269.228 0" nodeId="198"/>
+            <TransformGroup name="point39" translation="28.9373 84.7401 -1898.61" nodeId="199"/>
+            <TransformGroup name="point40" translation="56.616 89.357 -1901.33" nodeId="200"/>
+            <TransformGroup name="point41" translation="92.2423 89.3631 -1904.92" rotation="0 18.8176 0" nodeId="201"/>
           </TransformGroup>
-          <TransformGroup name="nameIndicator" translation="-122.396 88.2016 -1664.83" nodeId="12991">
-            <Note name="Note" nodeId="12992" text="field2&amp;#xA;18.15 ha" color="4278190080" fixedSize="true"/>
+          <TransformGroup name="nameIndicator" translation="-122.396 88.2016 -1664.83" nodeId="202">
+            <Note name="Note" nodeId="203" text="field2&amp;#xA;18.15 ha" color="4278190080" fixedSize="true"/>
           </TransformGroup>
-          <TransformGroup name="teleportIndicator" translation="108.659 89.4379 -1565.93" nodeId="12993"/>
+          <TransformGroup name="teleportIndicator" translation="108.659 89.4379 -1565.93" nodeId="204"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="triggerMarkers" nodeId="12994">
-        <TransformGroup name="warningStripesVehicleSelling" translation="69.0701 92.5019 -867.27" rotation="0 -90 0" nodeId="12995">
-          <Shape name="warningStripesCorner2" translation="-6.25 0 3.75" rotation="-180 0 -180" shapeId="5" clipDistance="200" nodeId="12996" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12862"/>
-          <Shape name="warningStripesCorner1" translation="-6.25 0 -3.5" shapeId="6" clipDistance="200" nodeId="12997" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12862"/>
-          <Shape name="warningStripesCorner2" translation="6.25 0 -3.5" shapeId="5" clipDistance="200" nodeId="12998" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12862"/>
-          <Shape name="warningStripesCorner1" translation="6.25 0 3.75" rotation="-180 -5.00896e-06 -180" shapeId="6" clipDistance="200" nodeId="12999" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12862"/>
+      <TransformGroup name="triggerMarkers" nodeId="205">
+        <TransformGroup name="warningStripesVehicleSelling" translation="69.0701 92.5019 -867.27" rotation="0 -90 0" nodeId="206">
+          <Shape name="warningStripesCorner2" translation="-6.25 0 3.75" rotation="-180 0 -180" shapeId="5" clipDistance="200" nodeId="207" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="29"/>
+          <Shape name="warningStripesCorner1" translation="-6.25 0 -3.5" shapeId="6" clipDistance="200" nodeId="208" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="29"/>
+          <Shape name="warningStripesCorner2" translation="6.25 0 -3.5" shapeId="5" clipDistance="200" nodeId="209" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="29"/>
+          <Shape name="warningStripesCorner1" translation="6.25 0 3.75" rotation="-180 -5.00896e-06 -180" shapeId="6" clipDistance="200" nodeId="210" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="29"/>
         </TransformGroup>
-        <TransformGroup name="warningStripesAnimalDealer" translation="79.0324 92.5019 -866.183" nodeId="13000">
-          <Shape name="warningStripesCorner2" translation="-3.8 1.74977e-07 7.3" rotation="-180 -0 -180" shapeId="5" clipDistance="200" nodeId="13001" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="12862"/>
-          <Shape name="warningStripesCorner1" translation="-3.8 0 -7.3" shapeId="6" clipDistance="200" nodeId="13002" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="12862"/>
-          <Shape name="warningStripesCorner2" translation="4.5 0.189866 -7.3" rotation="0 -0 -2.657" shapeId="5" clipDistance="200" nodeId="13003" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="12862"/>
-          <Shape name="warningStripesCorner1" translation="4.5 0.163306 7.3" rotation="-180 -4.78117e-06 178.494" shapeId="6" clipDistance="200" nodeId="13004" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="12862"/>
-        </TransformGroup>
-      </TransformGroup>
-      <TransformGroup name="mapBoundaries" lockedgroup="true" nodeId="13005">
-        <Shape name="mapBoundary1" translation="0 0 -1024" scale="2 1 1" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13006" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="12861"/>
-        <Shape name="mapBoundary2" scale="2 1 2" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13007" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="12861"/>
-        <Shape name="mapBoundary3" scale="2 1 2" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13008" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="12861"/>
-        <Shape name="mapBoundary4" scale="2 1 2" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13009" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="12861"/>
-      </TransformGroup>
-      <TransformGroup name="mapEnds" nodeId="13010">
-        <TransformGroup name="mapEnd" translation="-596.48 50 -919.664" rotation="0 22.247 0" nodeId="13011">
-          <ReferenceNode name="mapBoundsX" translation="1078.98 34.7048 -723.752" rotation="0 -26.6015 0" referenceId="491" nodeId="13015"/>
+        <TransformGroup name="warningStripesAnimalDealer" translation="79.0324 92.5019 -866.183" nodeId="211">
+          <Shape name="warningStripesCorner2" translation="-3.8 1.74977e-07 7.3" rotation="-180 -0 -180" shapeId="5" clipDistance="200" nodeId="212" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="29"/>
+          <Shape name="warningStripesCorner1" translation="-3.8 0 -7.3" shapeId="6" clipDistance="200" nodeId="213" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="29"/>
+          <Shape name="warningStripesCorner2" translation="4.5 0.189866 -7.3" rotation="0 -0 -2.657" shapeId="5" clipDistance="200" nodeId="214" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="29"/>
+          <Shape name="warningStripesCorner1" translation="4.5 0.163306 7.3" rotation="-180 -4.78117e-06 178.494" shapeId="6" clipDistance="200" nodeId="215" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="29"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="background" nodeId="13018"/>
-      <TransformGroup name="npcSpots" nodeId="13019">
-        <TransformGroup name="grandpa" translation="220.968 90.8585 -804.899" rotation="2.39263e-05 -0 2.11698e-11" nodeId="13020">
-          <TransformGroup name="farmhouse" translation="603.574 50 -66.565" rotation="-180 74.9067 180" nodeId="13021" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
+      <TransformGroup name="mapBoundaries" lockedgroup="true" nodeId="216">
+        <Shape name="mapBoundary1" translation="0 0 -1024" scale="2 1 1" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="217" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="27"/>
+        <Shape name="mapBoundary2" scale="2 1 2" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="218" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="27"/>
+        <Shape name="mapBoundary3" scale="2 1 2" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="219" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="27"/>
+        <Shape name="mapBoundary4" scale="2 1 2" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="220" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="27"/>
+      </TransformGroup>
+      <TransformGroup name="mapEnds" nodeId="221">
+        <TransformGroup name="mapEnd" translation="-596.48 50 -919.664" rotation="0 22.247 0" nodeId="222">
+          <ReferenceNode name="mapBoundsX" translation="1078.98 34.7048 -723.752" rotation="0 -26.6015 0" referenceId="491" nodeId="226"/>
         </TransformGroup>
-        <TransformGroup name="farmer" translation="210.865 91.1002 -797.208" rotation="0 24.7897 0" nodeId="13022">
-          <TransformGroup name="farmhouse" translation="452.067 50 -288.749" rotation="-4.32258e-06 64.0934 2.34163e-05" nodeId="13023" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
+      </TransformGroup>
+      <TransformGroup name="background" nodeId="229"/>
+      <TransformGroup name="npcSpots" nodeId="230">
+        <TransformGroup name="grandpa" translation="220.968 90.8585 -804.899" rotation="2.39263e-05 -0 2.11698e-11" nodeId="231">
+          <TransformGroup name="farmhouse" translation="603.574 50 -66.565" rotation="-180 74.9067 180" nodeId="232" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
         </TransformGroup>
-        <TransformGroup name="helper" translation="200.124 91.4428 -789.185" rotation="0 73.4546 0" nodeId="13024">
-          <TransformGroup name="house" translation="-67.6197 50 404.454" rotation="2.93209e-06 61.6137 2.55249e-06" nodeId="13025" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
+        <TransformGroup name="farmer" translation="210.865 91.1002 -797.208" rotation="0 24.7897 0" nodeId="233">
+          <TransformGroup name="farmhouse" translation="452.067 50 -288.749" rotation="-4.32258e-06 64.0934 2.34163e-05" nodeId="234" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
         </TransformGroup>
-        <TransformGroup name="forester" translation="171.063 91.8132 -764.119" rotation="0 73.4546 0" nodeId="13026">
-          <TransformGroup name="shed" translation="1157.35 50 1033.63" rotation="1.48454e-06 -52.6933 -1.4823e-05" nodeId="13027" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
+        <TransformGroup name="helper" translation="200.124 91.4428 -789.185" rotation="0 73.4546 0" nodeId="235">
+          <TransformGroup name="house" translation="-67.6197 50 404.454" rotation="2.93209e-06 61.6137 2.55249e-06" nodeId="236" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
         </TransformGroup>
-        <TransformGroup name="animalDealer" translation="122.213 91.8171 -721.17" rotation="0 52.8826 0" nodeId="13028">
-          <TransformGroup name="store" translation="672.928 50 79.509" rotation="-9.53108e-07 40 -6.14575e-07" nodeId="13029" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
+        <TransformGroup name="forester" translation="171.063 91.8132 -764.119" rotation="0 73.4546 0" nodeId="237">
+          <TransformGroup name="shed" translation="1157.35 50 1033.63" rotation="1.48454e-06 -52.6933 -1.4823e-05" nodeId="238" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
+        </TransformGroup>
+        <TransformGroup name="animalDealer" translation="122.213 91.8171 -721.17" rotation="0 52.8826 0" nodeId="239">
+          <TransformGroup name="store" translation="672.928 50 79.509" rotation="-9.53108e-07 40 -6.14575e-07" nodeId="240" minuteOfDayStart="360" minuteOfDayEnd="1320" weatherPreventMask="0xe"/>
         </TransformGroup>
       </TransformGroup>
     </TransformGroup>
-    <TransformGroup name="Procedural_Placement" nodeId="13030"/>
-    <Camera name="VogelPerspektive" translation="-111.463 3545.88 -861.155" rotation="90 -90 180" visibility="false" nodeId="13031" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
+    <TransformGroup name="Procedural_Placement" nodeId="241"/>
+    <Camera name="VogelPerspektive" translation="-111.463 3545.88 -861.155" rotation="90 -90 180" visibility="false" nodeId="242" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
+    <TransformGroup name="strassen" clipDistance="1000" nodeId="243">
+      <TransformGroup name="Kreiseln_Kreuzungen" translation="-477.843 148.294 -420.116" nodeId="244">
+        <Shape name="Kreisel_KleinLantow" translation="590.114 -27.7455 194.406" rotation="-7.24549 53.421 -8.93738" scale="1.1 1 1.1" shapeId="11" static="true" clipDistance="500" nodeId="245" castsShadows="false" receiveShadows="true" materialIds="6,16">
+          <Shape name="traffic_circle_10" rotation="180 41.1302 -180" shapeId="12" static="true" nodeId="246" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_entry1" rotation="-8.12189e-06 -13.502 -2.85364e-06" shapeId="13" static="true" nodeId="247" castsShadows="false" receiveShadows="true" materialIds="19,18,7,9,6,23"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -48.86 -180" shapeId="14" static="true" nodeId="248" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_entry1" rotation="-180 6.158 -180" shapeId="13" static="true" nodeId="249" castsShadows="false" receiveShadows="true" materialIds="19,18,7,9,6,23"/>
+          <Shape name="traffic_circle_5" rotation="180 -39.3704 180" shapeId="15" static="true" nodeId="250" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -3.86 -180" shapeId="14" static="true" nodeId="251" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_10" rotation="0.0240581 -45.893 0.00042897" shapeId="12" static="true" nodeId="252" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_5" rotation="-180 146.2 -180" scale="1 1 1.07" shapeId="15" static="true" nodeId="253" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_entry1" rotation="-180 86.14 -180" shapeId="13" static="true" nodeId="254" castsShadows="false" receiveShadows="true" materialIds="19,18,7,9,6,23"/>
+          <Shape name="traffic_circle_10" rotation="-180 58.5586 180" shapeId="12" static="true" nodeId="255" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_5" rotation="180 -36.1619 180" shapeId="15" static="true" nodeId="256" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+        </Shape>
+        <Shape name="Kreisel_WalzimAusbau" translation="-328.822 -42.1235 1191.04" rotation="180 43.051 180" scale="1.1 1 1.1" shapeId="11" static="true" clipDistance="500" nodeId="257" castsShadows="false" receiveShadows="true" materialIds="6,16">
+          <Shape name="traffic_circle_10" rotation="180 41.1302 -180" shapeId="12" static="true" nodeId="258" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_entry1" rotation="0 -1.14 0" shapeId="13" static="true" nodeId="259" castsShadows="false" receiveShadows="true" materialIds="19,18,7,9,6,23"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -48.86 -180" shapeId="14" static="true" nodeId="260" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_entry1" rotation="-180 6.158 -180" shapeId="13" static="true" nodeId="261" castsShadows="false" receiveShadows="true" materialIds="19,18,7,9,6,23"/>
+          <Shape name="traffic_circle_entry_1" rotation="-180 86.16 -179.983" shapeId="13" static="true" nodeId="262" castsShadows="false" receiveShadows="true" materialIds="19,18,7,9,6,23"/>
+          <Shape name="traffic_circle_5" rotation="-180 -38.86 -180" shapeId="15" static="true" nodeId="263" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -3.86 -180" shapeId="14" static="true" nodeId="264" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_10" rotation="0.0240581 -45.893 0.00042897" shapeId="12" static="true" nodeId="265" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+          <Shape name="traffic_circle_5" rotation="-180 146.2 -180" scale="1 1 1.07" shapeId="15" static="true" nodeId="266" castsShadows="false" receiveShadows="true" materialIds="23,18"/>
+        </Shape>
+        <Shape name="KreuzungT" translation="-69.92 -58.05 2.879" rotation="0 50.78 0" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="267" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="125.7 -44.5747 334.24" rotation="180 -65.2 -180" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="268" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="-63.6042 -63.2721 470.084" rotation="180 14.147 180" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="269" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungTest" translation="706.317 -43.9232 30.7029" rotation="-0.413158 -1.78496 -0.00409712" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="270" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="924.43 -58.29 -221.23" rotation="0 -0.98 0" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="271" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="946.336 -59.9348 347.565" rotation="-0.110184 85.2 -0.05" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="272" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="1116.94 -58.6457 1224.41" rotation="-2.7937 -33.7528 0" scale="1.1 1 0.9" shapeId="16" static="true" clipDistance="500" nodeId="273" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="72.9619 -53.4994 1201.94" rotation="0 210 0" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="274" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="67.7304 -56.5513 -231.611" rotation="179.696 -75.598 179.935" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="275" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="-107.76 -53.8739 -363.84" rotation="-179.686 -9 -179.989" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="276" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="897.844 -59.3437 228.981" shapeId="17" static="true" clipDistance="500" nodeId="277" castsShadows="true" receiveShadows="true" materialIds="5,25"/>
+        <Shape name="KreuzungT" translation="1258.15 -61.7741 706.72" rotation="0 -3.166 0" scale="1.1 1 0.9" shapeId="16" static="true" clipDistance="500" nodeId="278" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungTOhneStreifen" translation="2384.51 -59.0136 1066.03" rotation="180 3.127 180" scale="0.9 1 0.9" shapeId="16" static="true" clipDistance="500" nodeId="279" castsShadows="false" receiveShadows="true" materialIds="26,18"/>
+      </TransformGroup>
+      <TransformGroup name="Bundesstrasse" nodeId="280">
+        <Shape name="1" shapeId="18" static="true" clipDistance="500" nodeId="281" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="2" shapeId="19" static="true" clipDistance="500" nodeId="282" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="4" shapeId="20" static="true" clipDistance="500" nodeId="283" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="5" shapeId="21" static="true" clipDistance="500" nodeId="284" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="6" shapeId="22" static="true" clipDistance="500" nodeId="285" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="7" shapeId="23" static="true" clipDistance="500" nodeId="286" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="street08" shapeId="24" static="true" clipDistance="500" nodeId="287" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="20,18,18"/>
+        <Shape name="9" shapeId="25" static="true" clipDistance="500" nodeId="288" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="10" shapeId="26" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="289" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="12" shapeId="27" static="true" clipDistance="1000" nodeId="290" castsShadows="true" receiveShadows="true" materialIds="20,17"/>
+        <Shape name="11" shapeId="28" static="true" clipDistance="500" nodeId="291" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="13" shapeId="29" static="true" clipDistance="500" nodeId="292" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="14" shapeId="30" static="true" clipDistance="500" nodeId="293" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="15" shapeId="31" static="true" clipDistance="500" nodeId="294" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="17" shapeId="32" static="true" clipDistance="500" nodeId="295" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="18" shapeId="33" static="true" clipDistance="500" nodeId="296" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="16" shapeId="34" static="true" clipDistance="500" nodeId="297" castsShadows="false" receiveShadows="true" materialIds="20,17,17">
+          <Shape name="polySurface1" translation="707.335 84.3098 678.826" rotation="44.7976 -0 90" scale="0.1 1 0.0319724" shapeId="35" clipDistance="300" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="polySurface1" translation="701.195 84.3098 672.783" rotation="44.7976 -0 90" scale="0.1 1 0.0319724" shapeId="35" clipDistance="300" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="Landstrasse" nodeId="300">
+        <Shape name="1" shapeId="36" static="true" clipDistance="500" nodeId="301" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="2" shapeId="37" static="true" clipDistance="500" nodeId="302" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="3" shapeId="38" static="true" clipDistance="500" nodeId="303" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="4" shapeId="39" static="true" clipDistance="500" nodeId="304" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="5" shapeId="40" static="true" clipDistance="500" nodeId="305" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="6" shapeId="41" static="true" clipDistance="500" nodeId="306" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="7" shapeId="42" static="true" clipDistance="500" nodeId="307" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="8" shapeId="43" static="true" clipDistance="500" nodeId="308" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="9" shapeId="44" static="true" clipDistance="500" nodeId="309" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+        <Shape name="strassen" shapeId="45" static="true" nodeId="310" castsShadows="true" receiveShadows="true" materialIds="8,22,5,28"/>
+      </TransformGroup>
+      <TransformGroup name="Bundeslandstrasse" nodeId="311">
+        <Shape name="1" shapeId="46" static="true" clipDistance="500" nodeId="312" castsShadows="false" receiveShadows="true" materialIds="21,18,18"/>
+      </TransformGroup>
+      <TransformGroup name="Plattenweg" nodeId="313">
+        <Shape name="1" shapeId="47" static="true" clipDistance="500" nodeId="314" castsShadows="false" receiveShadows="true" materialIds="13,18,18"/>
+        <TransformGroup name="transform" translation="1131.06 32.1 1094.93" rotation="1.19464e-12 0 -2.7294e-05" nodeId="315">
+          <Shape name="lane50m" translation="-257.864 56.925 163.182" rotation="0 45 0" scale="1.3 1 0.6" shapeId="48" static="true" clipDistance="500" nodeId="316" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="CurveLane15m45left" translation="-286.284 56.925 124.46" rotation="-180 0 -180" scale="1.3 1 1.3" shapeId="49" static="true" clipDistance="500" nodeId="317" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane10m" translation="-307.228 54.31 124.131" rotation="-0 90 -0" scale="1.3 1 1" shapeId="50" static="true" clipDistance="500" nodeId="318" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane10m" translation="-317.169 54.31 124.131" rotation="-0 90 -0" scale="1.3 1 1" shapeId="50" static="true" clipDistance="500" nodeId="319" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane10m" translation="-286.236 56.925 124.46" rotation="0 0 1.62739e-11" scale="1.3 1 1" shapeId="50" static="true" clipDistance="500" nodeId="320" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane10m" translation="-337.137 54.3103 124.131" rotation="-0 90 -0" scale="1.3 1 1" shapeId="50" static="true" clipDistance="500" nodeId="321" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="CurveLane15m90left" translation="-391.879 56.925 79.1877" rotation="-180 90 -180" scale="1.3 1 1.3" shapeId="51" static="true" clipDistance="500" nodeId="322" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="CurveLane15m90left" translation="-404.508 56.925 136.558" rotation="180 0 180" scale="1.3 1 1.3" shapeId="51" static="true" clipDistance="500" nodeId="323" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane10m" translation="-327.173 56.925 148.966" rotation="-0 90 -0" scale="1.3 1 1" shapeId="50" static="true" clipDistance="500" nodeId="324" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane10m" translation="-337.131 56.925 148.966" rotation="-0 90 -0" scale="1.3 1 1" shapeId="50" static="true" clipDistance="500" nodeId="325" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane50m" translation="-282.289 56.925 148.963" rotation="0 90 0" scale="1.3 1 0.9" shapeId="48" static="true" clipDistance="500" nodeId="326" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="CurveLane15m45left" translation="-264.749 56.92 156.241" rotation="0 45 0" scale="1.3 1 1.3" shapeId="49" static="true" clipDistance="500" nodeId="327" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="CurveLane15m45left" translation="-250.62 56.925 180.663" scale="1.3 1 1.3" shapeId="49" static="true" clipDistance="500" nodeId="328" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="SlopeLane30m5" translation="-250.624 55.6174 210.619" rotation="7.75706e-06 0 -9.58906e-07" scale="1.3 1 1" shapeId="52" static="true" clipDistance="500" nodeId="329" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="SlopeLane30m-5" translation="-250.615 56.9295 240.563" scale="1.3 1 1" shapeId="53" static="true" clipDistance="500" nodeId="330" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane_TJunction" translation="-257.116 56.9295 247.05" rotation="0 90 0" scale="1.3 1 1.3" shapeId="54" static="true" clipDistance="500" nodeId="331" castsShadows="false" receiveShadows="true" materialIds="15,18"/>
+          <Shape name="lane_TJunction" translation="-250.616 56.9346 253.541" rotation="1.0381 0 3.25689e-12" scale="1.3 1 1.3" shapeId="54" static="true" clipDistance="500" nodeId="332" castsShadows="false" receiveShadows="true" materialIds="15,18"/>
+          <Shape name="lane10m" translation="-257.114 56.9295 247.052" rotation="-0 90 -0" scale="1.3 1 0.465" shapeId="50" static="true" clipDistance="500" nodeId="333" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane_TJunction" translation="-261.657 56.9304 247.044" rotation="2.7963 -88.8641 -1.67609e-11" scale="1.3 1 1.3" shapeId="54" static="true" clipDistance="500" nodeId="334" castsShadows="false" receiveShadows="true" materialIds="15,18"/>
+          <Shape name="lane50m" translation="-347.131 56.925 148.963" rotation="0 90 0" scale="1.3 1 0.9" shapeId="48" static="true" clipDistance="500" nodeId="335" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane50m" translation="-404.405 56.925 136.558" rotation="0 0 -8.13434e-12" scale="1.3 1 0.9" shapeId="48" static="true" clipDistance="500" nodeId="336" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="CurveLane15m90left" translation="-286.348 56.925 91.7" rotation="-2.19713e-13 0 9.90427e-12" scale="1.3 1 1.3" shapeId="51" static="true" clipDistance="500" nodeId="337" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane50m" translation="-298.752 56.925 79.3095" rotation="-0.13 90 0" scale="1.3 1 0.83" shapeId="48" static="true" clipDistance="500" nodeId="338" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane50m" translation="-357.892 56.8515 79.2038" rotation="0.12 90 0" scale="1.3 1 0.68" shapeId="48" static="true" clipDistance="500" nodeId="339" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+          <Shape name="lane50m" translation="-286.472 56.925 91.6657" rotation="-180 -0.67892 180" scale="1.3 1 0.46" shapeId="48" static="true" clipDistance="500" nodeId="340" castsShadows="false" receiveShadows="true" materialIds="18,14"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
   </Scene>
 
   <ProceduralPlacement>
@@ -1126,7 +1320,7 @@
           <Arg name="includeChildren" type="boolean" value="true" />
           <Arg name="excludeChildren" type="boolean" value="false" />
           <Arg name="nodesInclude" type="nodes" value="114298;114362;114361;" />
-          <Arg name="nodesExclude" type="nodes" value="12877;" />
+          <Arg name="nodesExclude" type="nodes" value="88;" />
         </Script>
       </Rule>
       <Rule name="paintRoads" isMainRule="true" objectMinDistance="0" slopeStart="0" slopeEnd="90" >
@@ -1139,52 +1333,52 @@
   </ProceduralPlacement>
 
   <UserAttributes>
-    <UserAttribute nodeId="12875">
+    <UserAttribute nodeId="86">
       <Attribute name="onCreate" type="scriptCallback" value="Environment.onCreateSunLight"/>
     </UserAttribute>
-    <UserAttribute nodeId="12896">
+    <UserAttribute nodeId="107">
       <Attribute name="onCreate" type="scriptCallback" value="Mission00.onCreateStartPoint"/>
     </UserAttribute>
-    <UserAttribute nodeId="12899">
+    <UserAttribute nodeId="110">
       <Attribute name="onCreate" type="scriptCallback" value="ShopTrigger.onCreate"/>
     </UserAttribute>
-    <UserAttribute nodeId="12907">
+    <UserAttribute nodeId="118">
       <Attribute name="onCreate" type="scriptCallback" value="BaseMission.onCreateStoreSpawnPlace"/>
       <Attribute name="yOffset" type="float" value="0.1"/>
     </UserAttribute>
-    <UserAttribute nodeId="12910">
+    <UserAttribute nodeId="121">
       <Attribute name="animalTypes" type="string" value="pig sheep cow horse"/>
       <Attribute name="isDealer" type="boolean" value="true"/>
       <Attribute name="onCreate" type="scriptCallback" value="AnimalLoadingTrigger.onCreate"/>
       <Attribute name="title" type="string" value="animals_dealer"/>
     </UserAttribute>
-    <UserAttribute nodeId="12917">
+    <UserAttribute nodeId="128">
       <Attribute name="onCreate" type="scriptCallback" value="PedestrianSystem.onCreate"/>
       <Attribute name="xmlFile" type="string" value="map/config/pedestrianSystem.xml"/>
     </UserAttribute>
-    <UserAttribute nodeId="12918">
+    <UserAttribute nodeId="129">
       <Attribute name="density" type="float" value="0.1"/>
       <Attribute name="groupName" type="string" value="standard"/>
       <Attribute name="width" type="float" value="2.2"/>
     </UserAttribute>
-    <UserAttribute nodeId="12921">
+    <UserAttribute nodeId="132">
       <Attribute name="groupName" type="string" value="standardStatic"/>
     </UserAttribute>
-    <UserAttribute nodeId="12923">
+    <UserAttribute nodeId="134">
       <Attribute name="onCreate" type="scriptCallback" value="TrafficSystem.onCreate"/>
       <Attribute name="xmlFile" type="string" value="map/config/trafficSystem.xml"/>
     </UserAttribute>
-    <UserAttribute nodeId="12926">
+    <UserAttribute nodeId="137">
       <Attribute name="onCreate" type="scriptCallback" value="AISystem.onCreateAIRoadSpline"/>
     </UserAttribute>
-    <UserAttribute nodeId="12927">
+    <UserAttribute nodeId="138">
       <Attribute name="maxSpeedScale" type="float" value="1"/>
       <Attribute name="speedLimit" type="float" value="50"/>
     </UserAttribute>
-    <UserAttribute nodeId="12928">
+    <UserAttribute nodeId="139">
       <Attribute name="onCreate" type="scriptCallback" value="FieldUtil.onCreate"/>
     </UserAttribute>
-    <UserAttribute nodeId="12929">
+    <UserAttribute nodeId="140">
       <Attribute name="angle" type="integer" value="90"/>
       <Attribute name="missionAllowed" type="boolean" value="true"/>
       <Attribute name="missionOnlyGrass" type="boolean" value="false"/>
@@ -1192,7 +1386,7 @@
       <Attribute name="polygonIndex" type="string" value="0"/>
       <Attribute name="teleportIndicatorIndex" type="string" value="2"/>
     </UserAttribute>
-    <UserAttribute nodeId="12948">
+    <UserAttribute nodeId="159">
       <Attribute name="angle" type="integer" value="90"/>
       <Attribute name="missionAllowed" type="boolean" value="true"/>
       <Attribute name="missionOnlyGrass" type="boolean" value="false"/>
@@ -1200,34 +1394,34 @@
       <Attribute name="polygonIndex" type="string" value="0"/>
       <Attribute name="teleportIndicatorIndex" type="string" value="2"/>
     </UserAttribute>
-    <UserAttribute nodeId="12994">
+    <UserAttribute nodeId="205">
       <Attribute name="onCreate" type="scriptCallback" value="BaseMission.onCreateTriggerMarker"/>
     </UserAttribute>
-    <UserAttribute nodeId="13021">
+    <UserAttribute nodeId="232">
       <Attribute name="isStartSpot" type="boolean" value="true"/>
       <Attribute name="npcName" type="string" value="GRANDPA"/>
       <Attribute name="onCreate" type="scriptCallback" value="NPCSpot.onCreate"/>
       <Attribute name="uniqueId" type="string" value="GRANDPA_FARMHOUSE"/>
     </UserAttribute>
-    <UserAttribute nodeId="13023">
+    <UserAttribute nodeId="234">
       <Attribute name="isStartSpot" type="boolean" value="true"/>
       <Attribute name="npcName" type="string" value="FARMER"/>
       <Attribute name="onCreate" type="scriptCallback" value="NPCSpot.onCreate"/>
       <Attribute name="uniqueId" type="string" value="FARMER_HOUSE"/>
     </UserAttribute>
-    <UserAttribute nodeId="13025">
+    <UserAttribute nodeId="236">
       <Attribute name="isStartSpot" type="boolean" value="true"/>
       <Attribute name="npcName" type="string" value="HELPER"/>
       <Attribute name="onCreate" type="scriptCallback" value="NPCSpot.onCreate"/>
       <Attribute name="uniqueId" type="string" value="HELPER_HOUSE"/>
     </UserAttribute>
-    <UserAttribute nodeId="13027">
+    <UserAttribute nodeId="238">
       <Attribute name="isStartSpot" type="boolean" value="true"/>
       <Attribute name="npcName" type="string" value="FORESTER"/>
       <Attribute name="onCreate" type="scriptCallback" value="NPCSpot.onCreate"/>
       <Attribute name="uniqueId" type="string" value="FORESTER_SHED"/>
     </UserAttribute>
-    <UserAttribute nodeId="13029">
+    <UserAttribute nodeId="240">
       <Attribute name="isStartSpot" type="boolean" value="true"/>
       <Attribute name="npcName" type="string" value="ANIMAL_DEALER"/>
       <Attribute name="onCreate" type="scriptCallback" value="NPCSpot.onCreate"/>
