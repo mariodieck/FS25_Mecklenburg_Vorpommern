@@ -609,7 +609,7 @@
   </Shapes>
 
   <Scene>
-    <Camera name="persp" translation="201.627 114.061 -394.824" rotation="146.849 -69.7389 180" visibility="false" nodeId="85" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
+    <Camera name="persp" translation="-565.775 97.506 -791.06" rotation="-6.33892 10.4689 7.73264e-07" visibility="false" nodeId="85" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
     <Light name="sun" translation="0 400 0" rotation="-47.2604 -28.1861 0" objectMask="0x83ff0000" nodeId="86" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-1024,-128,-1024" lastShadowMapSplitBboxMax="1024,148,1024" range="10000" scattering="true"/>
     <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="88" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="24" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
@@ -1199,19 +1199,19 @@
         <Shape name="KreuzungT" translation="946.336 -59.9348 347.565" rotation="-0.110184 85.2 -0.05" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="272" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
         <Shape name="KreuzungT" translation="1116.94 -58.6457 1224.41" rotation="-2.7937 -33.7528 0" scale="1.1 1 0.9" shapeId="16" static="true" clipDistance="500" nodeId="273" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
         <Shape name="KreuzungT" translation="72.9619 -53.4994 1201.94" rotation="0 210 0" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="274" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
-        <Shape name="KreuzungT" translation="67.7304 -56.5513 -231.611" rotation="179.696 -75.598 179.935" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="275" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
-        <Shape name="KreuzungT" translation="-107.76 -53.8739 -363.84" rotation="-179.686 -9 -179.989" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="276" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="67.7271 -57.0701 -231.612" rotation="179.696 -75.598 179.935" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="275" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="25,18"/>
+        <Shape name="KreuzungT" translation="-107.76 -54.342 -363.837" rotation="-179.686 -9 -179.989" scale="1.1 1 1.1" shapeId="16" static="true" clipDistance="500" nodeId="276" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="25,18"/>
         <Shape name="KreuzungT" translation="897.844 -59.3437 228.981" shapeId="17" static="true" clipDistance="500" nodeId="277" castsShadows="true" receiveShadows="true" materialIds="5,25"/>
         <Shape name="KreuzungT" translation="1258.15 -61.7741 706.72" rotation="0 -3.166 0" scale="1.1 1 0.9" shapeId="16" static="true" clipDistance="500" nodeId="278" castsShadows="false" receiveShadows="true" materialIds="25,18"/>
         <Shape name="KreuzungTOhneStreifen" translation="2384.51 -59.0136 1066.03" rotation="180 3.127 180" scale="0.9 1 0.9" shapeId="16" static="true" clipDistance="500" nodeId="279" castsShadows="false" receiveShadows="true" materialIds="26,18"/>
       </TransformGroup>
       <TransformGroup name="Bundesstrasse" nodeId="280">
         <Shape name="1" shapeId="18" static="true" clipDistance="500" nodeId="281" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
-        <Shape name="2" shapeId="19" static="true" clipDistance="500" nodeId="282" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
-        <Shape name="4" shapeId="20" static="true" clipDistance="500" nodeId="283" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="2" translation="0 -2.02482 0" shapeId="19" static="true" clipDistance="500" nodeId="282" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="20,18,18"/>
+        <Shape name="4" translation="0 -1.87701 0" shapeId="20" static="true" clipDistance="500" nodeId="283" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="20,18,18"/>
         <Shape name="5" shapeId="21" static="true" clipDistance="500" nodeId="284" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
         <Shape name="6" shapeId="22" static="true" clipDistance="500" nodeId="285" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
-        <Shape name="7" shapeId="23" static="true" clipDistance="500" nodeId="286" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
+        <Shape name="7" translation="0 -2.94096 0" shapeId="23" static="true" clipDistance="500" nodeId="286" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="20,18,18"/>
         <Shape name="street08" shapeId="24" static="true" clipDistance="500" nodeId="287" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="20,18,18"/>
         <Shape name="9" shapeId="25" static="true" clipDistance="500" nodeId="288" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
         <Shape name="10" shapeId="26" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="289" castsShadows="false" receiveShadows="true" materialIds="20,18,18"/>
