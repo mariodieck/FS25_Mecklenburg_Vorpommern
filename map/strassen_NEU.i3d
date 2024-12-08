@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="strassen_NEU.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="12" filename="models/streets/BetonStreifen.png"/>
+    <File fileId="1" filename="models/streets/ConcreteBare_diffuse.png"/>
+    <File fileId="7" filename="models/streets/FloorsRegular_diffuse.png"/>
+    <File fileId="20" filename="models/streets/Road_51.dds"/>
+    <File fileId="8" filename="models/streets/TJunction.png"/>
+    <File fileId="10" filename="models/streets/TJunctionX.png"/>
+    <File fileId="6" filename="models/streets/entry_traffic_circle.png"/>
+    <File fileId="15" filename="models/streets/feldweg_diffuse.dds"/>
+    <File fileId="16" filename="models/streets/feldweg_normal.dds"/>
+    <File fileId="13" filename="models/streets/halaMontiSystemzem.png"/>
+    <File fileId="22" filename="models/streets/lane_TJunction.png"/>
+    <File fileId="21" filename="models/streets/lane_diffuse.png"/>
+    <File fileId="2" filename="models/streets/portuguese_tiles.png"/>
+    <File fileId="11" filename="models/streets/road.dds"/>
+    <File fileId="14" filename="models/streets/road1.dds"/>
+    <File fileId="5" filename="models/streets/road2_traffic_circle.png"/>
+    <File fileId="17" filename="models/streets/road_normal.dds"/>
+    <File fileId="3" filename="models/streets/road_traffic_circle.png"/>
+    <File fileId="4" filename="models/streets/verge.png"/>
+    <File fileId="9" filename="models/streets/verge_normal.dds"/>
+    <File fileId="18" filename="models/streets/wald_diffuse.dds"/>
+    <File fileId="19" filename="models/streets/wald_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="BGARightEdge_mat" materialId="501">
+      <Texture fileId="4"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="concrete_diffuse" materialId="502">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="entry_traffic_circle" materialId="503">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="feldweg_mat" materialId="504">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+    </Material>
+    <Material name="floorregular_diffuse" materialId="505">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="lambert2" materialId="506">
+      <Texture fileId="13"/>
+    </Material>
+    <Material name="lambert5" materialId="507">
+      <Texture fileId="20"/>
+    </Material>
+    <Material name="lane_diffuse" materialId="508">
+      <Texture fileId="21"/>
+    </Material>
+    <Material name="lane_TJunction" materialId="509">
+      <Texture fileId="22"/>
+    </Material>
+    <Material name="portuguese_tiles" materialId="510">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="rightEdge_diffuse" materialId="511">
+      <Texture fileId="12"/>
+    </Material>
+    <Material name="rightEdge_diffuse" materialId="512">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="road2_traffic_circle" materialId="513">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="road_diffuse" materialId="514">
+      <Texture fileId="11"/>
+    </Material>
+    <Material name="road_diffuse" materialId="515">
+      <Texture fileId="14"/>
+    </Material>
+    <Material name="road_mat" materialId="516">
+      <Texture fileId="11"/>
+      <Normalmap fileId="17"/>
+    </Material>
+    <Material name="road_traffic_circle" materialId="517">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="TJunction_Diffuse" materialId="518">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="TJunction_Diffuse" materialId="519">
+      <Texture fileId="10"/>
+    </Material>
+    <Material name="wald_mat" materialId="520">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="strassen_NEU.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="strassen" clipDistance="1000" nodeId="566">
+      <TransformGroup name="Kreiseln_Kreuzungen" translation="-477.843 148.294 -420.116" nodeId="567">
+        <Shape name="Kreisel_KleinLantow" translation="590.114 -27.7455 194.406" rotation="-7.24549 53.421 -8.93738" scale="1.1 1 1.1" shapeId="1" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="568" castsShadows="false" receiveShadows="true" materialIds="502,510">
+          <Shape name="traffic_circle_10" rotation="180 41.1302 -180" shapeId="2" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="569" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_entry1" rotation="-8.12189e-06 -13.502 -2.85364e-06" shapeId="3" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="570" castsShadows="false" receiveShadows="true" materialIds="513,512,503,505,502,517"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -48.86 -180" shapeId="4" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="571" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_entry1" rotation="-180 6.158 -180" shapeId="3" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="572" castsShadows="false" receiveShadows="true" materialIds="513,512,503,505,502,517"/>
+          <Shape name="traffic_circle_5" rotation="180 -39.3704 180" shapeId="5" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="573" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -3.86 -180" shapeId="4" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="574" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_10" rotation="0.0240581 -45.893 0.00042897" shapeId="2" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="575" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_5" rotation="-180 146.2 -180" scale="1 1 1.07" shapeId="5" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="576" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_entry1" rotation="-180 86.14 -180" shapeId="3" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="577" castsShadows="false" receiveShadows="true" materialIds="513,512,503,505,502,517"/>
+          <Shape name="traffic_circle_10" rotation="-180 58.5586 180" shapeId="2" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="578" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_5" rotation="180 -36.1619 180" shapeId="5" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="579" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+        </Shape>
+        <Shape name="Kreisel_WalzimAusbau" translation="-328.822 -42.1235 1191.04" rotation="180 43.051 180" scale="1.1 1 1.1" shapeId="1" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="580" castsShadows="false" receiveShadows="true" materialIds="502,510">
+          <Shape name="traffic_circle_10" rotation="180 41.1302 -180" shapeId="2" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="581" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_entry1" rotation="0 -1.14 0" shapeId="3" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="582" castsShadows="false" receiveShadows="true" materialIds="513,512,503,505,502,517"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -48.86 -180" shapeId="4" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="583" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_entry1" rotation="-180 6.158 -180" shapeId="3" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="584" castsShadows="false" receiveShadows="true" materialIds="513,512,503,505,502,517"/>
+          <Shape name="traffic_circle_entry_1" rotation="-180 86.16 -179.983" shapeId="3" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="585" castsShadows="false" receiveShadows="true" materialIds="513,512,503,505,502,517"/>
+          <Shape name="traffic_circle_5" rotation="-180 -38.86 -180" shapeId="5" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="586" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_cirgle_45" rotation="180 -3.86 -180" shapeId="4" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="587" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_10" rotation="0.0240581 -45.893 0.00042897" shapeId="2" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="588" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+          <Shape name="traffic_circle_5" rotation="-180 146.2 -180" scale="1 1 1.07" shapeId="5" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="589" castsShadows="false" receiveShadows="true" materialIds="517,512"/>
+        </Shape>
+        <Shape name="KreuzungT" translation="-69.92 -58.05 2.879" rotation="0 50.78 0" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="590" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="125.7 -44.5747 334.24" rotation="180 -65.2 -180" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="591" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="-63.6042 -63.2721 470.084" rotation="180 14.147 180" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="592" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungTest" translation="706.317 -43.9232 30.7029" rotation="-0.413158 -1.78496 -0.00409712" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="593" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="924.43 -58.29 -221.23" rotation="0 -0.98 0" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="594" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="946.336 -59.9348 347.565" rotation="-0.110184 85.2 -0.05" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="595" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="1116.94 -58.6457 1224.41" rotation="-2.7937 -33.7528 0" scale="1.1 1 0.9" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="596" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="72.9619 -53.4994 1201.94" rotation="0 210 0" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="597" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="67.7304 -56.5513 -231.611" rotation="179.696 -75.598 179.935" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="598" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="-107.76 -53.8739 -363.84" rotation="-179.686 -9 -179.989" scale="1.1 1 1.1" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="599" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungT" translation="897.844 -59.3437 228.981" shapeId="7" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="600" castsShadows="true" receiveShadows="true" materialIds="501,518"/>
+        <Shape name="KreuzungT" translation="1258.15 -61.7741 706.72" rotation="0 -3.166 0" scale="1.1 1 0.9" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="601" castsShadows="false" receiveShadows="true" materialIds="518,512"/>
+        <Shape name="KreuzungTOhneStreifen" translation="2384.51 -59.0136 1066.03" rotation="180 3.127 180" scale="0.9 1 0.9" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="602" castsShadows="false" receiveShadows="true" materialIds="519,512"/>
+      </TransformGroup>
+      <TransformGroup name="Bundesstrasse" nodeId="603">
+        <Shape name="1" shapeId="8" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="604" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="2" shapeId="9" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="605" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="4" shapeId="10" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="606" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="5" shapeId="11" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="607" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="6" shapeId="12" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="608" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="7" shapeId="13" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="609" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="street08" shapeId="14" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="610" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="514,512,512"/>
+        <Shape name="9" shapeId="15" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="611" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="10" shapeId="16" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="612" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="12" shapeId="17" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="1000" nodeId="613" castsShadows="true" receiveShadows="true" materialIds="514,511"/>
+        <Shape name="11" shapeId="18" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="614" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="13" shapeId="19" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="615" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="14" shapeId="20" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="616" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="15" shapeId="21" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="617" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="17" shapeId="22" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="618" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="18" shapeId="23" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="619" castsShadows="false" receiveShadows="true" materialIds="514,512,512"/>
+        <Shape name="16" shapeId="24" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="620" castsShadows="false" receiveShadows="true" materialIds="514,511,511">
+          <Shape name="polySurface1" translation="707.335 84.3098 678.826" rotation="44.7976 -0 90" scale="0.1 1 0.0319724" shapeId="25" clipDistance="300" nodeId="621" castsShadows="true" receiveShadows="true" materialIds="506"/>
+          <Shape name="polySurface1" translation="701.195 84.3098 672.783" rotation="44.7976 -0 90" scale="0.1 1 0.0319724" shapeId="25" clipDistance="300" nodeId="622" castsShadows="true" receiveShadows="true" materialIds="506"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="Landstrasse" nodeId="623">
+        <Shape name="1" shapeId="26" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="624" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="2" shapeId="27" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="625" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="3" shapeId="28" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="626" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="4" shapeId="29" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="627" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="5" shapeId="30" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="628" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="6" shapeId="31" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="629" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="7" shapeId="32" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="630" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="8" shapeId="33" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="631" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="9" shapeId="34" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="632" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+        <Shape name="strassen" shapeId="35" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="633" castsShadows="true" receiveShadows="true" materialIds="504,516,501,520"/>
+      </TransformGroup>
+      <TransformGroup name="Bundeslandstrasse" nodeId="634">
+        <Shape name="1" shapeId="36" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="635" castsShadows="false" receiveShadows="true" materialIds="515,512,512"/>
+      </TransformGroup>
+      <TransformGroup name="Plattenweg" nodeId="636">
+        <Shape name="1" shapeId="37" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="637" castsShadows="false" receiveShadows="true" materialIds="507,512,512"/>
+        <TransformGroup name="transform" translation="1131.06 32.1 1094.93" rotation="1.19464e-12 0 -2.7294e-05" nodeId="638">
+          <Shape name="lane50m" translation="-257.864 56.925 163.182" rotation="0 45 0" scale="1.3 1 0.6" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="639" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="CurveLane15m45left" translation="-286.284 56.925 124.46" rotation="-180 0 -180" scale="1.3 1 1.3" shapeId="39" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="640" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane10m" translation="-307.228 54.31 124.131" rotation="-0 90 -0" scale="1.3 1 1" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="641" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane10m" translation="-317.169 54.31 124.131" rotation="-0 90 -0" scale="1.3 1 1" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="642" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane10m" translation="-286.236 56.925 124.46" rotation="0 0 1.62739e-11" scale="1.3 1 1" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="643" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane10m" translation="-337.137 54.3103 124.131" rotation="-0 90 -0" scale="1.3 1 1" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="644" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="CurveLane15m90left" translation="-391.879 56.925 79.1877" rotation="-180 90 -180" scale="1.3 1 1.3" shapeId="41" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="645" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="CurveLane15m90left" translation="-404.508 56.925 136.558" rotation="180 0 180" scale="1.3 1 1.3" shapeId="41" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="646" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane10m" translation="-327.173 56.925 148.966" rotation="-0 90 -0" scale="1.3 1 1" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="647" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane10m" translation="-337.131 56.925 148.966" rotation="-0 90 -0" scale="1.3 1 1" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="648" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane50m" translation="-282.289 56.925 148.963" rotation="0 90 0" scale="1.3 1 0.9" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="649" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="CurveLane15m45left" translation="-264.749 56.92 156.241" rotation="0 45 0" scale="1.3 1 1.3" shapeId="39" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="650" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="CurveLane15m45left" translation="-250.62 56.925 180.663" scale="1.3 1 1.3" shapeId="39" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="651" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="SlopeLane30m5" translation="-250.624 55.6174 210.619" rotation="7.75706e-06 0 -9.58906e-07" scale="1.3 1 1" shapeId="42" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="652" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="SlopeLane30m-5" translation="-250.615 56.9295 240.563" scale="1.3 1 1" shapeId="43" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="653" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane_TJunction" translation="-257.116 56.9295 247.05" rotation="0 90 0" scale="1.3 1 1.3" shapeId="44" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="654" castsShadows="false" receiveShadows="true" materialIds="509,512"/>
+          <Shape name="lane_TJunction" translation="-250.616 56.9346 253.541" rotation="1.0381 0 3.25689e-12" scale="1.3 1 1.3" shapeId="44" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="655" castsShadows="false" receiveShadows="true" materialIds="509,512"/>
+          <Shape name="lane10m" translation="-257.114 56.9295 247.052" rotation="-0 90 -0" scale="1.3 1 0.465" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="656" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane_TJunction" translation="-261.657 56.9304 247.044" rotation="2.7963 -88.8641 -1.67609e-11" scale="1.3 1 1.3" shapeId="44" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="657" castsShadows="false" receiveShadows="true" materialIds="509,512"/>
+          <Shape name="lane50m" translation="-347.131 56.925 148.963" rotation="0 90 0" scale="1.3 1 0.9" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="658" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane50m" translation="-404.405 56.925 136.558" rotation="0 0 -8.13434e-12" scale="1.3 1 0.9" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="659" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="CurveLane15m90left" translation="-286.348 56.925 91.7" rotation="-2.19713e-13 0 9.90427e-12" scale="1.3 1 1.3" shapeId="41" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="660" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane50m" translation="-298.752 56.925 79.3095" rotation="-0.13 90 0" scale="1.3 1 0.83" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="661" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane50m" translation="-357.892 56.8515 79.2038" rotation="0.12 90 0" scale="1.3 1 0.68" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="662" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+          <Shape name="lane50m" translation="-286.472 56.925 91.6657" rotation="-180 -0.67892 180" scale="1.3 1 0.46" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="663" castsShadows="false" receiveShadows="true" materialIds="512,508"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

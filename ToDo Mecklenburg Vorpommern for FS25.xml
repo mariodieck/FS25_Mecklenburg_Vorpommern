@@ -66,18 +66,23 @@ Farmlands eingetragen
 					in der map.i3d 
 			<Option value="110" name="Farmland 110"/>	 
             <Option value="255" name="Not buyable"/>
+			
+			- Straßen angepasst "NICHT" als Terrain Decal, sondern normal mit Collision (neu)
+			- Blitzer hinzugefügt (nicht funktional) vehicleShader.xml passt nicht
+			- Brücken eingefügt
+			- Wasserkraftwerk eingefügt
+			- Ortsschilder hinzugefügt (komplett neu erstellt)	
+			
+			
 		</Version>
+		
+		
+		
+		
+		
 		
 		<Version name="HIER DIE FORTLAUFENDE NUMMER">
 				- änderung 1
-				- änderung 2
-				- änderung 3
-				- änderung 4
-				- änderung 5
 		</Version>
-		
-		
-		
-		
     </Versions>
 </mvp>

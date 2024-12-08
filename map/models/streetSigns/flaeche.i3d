@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="flaeche.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_vmask.dds"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.dds"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.dds"/>
+    <File fileId="1" filename="signKlTa_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="signKlTa_mat" materialId="14" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="2"/>
+      <Custommap name="detailDiffuse" fileId="6"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+      <CustomParameter name="metalnessScale" value="0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="flaeche.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="sign" translation="0 2.31561 0" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="14"/>
+  </Scene>
+
+</i3D>
