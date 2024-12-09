@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <map>
     <farmlands densityMapFilename="map/data/infoLayer_farmlands.grle" numChannels="6" pricePerHa="19500">
-        <farmland id="1"  	priceScale="1" npcName="NPC_DE_01" /> 
-		<farmland id="2"  	priceScale="1" npcName="NPC_DE_01" /> <!-- Feld 1 -->
-		<farmland id="3"  	priceScale="1" npcName="NPC_DE_02" defaultFarmProperty="true" /> <!-- Wiese Kuhweide -->
+        <farmland id="1"  	priceScale="1" npcName="NPC_DE_01" /> <!-- Feld 1 -->
+		<farmland id="2"  	priceScale="1" npcName="NPC_DE_01" /> <!-- Feld 2 -->
+		<farmland id="3"  	priceScale="1" npcName="NPC_DE_02" /> <!-- Feld 3 -->
 		<farmland id="4"  	priceScale="1" npcName="NPC_DE_02" defaultFarmProperty="true" /> <!-- Kuhweide und Maisfeld -->
 		<farmland id="5"  	priceScale="1" npcName="NPC_DE_02" defaultFarmProperty="true" /> <!-- Schweine -->
 		<farmland id="6"  	priceScale="1" npcName="NPC_DE_03" /> <!-- Feld -->
@@ -49,7 +49,7 @@
 		<farmland id="46"  	priceScale="1" npcName="NPC_DE_35" /> <!-- Feld -->
 		<farmland id="47"  	priceScale="1" npcName="NPC_DE_36" /> <!-- Feld -->
 		<farmland id="48"  	priceScale="1" npcName="NPC_DE_36" /> <!-- Feld --> <!-- Feld 2 -->
-		<farmland id="49"  	priceScale="1" npcName="NPC_DE_37" /> <!-- Feld -->
+		<farmland id="49"  	priceScale="1" npcName="NPC_DE_37" />
 		<farmland id="50"  	priceScale="1" npcName="NPC_DE_38" /> <!-- Feld -->
 		<farmland id="51"  	priceScale="1" npcName="NPC_DE_38" /> <!-- Wiese Fricke -->
 		<farmland id="52"  	priceScale="1" npcName="NPC_DE_39" defaultFarmProperty="true" /> <!-- Feld 18 am Hof -->

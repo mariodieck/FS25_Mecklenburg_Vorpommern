@@ -53,7 +53,7 @@
 				- infoLayer_tipCollisionGenerated.grle
 				- infoLayer_weed.grle
 
-!!!!!!!!!!!! Gras auf der Map ist "WaterPlants" - "miscanthusSinensSmall"
+!!!!!!!!!!!! Gras auf der Map ist "WaterPlants" - "miscanthusSinensSmall" (Chinaschilf)
 
 fields.xml muss eingetragen werden welchen Land / Feld einem schon gehören soll
 
@@ -73,6 +73,12 @@ Farmlands eingetragen
 			- Wasserkraftwerk eingefügt
 			- Ortsschilder hinzugefügt (komplett neu erstellt)	
 			
+			- Felder erstellt
+				- Feld 1
+				- Feld 2
+				- Feld 3
+				- Feld 4
+				
 			
 		</Version>
 		
