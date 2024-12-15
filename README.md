@@ -34,3 +34,6 @@
 	- Feld 23	Farmland '44'
 	- Feld 24	Farmland '45'
 	- Feld 25	Farmland '46'
+	- Feld 25	Farmland '47'
+	- Feld 26	Farmland '29'
+	- Feld 27	Farmland '31'
