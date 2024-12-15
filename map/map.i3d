@@ -2442,6 +2442,281 @@
           </TransformGroup>
           <TransformGroup name="teleportIndicator" translation="1352.46 85.6559 292.98" nodeId="6834"/>
         </TransformGroup>
+        <TransformGroup name="field11" nodeId="6887">
+          <TransformGroup name="polygonPoints" nodeId="6888">
+            <TransformGroup name="point1" translation="1197.72 85.0352 -799.398" nodeId="6889"/>
+            <TransformGroup name="point2" translation="1199.79 86.9157 -684.012" nodeId="6896"/>
+            <TransformGroup name="point3" translation="1189.49 85.1288 -594.478" rotation="0 43.8973 0" nodeId="6897"/>
+            <TransformGroup name="point4" translation="1189 86.8959 -553.52" rotation="0 316.649 0" nodeId="6898"/>
+            <TransformGroup name="point5" translation="1196.57 87.7444 -529.141" rotation="0 221.03 0" nodeId="6899"/>
+            <TransformGroup name="point6" translation="1205.41 87.8115 -504.35" rotation="0 223.17 0" nodeId="6900"/>
+            <TransformGroup name="point7" translation="1205.13 86.0759 -457.971" rotation="0 235.072 0" nodeId="6901"/>
+            <TransformGroup name="point8" translation="1206.51 85.337 -410.127" rotation="0 277.225 0" nodeId="6902"/>
+            <TransformGroup name="point9" translation="1142 88.2345 -403.202" rotation="0 73.9851 0" nodeId="6903"/>
+            <TransformGroup name="point10" translation="1115 86.2666 -402.812" rotation="0 18.7734 0" nodeId="6904"/>
+            <TransformGroup name="point11" translation="1103.46 85.1015 -395.162" rotation="0 240.379 0" nodeId="6905"/>
+            <TransformGroup name="point12" translation="1094.34 84.3302 -383.873" rotation="0 172.963 0" nodeId="6906"/>
+            <TransformGroup name="point13" translation="1085.03 83.7884 -365.31" rotation="0 209.448 0" nodeId="6907"/>
+            <TransformGroup name="point14" translation="1074.84 83.4764 -341.57" rotation="0 92.8566 0" nodeId="6908"/>
+            <TransformGroup name="point15" translation="1067.75 83.8175 -320.519" rotation="0 69.9126 0" nodeId="6909"/>
+            <TransformGroup name="point16" translation="1065.78 84.1302 -311.899" rotation="0 276.226 0" nodeId="6910"/>
+            <TransformGroup name="point17" translation="1065.6 84.9727 -294.863" rotation="0 167.947 0" nodeId="6911"/>
+            <TransformGroup name="point18" translation="1069.08 85.8457 -269.699" rotation="0 176.423 0" nodeId="6912"/>
+            <TransformGroup name="point19" translation="1068.36 85.348 -223.465" rotation="0 338.139 0" nodeId="6913"/>
+            <TransformGroup name="point20" translation="1068.45 84.9625 -165.371" rotation="0 43.7535 0" nodeId="6914"/>
+            <TransformGroup name="point21" translation="1068.23 85.6225 -119.509" rotation="0 238.292 0" nodeId="6915"/>
+            <TransformGroup name="point22" translation="1067.01 86.519 -75.0974" rotation="0 120.722 0" nodeId="6916"/>
+            <TransformGroup name="point23" translation="1066.39 88.0587 50.1514" rotation="-180 38.8174 180" nodeId="6917"/>
+            <TransformGroup name="point24" translation="1058.87 87.7422 88.23" rotation="-180 327.466 180" nodeId="6918"/>
+            <TransformGroup name="point25" translation="1050.31 87.4009 114.421" rotation="-180 167.624 180" nodeId="6919"/>
+            <TransformGroup name="point26" translation="1048.52 87.0507 122.884" rotation="-180 242.752 180" nodeId="6920"/>
+            <TransformGroup name="point27" translation="1042.78 87.0726 129.661" rotation="-180 308.392 180" nodeId="6921"/>
+            <TransformGroup name="point28" translation="1026.85 87.7695 129.051" rotation="-180 253.207 180" nodeId="6922"/>
+            <TransformGroup name="point29" translation="1006.17 87.4889 126.22" rotation="-180 92.091 180" nodeId="6923"/>
+            <TransformGroup name="point30" translation="981.714 87.1619 117.365" rotation="-180 295.273 180" nodeId="6924"/>
+            <TransformGroup name="point31" translation="958.23 87.2093 108.205" rotation="-180 248.52 180" nodeId="6925"/>
+            <TransformGroup name="point32" translation="925.587 87.9197 84.0267" rotation="-180 289.826 180" nodeId="6926"/>
+            <TransformGroup name="point33" translation="896.007 90.464 62.5197" rotation="-180 153.614 180" nodeId="6927"/>
+            <TransformGroup name="point34" translation="881.29 91.6651 52.6502" rotation="-180 366.501 180" nodeId="6928"/>
+            <TransformGroup name="point35" translation="866.577 90.9354 43.7412" rotation="-180 136.927 180" nodeId="6929"/>
+            <TransformGroup name="point36" translation="863.062 91.7959 14.1579" rotation="-180 311.158 180" nodeId="6930"/>
+            <TransformGroup name="point37" translation="859.178 93.2972 -24.1738" rotation="-180 177.804 180" nodeId="6931"/>
+            <TransformGroup name="point38" translation="858.977 93.2754 -33.7133" rotation="-180 120.68 180" nodeId="6932"/>
+            <TransformGroup name="point39" translation="899.413 89.7906 -40.0745" rotation="-180 200.161 180" nodeId="6933"/>
+            <TransformGroup name="point40" translation="914.392 89.2268 -39.3265" rotation="-180 69.0536 180" nodeId="6934"/>
+            <TransformGroup name="point41" translation="916.265 89.5485 21.5954" rotation="-180 60.4079 180" nodeId="6935"/>
+            <TransformGroup name="point42" translation="917.868 89.444 27.4738" rotation="-180 347.527 180" nodeId="6936"/>
+            <TransformGroup name="point43" translation="926.269 89.0707 32.8328" rotation="-180 241.842 180" nodeId="6937"/>
+            <TransformGroup name="point44" translation="939.177 88.7465 40.9833" rotation="-180 356.723 180" nodeId="6938"/>
+            <TransformGroup name="point45" translation="955.199 88.8233 49.935" rotation="-180 72.9043 180" nodeId="6939"/>
+            <TransformGroup name="point46" translation="967.318 88.9156 56.9889" rotation="-180 286.212 180" nodeId="6940"/>
+            <TransformGroup name="point47" translation="978.882 88.9624 62.5385" rotation="-180 155.113 180" nodeId="6941"/>
+            <TransformGroup name="point48" translation="989.973 88.9673 70.4038" rotation="-180 115.085 180" nodeId="6942"/>
+            <TransformGroup name="point49" translation="997.14 88.9688 73.0244" rotation="-180 266.38 180" nodeId="6943"/>
+            <TransformGroup name="point50" translation="1003.01 88.9722 74.1499" rotation="-180 245.721 180" nodeId="6944"/>
+            <TransformGroup name="point51" translation="1009.08 88.9686 72.9871" rotation="-180 190.176 180" nodeId="6945"/>
+            <TransformGroup name="point52" translation="1013.06 88.9689 68.8251" rotation="-180 219.144 180" nodeId="6946"/>
+            <TransformGroup name="point53" translation="1013.45 88.9836 63.2192" rotation="-180 322.377 180" nodeId="6947"/>
+            <TransformGroup name="point54" translation="1009.77 88.9922 57.2065" rotation="-180 144.246 180" nodeId="6948"/>
+            <TransformGroup name="point55" translation="1004.37 88.9883 53.5266" rotation="-180 395.352 180" nodeId="6949"/>
+            <TransformGroup name="point56" translation="991.673 88.9844 53.8313" rotation="-180 362.622 180" nodeId="6950"/>
+            <TransformGroup name="point57" translation="982.709 88.9786 50.4883" rotation="-180 333.603 180" nodeId="6951"/>
+            <TransformGroup name="point58" translation="971.679 88.9404 45.9349" rotation="-180 328.037 180" nodeId="6952"/>
+            <TransformGroup name="point59" translation="936.854 88.8688 26.2232" rotation="-180 349.451 180" nodeId="6953"/>
+            <TransformGroup name="point60" translation="935.783 88.9411 -42.0785" rotation="-180 74.0685 180" nodeId="6954"/>
+            <TransformGroup name="point61" translation="938.258 88.9619 -45.9517" rotation="-180 191.524 180" nodeId="6955"/>
+            <TransformGroup name="point62" translation="942.835 88.9721 -46.5578" rotation="-180 111.696 180" nodeId="6956"/>
+            <TransformGroup name="point63" translation="954.026 88.9923 -47.5577" rotation="-180 248.499 180" nodeId="6957"/>
+            <TransformGroup name="point64" translation="1006.14 88.9543 -48.3897" rotation="-180 296.204 180" nodeId="6958"/>
+            <TransformGroup name="point65" translation="1008.88 88.9493 -50.7332" rotation="-180 206.668 180" nodeId="6959"/>
+            <TransformGroup name="point66" translation="1010.05 88.9603 -55.8394" rotation="-180 84.7043 180" nodeId="6960"/>
+            <TransformGroup name="point67" translation="1010.29 88.9611 -66.4733" rotation="8.65142e-06 -70.6559 -8.65142e-06" nodeId="6961"/>
+            <TransformGroup name="point68" translation="1010.14 88.9644 -71.1482" rotation="-180 47.7829 180" nodeId="6963"/>
+            <TransformGroup name="point69" translation="1005.17 88.9689 -83.9399" rotation="-180 71.1296 180" nodeId="6964"/>
+            <TransformGroup name="point70" translation="1003.89 88.965 -96.8722" rotation="-180 215.355 180" nodeId="6965"/>
+            <TransformGroup name="point71" translation="1003.41 88.9213 -146.412" rotation="-180 362.549 180" nodeId="6966"/>
+            <TransformGroup name="point72" translation="1002.71 88.7784 -181.204" rotation="-180 225.522 180" nodeId="6967"/>
+            <TransformGroup name="point73" translation="1002.3 88.7234 -201.773" rotation="-180 49.9687 180" nodeId="6968"/>
+            <TransformGroup name="point74" translation="996.878 88.8351 -205.992" rotation="-180 363.631 180" nodeId="6969"/>
+            <TransformGroup name="point75" translation="986.988 88.9729 -205.059" rotation="-180 259.6 180" nodeId="6970"/>
+            <TransformGroup name="point76" translation="982.299 89.0066 -198.116" rotation="-180 185.772 180" nodeId="6971"/>
+            <TransformGroup name="point77" translation="982.239 89.0078 -188.457" rotation="-180 267.062 180" nodeId="6972"/>
+            <TransformGroup name="point78" translation="985.4 88.9985 -182.923" rotation="-180 59.5589 180" nodeId="6973"/>
+            <TransformGroup name="point79" translation="990.943 88.9771 -172.603" rotation="-180 214.226 180" nodeId="6974"/>
+            <TransformGroup name="point80" translation="992.609 88.9758 -165.517" rotation="-180 41.3985 180" nodeId="6975"/>
+            <TransformGroup name="point81" translation="990.888 88.9883 -73.9978" rotation="-180 355.918 180" nodeId="6976"/>
+            <TransformGroup name="point82" translation="988.927 88.9922 -70.4" rotation="-180 134.71 180" nodeId="6977"/>
+            <TransformGroup name="point83" translation="981.895 88.9961 -66.1901" rotation="-180 238.099 180" nodeId="6978"/>
+            <TransformGroup name="point84" translation="969.481 89.0257 -63.904" rotation="-180 381.935 180" nodeId="6979"/>
+            <TransformGroup name="point85" translation="954.26 89 -61.3016" rotation="-180 58.7178 180" nodeId="6980"/>
+            <TransformGroup name="point86" translation="943.076 88.9883 -60.0533" rotation="-180 242.259 180" nodeId="6981"/>
+            <TransformGroup name="point87" translation="936.378 88.9665 -63.4783" rotation="-180 129.766 180" nodeId="6982"/>
+            <TransformGroup name="point88" translation="936.096 88.9848 -93.8437" rotation="8.65142e-06 57.811 -8.65142e-06" nodeId="6983"/>
+            <TransformGroup name="point89" translation="915.093 88.907 -93.8677" rotation="-180 141.508 180" nodeId="6984"/>
+            <TransformGroup name="point90" translation="915.283 88.9864 -58.9678" rotation="-180 378.325 180" nodeId="6985"/>
+            <TransformGroup name="point91" translation="906.151 89.1569 -56.489" rotation="-180 211.359 180" nodeId="6986"/>
+            <TransformGroup name="point92" translation="879.815 90.5607 -52.2707" rotation="-180 337.866 180" nodeId="6987"/>
+            <TransformGroup name="point93" translation="858.939 92.7785 -50.5062" rotation="-180 149.064 180" nodeId="6988"/>
+            <TransformGroup name="point94" translation="853.266 93.2567 -53.9454" rotation="-180 198.795 180" nodeId="6989"/>
+            <TransformGroup name="point95" translation="848.801 92.4423 -67.9062" rotation="-180 162.789 180" nodeId="6990"/>
+            <TransformGroup name="point96" translation="843.963 90.7257 -83.2413" rotation="-180 346.888 180" nodeId="6991"/>
+            <TransformGroup name="point97" translation="830.011 89.3456 -99.9469" rotation="-180 151.546 180" nodeId="6992"/>
+            <TransformGroup name="point98" translation="819.315 88.5251 -110.8" rotation="-180 294.283 180" nodeId="6993"/>
+            <TransformGroup name="point99" translation="808.656 87.9809 -121.033" rotation="-180 -65.7173 180" nodeId="7000"/>
+            <TransformGroup name="point100" translation="787.176 86.8451 -132.764" rotation="-180 164.073 180" nodeId="7001"/>
+            <TransformGroup name="point101" translation="759.564 85.2328 -140.622" rotation="-180 240.891 180" nodeId="7002"/>
+            <TransformGroup name="point102" translation="734.142 84.9333 -132.838" rotation="-180 275.146 180" nodeId="7003"/>
+            <TransformGroup name="point103" translation="710.717 84.7661 -122.933" rotation="-180 160.428 180" nodeId="7004"/>
+            <TransformGroup name="point104" translation="683.319 84.8073 -107.433" rotation="-180 234.753 180" nodeId="7005"/>
+            <TransformGroup name="point105" translation="661.034 84.537 -97.8294" rotation="-180 182.401 180" nodeId="7006"/>
+            <TransformGroup name="point106" translation="646.025 84.3912 -87.6069" rotation="-180 1.79765 180" nodeId="7007"/>
+            <TransformGroup name="point107" translation="622.991 84.2335 -75.0311" rotation="-180 110.034 180" nodeId="7008"/>
+            <TransformGroup name="point108" translation="601.746 85.0654 -60.7364" rotation="-180 3.63915 180" nodeId="7009"/>
+            <TransformGroup name="point109" translation="562.093 85.3896 -58.9415" rotation="-180 259.427 180" nodeId="7010"/>
+            <TransformGroup name="point110" translation="562.281 85.8962 -112.013" rotation="-180 121.545 180" nodeId="7011"/>
+            <TransformGroup name="point111" translation="564.234 85.3704 -130.522" rotation="-180 -14.2205 180" nodeId="7012"/>
+            <TransformGroup name="point112" translation="566.497 84.8952 -151.241" rotation="-180 -16.2531 180" nodeId="7013"/>
+            <TransformGroup name="point113" translation="571.651 84.5998 -167.117" rotation="-180 -1.2797 180" nodeId="7014"/>
+            <TransformGroup name="point114" translation="582.462 84.5521 -191.457" rotation="-180 258.433 180" nodeId="7015"/>
+            <TransformGroup name="point115" translation="582.551 85.1097 -228.582" rotation="-180 95.168 180" nodeId="7016"/>
+            <TransformGroup name="point116" translation="559.241 85.223 -230.515" rotation="-180 178.221 180" nodeId="7017"/>
+            <TransformGroup name="point117" translation="561.533 84.8637 -268.76" rotation="-180 34.2947 180" nodeId="7018"/>
+            <TransformGroup name="point118" translation="563.073 84.2828 -308.432" rotation="-180 215.982 180" nodeId="7019"/>
+            <TransformGroup name="point119" translation="565.167 83.8985 -338.071" rotation="-180 104.015 180" nodeId="7020"/>
+            <TransformGroup name="point120" translation="569.971 83.7995 -368.565" rotation="-180 183.389 180" nodeId="7021"/>
+            <TransformGroup name="point121" translation="574.432 84.414 -410.632" rotation="-180 -4.204 180" nodeId="7022"/>
+            <TransformGroup name="point122" translation="580.906 84.8634 -447.879" rotation="-180 81.0742 180" nodeId="7023"/>
+            <TransformGroup name="point123" translation="585.98 84.4078 -482.753" rotation="-180 -58.205 180" nodeId="7024"/>
+            <TransformGroup name="point124" translation="590.396 84.1899 -508.785" rotation="8.65142e-06 44.4621 -8.65142e-06" nodeId="7025"/>
+            <TransformGroup name="point125" translation="592.524 84.2289 -519.844" rotation="-180 34.5158 180" nodeId="7026"/>
+            <TransformGroup name="point126" translation="603.8 83.8572 -530.234" rotation="-180 57.4991 180" nodeId="7027"/>
+            <TransformGroup name="point127" translation="646.932 83.6669 -566.008" rotation="-180 -28.4706 180" nodeId="7028"/>
+            <TransformGroup name="point128" translation="672.908 83.9854 -586.212" rotation="-180 -6.16062 180" nodeId="7029"/>
+            <TransformGroup name="point129" translation="693.754 84.7229 -601.036" rotation="8.65142e-06 -59.962 -8.65142e-06" nodeId="7030"/>
+            <TransformGroup name="point130" translation="714.868 85.0324 -608.146" rotation="-180 35.5012 180" nodeId="7031"/>
+            <TransformGroup name="point131" translation="733.223 85.1839 -611.814" rotation="8.65142e-06 11.2414 -8.65142e-06" nodeId="7033"/>
+            <TransformGroup name="point132" translation="738.583 85.5077 -616.028" rotation="8.65142e-06 11.2414 -8.65142e-06" nodeId="7187"/>
+            <TransformGroup name="point133" translation="743.537 86.127 -622.505" rotation="8.65142e-06 11.2414 -8.65142e-06" nodeId="7188"/>
+            <TransformGroup name="point134" translation="746.132 86.9472 -629.639" rotation="-180 373.641 180" nodeId="7034"/>
+            <TransformGroup name="point135" translation="746.227 90.8553 -657.095" rotation="-180 270.884 180" nodeId="7035"/>
+            <TransformGroup name="point136" translation="746.235 92.8373 -679.134" rotation="-180 118.762 180" nodeId="7036"/>
+            <TransformGroup name="point137" translation="747.06 92.9994 -710.658" rotation="-180 246.531 180" nodeId="7037"/>
+            <TransformGroup name="point138" translation="746.709 93.1187 -739.593" rotation="-180 100.246 180" nodeId="7038"/>
+            <TransformGroup name="point139" translation="746.301 89.3715 -786.163" rotation="-180 184.691 180" nodeId="7039"/>
+            <TransformGroup name="point140" translation="747.415 88.1305 -820.268" rotation="-180 55.9132 180" nodeId="7040"/>
+            <TransformGroup name="point141" translation="747.62 88.9728 -867.708" rotation="-180 74.4332 180" nodeId="7041"/>
+            <TransformGroup name="point142" translation="747.803 89 -914.897" rotation="-180 128.931 180" nodeId="7042"/>
+            <TransformGroup name="point143" translation="748.544 89 -926.915" rotation="-180 42.2026 180" nodeId="7043"/>
+            <TransformGroup name="point144" translation="756.95 89 -933.899" rotation="-180 162.906 180" nodeId="7044"/>
+            <TransformGroup name="point145" translation="768.052 89 -935.268" rotation="-180 300.301 180" nodeId="7045"/>
+            <TransformGroup name="point146" translation="780.317 89 -934.005" rotation="-180 270.044 180" nodeId="7046"/>
+            <TransformGroup name="point147" translation="803.674 89 -918.21" rotation="-180 -26.8612 180" nodeId="7047"/>
+            <TransformGroup name="point148" translation="822.488 89 -904.953" rotation="-180 192.969 180" nodeId="7048"/>
+            <TransformGroup name="point149" translation="858.705 89 -882.46" rotation="-180 108.472 180" nodeId="7049"/>
+            <TransformGroup name="point150" translation="893.148 89 -866.64" rotation="-180 308.37 180" nodeId="7050"/>
+            <TransformGroup name="point151" translation="925.881 89 -852.452" rotation="-180 16.803 180" nodeId="7051"/>
+            <TransformGroup name="point152" translation="960.77 89 -838.093" rotation="-180 316.585 180" nodeId="7052"/>
+            <TransformGroup name="point153" translation="992.978 89 -825.546" rotation="-180 249.723 180" nodeId="7053"/>
+            <TransformGroup name="point154" translation="1020.47 89 -814.646" rotation="-180 158.52 180" nodeId="7054"/>
+            <TransformGroup name="point155" translation="1046.52 89.0437 -805.259" rotation="-180 294.066 180" nodeId="7055"/>
+            <TransformGroup name="point156" translation="1071.92 88.9899 -800.398" rotation="-180 218.911 180" nodeId="7056"/>
+            <TransformGroup name="point157" translation="1087.47 88.9639 -798.191" rotation="-180 194.472 180" nodeId="7057"/>
+          </TransformGroup>
+          <TransformGroup name="nameIndicator" translation="863.45 89.618 -429.734" nodeId="6893">
+            <Note name="Note" nodeId="6895" text="field11&amp;#xA;41.30 ha" color="4278190080" fixedSize="true"/>
+          </TransformGroup>
+          <TransformGroup name="teleportIndicator" translation="887.962 87.1223 -495.322" nodeId="6894"/>
+        </TransformGroup>
+        <TransformGroup name="field12" nodeId="7059">
+          <TransformGroup name="polygonPoints" nodeId="7060">
+            <TransformGroup name="point1" translation="740.658 89.0158 -972.031" nodeId="7061"/>
+            <TransformGroup name="point2" translation="740.658 88.5971 -641.123" rotation="0 156.103 0" nodeId="7085"/>
+            <TransformGroup name="point3" translation="739.97 87.0415 -630.4" rotation="0 267.598 0" nodeId="7086"/>
+            <TransformGroup name="point4" translation="738.546 86.3671 -624.963" rotation="0 100.4 0" nodeId="7087"/>
+            <TransformGroup name="point5" translation="734.666 85.8243 -619.879" rotation="0 69.1943 0" nodeId="7088"/>
+            <TransformGroup name="point6" translation="728.386 85.5982 -617.18" rotation="0 323.572 0" nodeId="7089"/>
+            <TransformGroup name="point7" translation="717.851 85.6554 -616.257" rotation="0 64.9274 0" nodeId="7090"/>
+            <TransformGroup name="point8" translation="705.963 85.4443 -612.358" rotation="0 235.561 0" nodeId="7091"/>
+            <TransformGroup name="point9" translation="690.897 85.2451 -606.742" rotation="0 32.5843 0" nodeId="7092"/>
+            <TransformGroup name="point10" translation="678.69 84.6259 -597.571" rotation="0 263.827 0" nodeId="7093"/>
+            <TransformGroup name="point11" translation="668.792 84.2973 -591.02" rotation="180 -83.8271 180" nodeId="7094"/>
+            <TransformGroup name="point12" translation="657.98 83.978 -582.519" rotation="180 260.762 180" nodeId="7095"/>
+            <TransformGroup name="point13" translation="641.828 83.8773 -570.027" rotation="180 140.938 180" nodeId="7096"/>
+            <TransformGroup name="point14" translation="624.518 83.7464 -553.488" rotation="180 207.499 180" nodeId="7097"/>
+            <TransformGroup name="point15" translation="609.025 83.848 -542.875" rotation="180 141.361 180" nodeId="7098"/>
+            <TransformGroup name="point16" translation="593.992 84.2765 -530.583" rotation="180 180.285 180" nodeId="7099"/>
+            <TransformGroup name="point17" translation="588.364 84.5115 -522.745" rotation="180 -74.6967 180" nodeId="7100"/>
+            <TransformGroup name="point18" translation="583.791 84.5507 -500.152" rotation="180 160.783 180" nodeId="7101"/>
+            <TransformGroup name="point19" translation="578.141 85.0649 -481.468" rotation="180 155.806 180" nodeId="7102"/>
+            <TransformGroup name="point20" translation="576.446 85.3236 -470.164" rotation="180 20.1134 180" nodeId="7103"/>
+            <TransformGroup name="point21" translation="575.347 85.4913 -458.581" rotation="180 95.6207 180" nodeId="7104"/>
+            <TransformGroup name="point22" translation="574.187 85.5019 -445.304" rotation="180 108.066 180" nodeId="7105"/>
+            <TransformGroup name="point23" translation="572.241 85.3777 -431.868" rotation="180 24.7868 180" nodeId="7106"/>
+            <TransformGroup name="point24" translation="571.408 85.0539 -420.732" rotation="180 40.7164 180" nodeId="7107"/>
+            <TransformGroup name="point25" translation="569.57 84.8207 -410.56" rotation="180 -56.9717 180" nodeId="7108"/>
+            <TransformGroup name="point26" translation="567.79 84.4865 -397.354" rotation="180 22.9519 180" nodeId="7109"/>
+            <TransformGroup name="point27" translation="567.087 84.2156 -384.341" rotation="180 240.35 180" nodeId="7110"/>
+            <TransformGroup name="point28" translation="565.026 84.1081 -370.554" rotation="180 38.92 180" nodeId="7111"/>
+            <TransformGroup name="point29" translation="562.718 84.0852 -354.696" rotation="180 -35.0569 180" nodeId="7112"/>
+            <TransformGroup name="point30" translation="559.258 84.2739 -346.907" rotation="180 178.885 180" nodeId="7113"/>
+            <TransformGroup name="point31" translation="554.771 84.6466 -342.219" rotation="180 195.235 180" nodeId="7114"/>
+            <TransformGroup name="point32" translation="547.595 85.4244 -338.179" rotation="180 157.136 180" nodeId="7115"/>
+            <TransformGroup name="point33" translation="539.599 86.6398 -337.602" rotation="180 246.016 180" nodeId="7116"/>
+            <TransformGroup name="point34" translation="531.029 88.2649 -340.816" rotation="180 272.18 180" nodeId="7117"/>
+            <TransformGroup name="point35" translation="519.406 89.1869 -346.257" rotation="180 235.326 180" nodeId="7118"/>
+            <TransformGroup name="point36" translation="507.689 89.2335 -349.191" rotation="180 210.006 180" nodeId="7119"/>
+            <TransformGroup name="point37" translation="496.76 89.2268 -351.705" rotation="180 -50.3094 180" nodeId="7120"/>
+            <TransformGroup name="point38" translation="484.855 89.2296 -352.08" rotation="180 -17.6816 180" nodeId="7121"/>
+            <TransformGroup name="point39" translation="469.748 89.2348 -353.102" rotation="180 -79.2944 180" nodeId="7122"/>
+            <TransformGroup name="point40" translation="459.518 89.2297 -353.389" rotation="180 165.336 180" nodeId="7123"/>
+            <TransformGroup name="point41" translation="448.146 89.2107 -355.197" rotation="180 59.8704 180" nodeId="7124"/>
+            <TransformGroup name="point42" translation="436.668 89.1482 -357.745" rotation="180 199.895 180" nodeId="7125"/>
+            <TransformGroup name="point43" translation="427.469 89.1501 -363.036" rotation="180 248.113 180" nodeId="7126"/>
+            <TransformGroup name="point44" translation="421.328 89.1249 -370.828" rotation="180 164.755 180" nodeId="7127"/>
+            <TransformGroup name="point45" translation="418.966 89.1478 -385.57" rotation="180 40.791 180" nodeId="7128"/>
+            <TransformGroup name="point46" translation="424.263 89 -400.423" rotation="180 137.57 180" nodeId="7129"/>
+            <TransformGroup name="point47" translation="434.286 89.0522 -415.236" rotation="180 204.69 180" nodeId="7130"/>
+            <TransformGroup name="point48" translation="441.925 89.2179 -424.877" rotation="180 84.7006 180" nodeId="7131"/>
+            <TransformGroup name="point49" translation="448.666 89.2296 -432.262" rotation="180 48.1507 180" nodeId="7132"/>
+            <TransformGroup name="point50" translation="455.359 89.2335 -442.515" rotation="180 246.38 180" nodeId="7133"/>
+            <TransformGroup name="point51" translation="462.475 89.2374 -450.202" rotation="180 97.4917 180" nodeId="7134"/>
+            <TransformGroup name="point52" translation="474.935 89.2337 -459.818" rotation="180 193.283 180" nodeId="7135"/>
+            <TransformGroup name="point53" translation="480.59 89.2241 -465.384" rotation="180 137.179 180" nodeId="7136"/>
+            <TransformGroup name="point54" translation="487.657 89.2338 -476.912" rotation="180 -57.4571 180" nodeId="7137"/>
+            <TransformGroup name="point55" translation="496.233 89.2374 -498.6" rotation="180 219.196 180" nodeId="7138"/>
+            <TransformGroup name="point56" translation="499.62 89.2374 -515.435" rotation="5.00896e-06 56.1192 5.00896e-06" nodeId="7139"/>
+            <TransformGroup name="point57" translation="503.81 89.2374 -538.272" rotation="-180 45.7718 -180" nodeId="7140"/>
+            <TransformGroup name="point58" translation="508.946 89.2208 -564.258" rotation="180 83.5417 180" nodeId="7141"/>
+            <TransformGroup name="point59" translation="511.658 89.2326 -575.444" rotation="180 77.9749 180" nodeId="7142"/>
+            <TransformGroup name="point60" translation="511.98 89.2374 -583.039" rotation="180 255.619 180" nodeId="7143"/>
+            <TransformGroup name="point61" translation="515.073 89.2374 -589.114" rotation="180 -71.7515 180" nodeId="7144"/>
+            <TransformGroup name="point62" translation="503.98 89.2335 -600.561" rotation="180 35.9204 180" nodeId="7145"/>
+            <TransformGroup name="point63" translation="499.616 89.0236 -608.257" rotation="180 97.3159 180" nodeId="7146"/>
+            <TransformGroup name="point64" translation="497.806 89.0628 -619.596" rotation="180 175.495 180" nodeId="7147"/>
+            <TransformGroup name="point65" translation="499.478 90.4702 -629.203" rotation="5.00896e-06 4.50455 5.00896e-06" nodeId="7148"/>
+            <TransformGroup name="point66" translation="502.059 91.8153 -637.865" rotation="5.00896e-06 182.505 5.00896e-06" nodeId="7149"/>
+            <TransformGroup name="point67" translation="519.755 95.7293 -659.987" rotation="5.00896e-06 208.595 5.00896e-06" nodeId="7150"/>
+            <TransformGroup name="point68" translation="529.503 97.1065 -675.256" rotation="5.00896e-06 83.0738 5.00896e-06" nodeId="7151"/>
+            <TransformGroup name="point69" translation="531.277 97.6465 -687.479" rotation="5.00896e-06 124.96 5.00896e-06" nodeId="7152"/>
+            <TransformGroup name="point70" translation="531.32 97.8809 -697.3" rotation="5.00896e-06 59.2318 5.00896e-06" nodeId="7153"/>
+            <TransformGroup name="point71" translation="531.227 98.0424 -706.047" rotation="5.00896e-06 84.269 5.00896e-06" nodeId="7154"/>
+            <TransformGroup name="point72" translation="529.641 98.0974 -715.081" rotation="5.00896e-06 67.0901 5.00896e-06" nodeId="7155"/>
+            <TransformGroup name="point73" translation="527.027 98.1913 -726.919" rotation="5.00896e-06 276.917 5.00896e-06" nodeId="7156"/>
+            <TransformGroup name="point74" translation="524.958 98.078 -740.115" rotation="5.00896e-06 353.772 5.00896e-06" nodeId="7157"/>
+            <TransformGroup name="point75" translation="525.338 98.1405 -756.072" rotation="5.00896e-06 300 5.00896e-06" nodeId="7158"/>
+            <TransformGroup name="point76" translation="528.074 98.9624 -777.093" rotation="5.00896e-06 38.7633 5.00896e-06" nodeId="7159"/>
+            <TransformGroup name="point77" translation="532.517 100.063 -793.517" rotation="5.00896e-06 269.235 5.00896e-06" nodeId="7160"/>
+            <TransformGroup name="point78" translation="536.661 100.765 -806.586" rotation="5.00896e-06 180.315 5.00896e-06" nodeId="7161"/>
+            <TransformGroup name="point79" translation="540.102 100.959 -818.686" rotation="5.00896e-06 171.601 5.00896e-06" nodeId="7162"/>
+            <TransformGroup name="point80" translation="541.881 101.129 -831.88" rotation="5.00896e-06 94.5103 5.00896e-06" nodeId="7163"/>
+            <TransformGroup name="point81" translation="544.465 101.832 -845.557" rotation="5.00896e-06 191.645 5.00896e-06" nodeId="7164"/>
+            <TransformGroup name="point82" translation="547.71 100.948 -858.91" rotation="5.00896e-06 253.008 5.00896e-06" nodeId="7165"/>
+            <TransformGroup name="point83" translation="550.53 98.7311 -875.826" rotation="5.00896e-06 244.23 5.00896e-06" nodeId="7166"/>
+            <TransformGroup name="point84" translation="553.62 96.5439 -892.867" rotation="5.00896e-06 260.838 5.00896e-06" nodeId="7167"/>
+            <TransformGroup name="point85" translation="555.807 93.4043 -911.607" rotation="5.00896e-06 261.691 5.00896e-06" nodeId="7168"/>
+            <TransformGroup name="point86" translation="559.711 90.5256 -932.077" rotation="5.00896e-06 6.26528 5.00896e-06" nodeId="7169"/>
+            <TransformGroup name="point87" translation="561.854 89.797 -946.915" rotation="5.00896e-06 95.9315 5.00896e-06" nodeId="7170"/>
+            <TransformGroup name="point88" translation="564.843 89.1825 -962.506" rotation="5.00896e-06 64.0216 5.00896e-06" nodeId="7171"/>
+            <TransformGroup name="point89" translation="574.525 89.4091 -967.116" rotation="5.00896e-06 40.1907 5.00896e-06" nodeId="7172"/>
+            <TransformGroup name="point90" translation="587.185 88.9813 -968.671" rotation="-180 0.651609 -180" nodeId="7173"/>
+            <TransformGroup name="point91" translation="591.4 88.9751 -969.742" rotation="-180 0.651609 -180" nodeId="7174"/>
+            <TransformGroup name="point92" translation="596.418 88.7271 -971.212" rotation="-180 41.2706 -180" nodeId="7175"/>
+            <TransformGroup name="point93" translation="603.573 88.8009 -974.334" rotation="-180 304.871 -180" nodeId="7176"/>
+            <TransformGroup name="point94" translation="613.734 88.8624 -974.207" rotation="-180 317.368 -180" nodeId="7177"/>
+            <TransformGroup name="point95" translation="631.237 88.8245 -973.525" rotation="-180 68.4578 -180" nodeId="7178"/>
+            <TransformGroup name="point96" translation="653.658 89.0041 -973.526" rotation="-180 300.718 -180" nodeId="7179"/>
+            <TransformGroup name="point97" translation="672.775 88.9993 -973.192" rotation="-180 87.5826 -180" nodeId="7180"/>
+            <TransformGroup name="point98" translation="691.388 89 -973.208" rotation="-180 261.613 -180" nodeId="7181"/>
+            <TransformGroup name="point99" translation="705.93 89 -972.838" rotation="-180 265.342 -180" nodeId="7182"/>
+            <TransformGroup name="point100" translation="718.622 89 -972.993" rotation="-180 218.151 -180" nodeId="7183"/>
+            <TransformGroup name="point101" translation="728.408 89.0081 -972.577" rotation="-180 97.5148 -180" nodeId="7184"/>
+            <TransformGroup name="point102" translation="734.91 88.9977 -972.599" rotation="-180 107.164 -180" nodeId="7185"/>
+          </TransformGroup>
+          <TransformGroup name="nameIndicator" translation="611.342 102.776 -665.261" nodeId="7065">
+            <Note name="Note" nodeId="7067" text="field12&amp;#xA;10.57 ha" color="4278190080" fixedSize="true"/>
+          </TransformGroup>
+          <TransformGroup name="teleportIndicator" translation="578.371 88.9519 -960.634" nodeId="7066"/>
+        </TransformGroup>
       </TransformGroup>
       <TransformGroup name="triggerMarkers" nodeId="1151">
         <TransformGroup name="warningStripesVehicleSelling" translation="69.0701 92.5019 -867.27" rotation="0 -90 0" nodeId="1152">
@@ -2488,7 +2763,7 @@
       </TransformGroup>
     </TransformGroup>
     <TransformGroup name="Procedural_Placement" nodeId="1187"/>
-    <Camera name="VogelPerspektive" translation="1562.25 713.049 83.1582" rotation="100.536 -82.7481 -180" visibility="false" nodeId="1188" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
+    <Camera name="VogelPerspektive" translation="336.844 568.184 -629.285" rotation="116.355 -78.6322 180" visibility="false" nodeId="1188" fov="60" nearClip="0.1" farClip="6000" orthographicHeight="25"/>
     <TransformGroup name="strassen" clipDistance="1000" nodeId="1189">
       <TransformGroup name="Kreiseln_Kreuzungen" translation="-477.843 148.294 -420.116" nodeId="1190">
         <Shape name="Kreisel_KleinLantow" translation="590.114 -27.7455 194.406" rotation="-7.24549 53.421 -8.93738" scale="1.1 1 1.1" shapeId="11" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="1191" castsShadows="false" receiveShadows="true" materialIds="24,47">
@@ -2959,6 +3234,22 @@
       <Attribute name="teleportIndicatorIndex" type="string" value="2"/>
     </UserAttribute>
     <UserAttribute nodeId="6827">
+      <Attribute name="angle" type="integer" value="0"/>
+      <Attribute name="missionAllowed" type="boolean" value="true"/>
+      <Attribute name="missionOnlyGrass" type="boolean" value="false"/>
+      <Attribute name="nameIndicatorIndex" type="string" value="1"/>
+      <Attribute name="polygonIndex" type="string" value="0"/>
+      <Attribute name="teleportIndicatorIndex" type="string" value="2"/>
+    </UserAttribute>
+    <UserAttribute nodeId="6887">
+      <Attribute name="angle" type="integer" value="0"/>
+      <Attribute name="missionAllowed" type="boolean" value="true"/>
+      <Attribute name="missionOnlyGrass" type="boolean" value="false"/>
+      <Attribute name="nameIndicatorIndex" type="string" value="1"/>
+      <Attribute name="polygonIndex" type="string" value="0"/>
+      <Attribute name="teleportIndicatorIndex" type="string" value="2"/>
+    </UserAttribute>
+    <UserAttribute nodeId="7059">
       <Attribute name="angle" type="integer" value="0"/>
       <Attribute name="missionAllowed" type="boolean" value="true"/>
       <Attribute name="missionOnlyGrass" type="boolean" value="false"/>

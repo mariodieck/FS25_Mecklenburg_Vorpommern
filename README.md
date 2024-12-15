@@ -18,3 +18,6 @@
 	- Feld 7	Farmland '10'
 	- Feld 8	Farmland '11'
 	- Feld 9	Farmland '14'
+	- Feld 10	Farmland '17'
+	- Feld 11	Farmland '9'
+	- Feld 12	Farmland '56'
