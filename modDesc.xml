@@ -27,4 +27,10 @@
             <iconFilename>preview.png</iconFilename>
         </map>
     </maps>
+	<extraSourceFiles>
+		<sourceFile filename="scripts/SpeedCamera.lua" />
+		<sourceFile filename="scripts/SC_PayFineEvent.lua"/>
+		<!-- <sourceFile filename="scripts/TrafficLightCrossing.lua"/> -->
+	</extraSourceFiles>
+	<l10n filenamePrefix="map/translations/l10n"/>
 </modDesc>

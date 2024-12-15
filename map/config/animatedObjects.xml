@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animatedObjects>
+	<animatedObject index="sawmillAnim">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_produktionON" negText="action_produktionOFF"/>
+        <sounds>
+            <moving file="map/sounds/sawmill.ogg" linkNode="0" volume="50" radius="50" innerRadius="2" />
+		</sounds>
+		<animation initialTime="0" duration="10">
+            <part node="1">
+                <keyFrame time="0.0" 	scale="1 1 1" />
+                <keyFrame time="0.5" 	scale="1 1 0" />
+            </part>
+			<part node="2">
+                <keyFrame time="0.0" 	scale="1 1 0" />
+                <keyFrame time="0.5" 	scale="1 1 1" />
+				<keyFrame time="0.5" 	visibility="false" />
+            </part>
+			<part node="3">
+                <keyFrame time="0.5" 	visibility="false" />
+                <keyFrame time="0.5" 	visibility="true" />
+				<keyFrame time="0.89" 	translation="-2.821 -1.198 20.37" rotation="0 0 0"/>
+				<keyFrame time="0.9" 	translation="-2.821 -1.198 20.38" rotation="0 0 -45"/>
+                <keyFrame time="1" 		visibility="false" />
+            </part>
+			<part node="4">
+                <keyFrame time="0.0" 	rotation="0 0 0" />
+                <keyFrame time="0.89" 	rotation="0 0 0" />
+                <keyFrame time="0.9" 	rotation="0 0 -45" />
+                <keyFrame time="1" 		rotation="0 0 0" />
+            </part>
+        </animation>
+    </animatedObject>
+
+    <animatedObject index="Schweinestall">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+        <sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+		<animation initialTime="0" duration="0.5">
+            <part node="1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="-90 0 0" />
+            </part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>	 
+		 
+    <animatedObject index="Kuhstall1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+        <sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+        <animation initialTime="0" duration="0.5">
+            <part node="1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="-90 0 0" />
+            </part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="Kuhstall2">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+        <sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+        <animation initialTime="0" duration="0.5">
+            <part node="1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="-90 0 0" />
+            </part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="Kuhstall3">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+        <sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+        <animation initialTime="0" duration="0.5">
+            <part node="1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="-90 0 0" />
+            </part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="Unterstand">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+        <sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+        <animation initialTime="0" duration="0.5">
+            <part node="1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="-90 0 0" />
+            </part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<!-- LAGER 1 4 -->
+		<!-- BergehalleLager -->
+		<animatedObject index="BergehalleLagerlights" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="BergehalleLagerRollDoorRight" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleLagerRollDoorLeft" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleLagerRollDoorRightSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleLagerRollDoorLeftSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+
+
+			
+			<!-- Kuhho1-->
+			<!-- Rolltor 1 -->		
+				<animatedObject index="BergehalleRolltor5">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-4.5 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+					</animation>
+				</animatedObject>	
+			<!-- Rolltor 2 -->
+				<animatedObject index="BergehalleRolltor6">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-4.5 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 3 -->
+				<animatedObject index="BergehalleRolltor7">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 2.25" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 -2.25" />
+							<keyFrame time="1.00" translation="0 0 -2.25" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 4 -->
+				<animatedObject index="BergehalleRolltor8">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 2.25" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 -2.25" />
+							<keyFrame time="1.00" translation="0 0 -2.25" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Licht-->
+				<animatedObject index="Bergehallekuhhof1Licht">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+	
+		<!-- Kuhhof2 10 14 -->
+		<!-- Bergehallekuhhof1 -->
+		<animatedObject index="Bergehallekuhhof1lights" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof1rollDoorRight" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof1rollDoorLeft" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof1rollDoorRightSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof1rollDoorLeftSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+			
+		<!-- Bergehallekuhhof2 -->
+		<animatedObject index="Bergehallekuhhof2lights" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof2rollDoorRight" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof2rollDoorLeft" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof2rollDoorRightSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof2rollDoorLeftSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+
+		<!-- Bergehallekuhhof3 -->
+		<animatedObject index="Bergehallekuhhof3lights" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorRight" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorLeft" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorRightSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorLeftSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+
+		<!-- Bergehallekuhhof3 -->
+		<animatedObject index="Bergehallekuhhof3lights" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorRight" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorLeft" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorRightSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="Bergehallekuhhof3rollDoorLeftSide" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+
+		<animatedObject index="hallentoreKuhhof0" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0 0 0"/>
+                    <keyFrame time="1.0" 	translation="1.8 0 0"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0 0 0"/>
+                    <keyFrame time="1.0" 	translation="-1.8 0 0"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		
+		<animatedObject index="hallentoreKuhhof1" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0 0 0"/>
+                    <keyFrame time="1.0" 	translation="1.8 0 0"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0 0 0"/>
+                    <keyFrame time="1.0" 	translation="-1.8 0 0"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		
+		<!-- Schweinehof 10 14 -->
+		<!-- BergehalleSchweinehof -->
+		<animatedObject index="PicBergehalleLichtIndoor14" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="PicBergehalleRolltor12" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="PicBergehalleRolltor13" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="PicBergehalleRolltor11" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="PicBergehalleRolltor10" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+
+		<!-- Schweinehof 10 12 -->
+			<!-- Rolltor 1 -->		
+				<animatedObject index="PicRolltor10">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-1.4 0 0" />
+							<keyFrame time="1.00" translation="-2.7 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="1.4 0 0" />
+							<keyFrame time="1.00" translation="2.7 0 0" />
+						</part>
+					</animation>
+				</animatedObject>	
+			<!-- Rolltor 2 -->
+				<animatedObject index="PicRolltor11">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-1.4 0 0" />
+							<keyFrame time="1.00" translation="-2.7 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="1.4 0 0" />
+							<keyFrame time="1.00" translation="2.7 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 3 -->
+				<animatedObject index="PicRolltor12">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-1.4 0 0" />
+							<keyFrame time="1.00" translation="-2.7 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="1.4 0 0" />
+							<keyFrame time="1.00" translation="2.7 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+		<!-- GetreideAG 15 19 -->
+		<animatedObject index="BergehalleLichtIndoor19" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="BergehalleRolltor18" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleRollDoor17" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleRollDoor16" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleRollDoor15" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		
+				
+		<!-- Technickhof1 20 24 -->
+		<animatedObject index="BergehalleTechnikhofLicht1" >
+            <animation initialTime="0" duration="0.25">
+                <part node="1|0">	<!--index of Lever of the Lightswitch-->
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="60 0 0"/>
+                </part>
+                <part node="2|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 0 -60"/>
+                </part>
+				<part node="3|1">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+            </animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds>
+				<moving file="map/models/lpgBergehalle/sounds/switch.ogg" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+			</sounds>	
+        </animatedObject>
+		<animatedObject index="BergehalleTechnikhof1" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleTechnikhof2" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 -1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 -3.735"/>
+                </part>
+				<part node="2">
+                    <keyFrame time="0.0" 	translation="0.064 0.002 1.226"/>
+                    <keyFrame time="1.0" 	translation="0.064 0.002 3.735"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleTechnikhof3" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 -0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 -0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject index="BergehalleTechnikhof4" >
+            <animation initialTime="0" duration="4">
+                <part node="1">
+                    <keyFrame time="0.0"  translation="0 0.002 0.064"/>
+                    <keyFrame time="1.0"  translation="-5 0.002 0.064"/>
+                </part>
+			</animation>
+            <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+            <sounds>
+                <moving file="map/models/lpgBergehalle/sounds/openRollDoor.ogg" loops="0" linkNode="0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		
+
+			<!-- HofSilo Gosse-->
+				<animatedObject index="HofSilotor1">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="openGosse" negText="closeGosse" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1.00" rotation="0 0 -97" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- LilaBackWerk Gosse-->
+				<animatedObject index="LilaBackWerktor1">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="openGosse" negText="closeGosse" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.75" rotation="0 0 -90" />
+							<keyFrame time="1.00" rotation="0 0 -103" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- GetreideAGDoor Gosse-->
+				<animatedObject index="GetreideAGDoor">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="openGosse" negText="closeGosse" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.75" rotation="0 0 107.9" />
+							<keyFrame time="1.00" rotation="0 0 107.9" />
+						</part>
+						<part node="2"> <!--index of left door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.75" rotation="0 0 -107.9" />
+							<keyFrame time="1.00" rotation="0 0 -107.9" />
+						</part>
+					</animation>
+				</animatedObject>
+					
+			<!-- horsesDoor -->		
+				<animatedObject index="horsesDoor">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds>
+						<moving linkNode="0" template="woodBigDoorLoop" />
+						<posEnd linkNode="0" template="metalDoorsOpen" />
+						<negEnd linkNode="0" template="metalDoorsClose" />
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.75" rotation="0 -100 0" />
+							<keyFrame time="1.00" rotation="0 -107 0" />
+						</part>
+					</animation>
+				</animatedObject>	
+				
+			<!-- Technickhof2 25 29  -->
+			<!-- Rolltor 1 -->		
+				<animatedObject index="BergehalleRolltor25">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-4.5 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+					</animation>
+				</animatedObject>	
+			<!-- Rolltor 2 -->
+				<animatedObject index="BergehalleRolltor26">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="-4.5 0 0" />
+							<keyFrame time="1.00" translation="-4.5 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 3 -->
+				<animatedObject index="BergehalleRolltor27">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 2.25" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 -2.25" />
+							<keyFrame time="1.00" translation="0 0 -2.25" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 4 -->
+				<animatedObject index="BergehalleRolltor28">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 2.25" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 -2.25" />
+							<keyFrame time="1.00" translation="0 0 -2.25" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Licht-->
+				<animatedObject index="BergehalleLichtIndoor29">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds>
+						<moving file="map/sounds/switch01_0.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			
+			<!--  Werkstatt -->
+			<!--  Tuer 1 -->
+				<animatedObject index="WerkstattTor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 -90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!--  Tuer 2 -->
+				<animatedObject index="WerkstattTor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!--  Tor 3 -->
+				<animatedObject index="WerkstattTor3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.8" rotation="0 -90 0" />
+							<keyFrame time="1" rotation="0 -90 0" />
+						</part>
+						<part node="2"> <!--index of right Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.2" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Tor 4 -->
+				<animatedObject index="WerkstattTor4">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.8" rotation="0 -90 0" />
+							<keyFrame time="1" rotation="0 -90 0" />
+						</part>
+						<part node="2"> <!--index of right Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.2" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Tor 5-->
+				<animatedObject index="WerkstattTor5">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="1" translation="0 0 4.52" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Tor 6-->
+				<animatedObject index="WerkstattTor6">
+					<controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" translation="0 0.162 0" />
+							<keyFrame time="1" translation="0 0.162 -4.52" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Licht-->
+				<animatedObject index="WerkstattLichtIndoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+					</animation>	
+				</animatedObject>
+				
+	 <!-- DOORS -->
+    <animatedObject index="DrzwiM0">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+         <sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" translation="2.09 0 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" translation="-2.048 0 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="DrzwiM1">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+     <sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 95 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -95 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="DrzwiM11">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+     <sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -95 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 95 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="engraver">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="startengraver" negText="stopengraver" />
+       <sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> Leiter --> 
+                <keyFrame time="0.8" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 0 75" />
+            </part>
+			 <part node="2|0"> <!-- node -> Engraver -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -90 0" />
+            </part>
+			<part node="2|0|0"> <!-- node -> Engraver -->
+                <keyFrame time="0" rotation="0 20 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 0 0" />
+            </part>
+			<part node="2|0|0|0"> <!-- node -> Engraver -->
+                <keyFrame time="0" rotation="-30 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 0 0" />
+            </part>
+			<part node="2|0|0|0|0"> <!-- node -> Engraver -->
+                <keyFrame time="0" rotation="32 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 0 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="Brama">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+       <sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -110 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 110 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	<animatedObject index="Drzwi">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+       <sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 95 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -95 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	<animatedObject index="DrzwiL0">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+         <sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds> 
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 95 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -95 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+
+	
+		<!-- Lu Lager -->	
+			<!-- Rolldoor elektrisch LPG Lager 1 -->
+				<animatedObject index="LURollDoorLPG">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR" negText="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="6.2">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.00837715 -2.199 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="-0.00837715 -1.37164 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="-0.00837715 -0.570689 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="-0.00837715 0.228289 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.798" translation="-0.00837715 1.0268 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.00837715 1.8471 2.5181" rotation="0 -0 0"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.008 -1.19759 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="-0.008 -0.369226 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="-0.008 0.43172 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="-0.008 1.2307 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.798" translation="-0.008 2.02921 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.008 2.84951 2.5181" rotation="0 -0 29"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0264676 -0.377933 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="-0.0264676 0.450431 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="-0.0264676 1.25138 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="-0.0264676 2.05036 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.798" translation="-0.0264676 2.84887 2.5181" rotation="0 -0 30"/>
+							<Keyframe time="1" translation="-0.388964 3.52313 2.5181" rotation="0 -0 45"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0264676 0.422067 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="-0.0264676 1.25043 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="-0.0264676 2.05138 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="-0.0264676 2.85036 2.5181" rotation="0 -0 30"/>
+							<Keyframe time="0.798" translation="-0.388137 3.50322 2.5181" rotation="0 -0 45"/>
+							<Keyframe time="1" translation="-0.905489 4.05865 2.5181" rotation="0 -0 45"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0264676 1.22207 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="-0.0264676 2.05043 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="-0.0264676 2.85138 2.5181" rotation="0 -0 30"/>
+							<Keyframe time="0.597" translation="-0.412508 3.49108 2.5181" rotation="0 -0 45"/>
+							<Keyframe time="0.798" translation="-0.929033 4.02511 2.5181" rotation="0 -0 45"/>
+							<Keyframe time="1" translation="-1.44638 4.58055 2.5181" rotation="0 -0 45"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0264676 2.01558 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="-0.0264676 2.85043 2.5181" rotation="0 -0 29"/>
+							<Keyframe time="0.396" translation="-0.388477 3.5054 2.5181" rotation="0 -0 45"/>
+							<Keyframe time="0.597" translation="-0.929373 4.02628 2.5181" rotation="0 -0 45"/>
+							<Keyframe time="0.798" translation="-1.4459 4.56031 2.5181" rotation="0 -0 45"/>
+							<Keyframe time="1" translation="-1.76261 4.91513 2.5181" rotation="0 -0 45"/>
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolldoor elektrisch LPG Lager 1_1 -->
+				<animatedObject index="LURollDoorLPG1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR" negText="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="6.2">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="0.00775403 -2.2 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="0.00775403 -1.4023 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="0.00775403 -0.602404 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="0.00775403 0.197584 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.798" translation="0.00775403 0.997831 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="0.00775403 1.79784 2.5181" rotation="0 -0 0"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="0.00775403 -1.19759 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="0.00775403 -0.39989 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="0.00775403 0.400006 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="0.00775403 1.19999 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.798" translation="0.00775403 2.00024 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="0.00775403 2.80025 2.5181" rotation="0 0 -30"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="0.00775403 -0.39759 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="0.00775403 0.40011 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="0.00775403 1.20001 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="0.00775403 1.99999 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.798" translation="0.00775403 2.80024 2.5181" rotation="0 0 -30"/>
+							<Keyframe time="1" translation="0.381609 3.44778 2.5181" rotation="0 0 -45"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="0.00775403 0.40241 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="0.00775403 1.20011 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="0.00775403 2.00001 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.597" translation="0.00775403 2.79999 2.5181" rotation="0 0 -30"/>
+							<Keyframe time="0.798" translation="0.381609 3.44778 2.5181" rotation="0 0 -45"/>
+							<Keyframe time="1" translation="0.910319 3.9765 2.5181" rotation="0 0 -45"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="0.00775403 1.20241 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="0.00775403 2.00011 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.396" translation="0.00775403 2.80001 2.5181" rotation="0 0 -30"/>
+							<Keyframe time="0.597" translation="0.381609 3.44753 2.5181" rotation="0 0 -45"/>
+							<Keyframe time="0.798" translation="0.910319 3.97649 2.5181" rotation="0 0 -45"/>
+							<Keyframe time="1" translation="1.43903 4.50521 2.5181" rotation="0 0 -45"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="0.00775415 2.00241 2.5181" rotation="0 -0 0"/>
+							<Keyframe time="0.195" translation="0.00775415 2.80011 2.5181" rotation="0 0 -30"/>
+							<Keyframe time="0.396" translation="0.381609 3.44754 2.5181" rotation="0 0 -45"/>
+							<Keyframe time="0.597" translation="0.910319 3.97624 2.5181" rotation="0 0 -45"/>
+							<Keyframe time="0.798" translation="1.43903 4.5052 2.5181" rotation="0 0 -45"/>
+							<Keyframe time="1" translation="1.77253 4.83862 2.5181" rotation="0 0 -45"/>
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- LU Lager Tor 3 -->
+				<animatedObject index="LULagerTor3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.8" rotation="0 -120 0" />
+							<keyFrame time="1" rotation="0 -120 0" />
+						</part>
+						<part node="2"> <!--index of right Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.2" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 120 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- LU Lager Tor 4 -->
+				<animatedObject index="LULagerTor4">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.8" rotation="0 -120 0" />
+							<keyFrame time="1" rotation="0 -120 0" />
+						</part>
+						<part node="2"> <!--index of right Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.2" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 120 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- LU Lager Tor 5 -->
+				<animatedObject index="LULagerTor5">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.8" rotation="0 -120 0" />
+							<keyFrame time="1" rotation="0 -120 0" />
+						</part>
+						<part node="2"> <!--index of right Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.2" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 120 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- LU Lager Tor 6  -->
+				<animatedObject index="LULagerTor6">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/door1.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of left Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.8" rotation="0 -120 0" />
+							<keyFrame time="1" rotation="0 -120 0" />
+						</part>
+						<part node="2"> <!--index of right Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.2" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 120 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- LU Lager Tuer 7 -->
+				<animatedObject index="LULagerTor7">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+			<!-- Licht-->
+				<animatedObject index="LULagerLichtIndoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="4|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="5|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<!-- BGA Generatorhaus-->
+			<!-- Rolldoor 1 elektrisch Generatorhaus BGA -->
+				<animatedObject index="BGARollDoorGeneratorHouse1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR" negText="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="7.5">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolldoor 2 elektrisch Generatorhaus BGA -->
+				<animatedObject index="BGARollDoorGeneratorHouse2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR" negText="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR" />
+					<sounds><moving file="map/sounds/OpenElectricDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="7.5">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- BGA Generatorhaus Tuer 1 -->
+				<animatedObject index="BGAGeneratorHouse3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 -90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- BGA Generatorhaus Tuer 2 -->
+				<animatedObject index="BGAGeneratorHouse4">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+					<sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+
+			<!-- BGA Generatorhaus insideLight -->	
+			    <animatedObject index="Generatorlight_inside">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds><moving file="map/sounds/switch01_0.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 -7.5" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+					</animation>
+				</animatedObject>	
+				<animatedObject index="torVier">
+                    <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+                    <sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+                    <animation initialTime="0" duration="8">
+                        <part node="1">
+                            <keyFrame time="0.00" translation="0.001 -0.067 2.214" />
+                            <keyFrame time="1.00" translation="0.001 -0.067 -7.107" />
+                        </part>
+                    </animation>
+                </animatedObject>	
+			
+    <!-- Shed1A -->
+    <animatedObject index="doorRight001">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.25" volume="0.6" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>   
+        <animation initialTime="0" duration="5">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0.05" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" translation="0 0 -7.3" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+    <animatedObject index="doorLeft001">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.25" volume="0.6" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+        <animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="0 0 0" />
+                <keyFrame time="1.00" translation="0 0 7.3"  />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="lightSwitch001">
+			<!-- if only posyKey is given animated has a toggle state behavior  -->
+			<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds><moving file="map/sounds/switch01_0.wav" pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+		<animation initialTime="0" duration="0.01"> <!-- duration -> total time of animation in seconds -->
+			<part node="1">
+				<!-- time must be in range between 0 and 1 -->
+				<keyFrame time="0.00" visibility="false" />
+				<keyFrame time="1" visibility="true" />
+			</part>
+		</animation>
+	</animatedObject>
+    <!-- Shed2A BGA-->
+    <animatedObject index="doorRight10">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.25" volume="0.6" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>   
+        <animation initialTime="0" duration="5">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0.05" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" translation="0 0 -3.1" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+    <animatedObject index="doorLeft10">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <sounds><moving file="map/sounds/OpenDoorSound.wav" linkNode="0" pitchOffset="1.25" volume="0.6" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+        <animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="0 0 0" />
+                <keyFrame time="1.00" translation="0 0 3.1"  />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="lightSwitch10">
+			<!-- if only posyKey is given animated has a toggle state behavior  -->
+			<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+			<sounds><moving file="map/sounds/switch01_0.wav" pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+		<animation initialTime="0" duration="0.01"> <!-- duration -> total time of animation in seconds -->
+			<part node="1">
+				<!-- time must be in range between 0 and 1 -->
+				<keyFrame time="0.00" visibility="false" />
+				<keyFrame time="1" visibility="true" />
+			</part>
+		</animation>
+	</animatedObject>
+	
+	<animatedObject index="single_lh_gate">
+			<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+			<sounds><moving file="map/sounds/OpenGateDoorSound.wav" linkNode="0"  pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /></sounds>
+		<animation initialTime="0" duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0.0" rotation="0 0 0" />
+				<keyFrame time="0.3" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -100 0" />
+			</part>
+			<part node="1|0"> <!--index of riegel-->
+				<keyFrame time="0.0" translation="0 0 0" />
+				<keyFrame time="0.1" translation="0 0 0.12" />
+			</part>
+		</animation>
+	</animatedObject>
+	
+	<!-- Screen-->
+		<animatedObject index="screenClaas">
+			<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_SCREEN_CLICK" negText="input_SCREEN_CLICK" />
+			<sounds>
+				<moving file="map/sounds/switch01_0.wav" pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+				<negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+			</sounds>
+			<animation initialTime="0" duration="0.01">
+			<part node="1">
+				<keyFrame time="0.5" visibility="true" />
+				<keyFrame time="0.51" visibility="false" />
+			</part>
+			<part node="2">
+				<keyFrame time="0.5" visibility="false" />
+				<keyFrame time="0.51" visibility="true" />
+			</part>
+			</animation>
+		</animatedObject>
+	
+	<!-- Tore Haupthof -->
+		<!-- Tor 1 -->
+	<animatedObject index="northGate">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="northGateOpen" negText="northGateClosed" />
+		<openingHours startTime="6" endTime="22" disableIfClosed="true" closedText="$l10n_closedText_Closed"/> 
+        <sounds>
+				<moving file="map/sounds/emotor.wav" loops="1" linkNode="0" volume="2" radius="25" innerRadius="3" fadeOut="0.05"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+            </sounds>
+		<animation initialTime="0" duration="20">
+				<part node="1">
+					<keyFrame time="0.00" translation="0 0 0" />
+					<keyFrame time="1.00" translation="14 0 0"  />
+				</part>
+				<part node="2|0">
+                    <keyFrame time="0.00" rotation="0 0 0"/>
+                    <keyFrame time="1.00" rotation="0 28800 0"/>
+                </part>
+				<part node="2|0|0">
+                    <keyFrame time="0.00" visibility="true"/>
+                    <keyFrame time="0.01" visibility="true"/>
+					<keyFrame time="0.02" visibility="false"/>
+					<keyFrame time="0.99" visibility="true"/>
+                    <keyFrame time="1.00" visibility="true"/>
+                </part>
+				<part node="2|0|1">
+                    <keyFrame time="0.00" visibility="false"/>
+                    <keyFrame time="0.01" visibility="true"/>
+					<keyFrame time="0.99" visibility="true"/>
+                    <keyFrame time="1.00" visibility="false"/>
+                </part>
+		</animation>
+    </animatedObject>	
+	<!-- Tor 2 -->
+	<animatedObject index="southGate">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="southGateOpen" negText="southGateClosed" />
+        <openingHours startTime="6" endTime="22" disableIfClosed="true" closedText="$l10n_closedText_Closed"/>   
+		<sounds>
+                <moving file="map/sounds/emotor.wav" loops="0" linkNode="0" volume="2" radius="25" innerRadius="3" fadeOut="0.05"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+            </sounds>
+		<animation initialTime="0" duration="20">
+				<part node="1">
+					<keyFrame time="0.00" translation="0 0 0" />
+					<keyFrame time="1.00" translation="14 0 0"  />
+				</part>
+				<part node="2|0">
+                    <keyFrame time="0.00" rotation="0 0 0"/>
+                    <keyFrame time="1.00" rotation="0 28800 0"/>
+                </part>
+				<part node="2|0|0">
+                    <keyFrame time="0.00" visibility="true"/>
+                    <keyFrame time="0.01" visibility="true"/>
+					<keyFrame time="0.02" visibility="false"/>
+					<keyFrame time="0.99" visibility="true"/>
+                    <keyFrame time="1.00" visibility="true"/>
+                </part>
+				<part node="2|0|1">
+                    <keyFrame time="0.00" visibility="false"/>
+                    <keyFrame time="0.01" visibility="true"/>
+					<keyFrame time="0.99" visibility="true"/>
+                    <keyFrame time="1.00" visibility="false"/>
+                </part>
+		</animation>
+    </animatedObject>
+	<!-- RollTore -->
+	<animatedObject index="TorWerkstatt">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <openingHours startTime="7" endTime="20" disableIfClosed="true" closedText="$l10n_closedText_Closed"/>   
+		<sounds>
+                <moving file="map/sounds/emotor.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+            </sounds>
+		<animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="-3.089 0 -3.035" />
+                <keyFrame time="1.00" translation="11.5 0 -3.035"  />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="TorRaiffeisen">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <openingHours startTime="6" endTime="22" disableIfClosed="true" closedText="$l10n_closedText_Closed"/>   
+		<sounds>
+                <moving file="map/sounds/emotor.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+            </sounds>
+		<animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="-3.089 0 -3.035" />
+                <keyFrame time="1.00" translation="11.5 0 -3.035"  />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="TorSpinnerei">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <openingHours startTime="7" endTime="18" disableIfClosed="true" closedText="$l10n_closedText_Closed"/>   
+		<sounds>
+                <moving file="map/sounds/emotor.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+            </sounds>
+		<animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="-3.089 0 -3.035" />
+                <keyFrame time="1.00" translation="11.5 0 -3.035"  />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="claasTor">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <openingHours startTime="7" endTime="20" disableIfClosed="true" closedText="$l10n_closedText_Closed"/>   
+		<sounds>
+                <moving file="map/sounds/emotor.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+            </sounds>
+		<animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="-3.089 0 -3.035" />
+                <keyFrame time="1.00" translation="11.5 0 -3.035"  />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="TorSaegewerk">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="input_ANIMATED_OBJECT_OPEN_DOOR" negText="input_ANIMATED_OBJECT_CLOSE_DOOR" />
+        <openingHours startTime="8" endTime="22" disableIfClosed="true" closedText="$l10n_closedText_Closed"/>   
+		<sounds>
+                <moving file="map/sounds/emotor.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <negEnd file="map/sounds/keyclick.ogg" linkNode="0" volume="2" radius="25" innerRadius="3" />
+        </sounds>
+		<animation initialTime="0" duration="5">
+            <part node="1">
+                <keyFrame time="0.05" translation="-3.2 0 -3.035" />
+                <keyFrame time="1.00" translation="8.35 0 -3.035"  />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<!-- Brücke Hafen ab 6:00 Uhr -->
+	<animatedObject index="BruckeHafen6">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="1" posText="openBridge" negText="closeBridge" />                
+		<openingHours startTime="6" endTime="6.15" disableIfClosed="true" closedText="$l10n_closedText_Bridge"/>                
+		<sounds>
+                <moving file="map/sounds/bimel.wav" loops="0" linkNode="1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+		<animation initialTime="0" duration="20">
+            <part node="0|0|4|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|0|3|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|0|2">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 60" />
+            </part>
+            <part node="0|0|1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -60" />
+            </part>
+        </animation>
+    </animatedObject>
+	<!-- Brücke Hafen ab 15:00 Uhr -->
+	<animatedObject index="BruckeHafen15">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="1" posText="openBridge" negText="closeBridge" />                
+		<openingHours startTime="15" endTime="15.15" disableIfClosed="true" closedText="$l10n_closedText_Bridge"/>                
+		<sounds>
+                <moving file="map/sounds/bimel.wav" loops="0" linkNode="1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+		<animation initialTime="0" duration="20">
+            <part node="0|4|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|3|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|2">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 60" />
+            </part>
+            <part node="0|1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -60" />
+            </part>
+        </animation>
+    </animatedObject>
+	<!-- Brücke Hafen ab 20:00 Uhr -->
+	<animatedObject index="BruckeHafen20">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="openBridge" negText="closeBridge" />                
+		<openingHours startTime="20" endTime="20.15" disableIfClosed="true" closedText="$l10n_closedText_Bridge"/>                
+		<sounds>
+                <moving file="map/sounds/bimel.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+		<animation initialTime="0" duration="20">
+            <part node="4|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="3|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="2">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 60" />
+            </part>
+            <part node="1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -60" />
+            </part>
+        </animation>
+    </animatedObject>
+
+	<!-- Brücke GetreideAG ab 8:00 Uhr -->
+	<animatedObject index="BruckeGetreideAG8">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="1" posText="openBridge" negText="closeBridge" />                
+		<openingHours startTime="8" endTime="8.15" disableIfClosed="true" closedText="$l10n_closedText_Bridge"/>                
+		<sounds>
+                <moving file="map/sounds/bimel.wav" loops="0" linkNode="1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+		<animation initialTime="0" duration="20">
+            <part node="0|0|4|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|0|3|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|0|2">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 60" />
+            </part>
+            <part node="0|0|1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -60" />
+            </part>
+        </animation>
+    </animatedObject>
+	<!-- Brücke GetreideAG ab 12:00 Uhr -->
+	<animatedObject index="BruckeGetreideAG12">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="1" posText="openBridge" negText="closeBridge" />                
+		<openingHours startTime="12" endTime="12.15" disableIfClosed="true" closedText="$l10n_closedText_Bridge"/>                
+		<sounds>
+                <moving file="map/sounds/bimel.wav" loops="1" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+		<animation initialTime="0" duration="20">
+            <part node="0|4|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|3|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="0|2">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 60" />
+            </part>
+            <part node="0|1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -60" />
+            </part>
+        </animation>
+    </animatedObject>
+	<!-- Brücke GetreideAG ab 18:00 Uhr -->
+	<animatedObject index="BruckeGetreideAG18">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="openBridge" negText="closeBridge" />                
+		<openingHours startTime="18" endTime="18.15" disableIfClosed="true" closedText="$l10n_closedText_Bridge"/>                
+		<sounds>
+                <moving file="map/sounds/bimel.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+		<animation initialTime="0" duration="20">
+            <part node="4|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="3|0">
+                <keyFrame time="0" rotation="0 0 90" />
+                <keyFrame time="0.05" rotation="0 0 180" />
+                <keyFrame time="1" rotation="0 0 180" />
+            </part>
+            <part node="2">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 60" />
+            </part>
+            <part node="1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="0.1555" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -60" />
+            </part>
+        </animation>
+    </animatedObject>
+
+	<!-- SPEED RADARS -->
+	<animatedObject index="radarOnOff" saveId="radarOnOff" >
+       <animation duration="0.01">
+          <part node="0">
+               <keyFrame time="0.0" scale="1 1 1"/>
+               <keyFrame time="1.0" scale="0 0 0"/>
+           </part>
+       </animation>
+		<controls triggerNode="1|0" posAction="ACTIVATE_HANDTOOL" posText="action_radarOn" negText="action_radarOff" />
+           <sounds>
+               <moving file="map/sounds/keyclick.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+           </sounds>
+     </animatedObject>
+	 
+	 <!-- Traffic Lights -->
+	<animatedObject index="trafficLightsOnOff" saveId="trafficLightsOnOff" >
+       <animation duration="0.01">
+          <part node="0">
+               <keyFrame time="0.0" scale="1 1 1"/>
+               <keyFrame time="1.0" scale="0 0 0"/>
+           </part>
+       </animation>
+		<controls triggerNode="1" posAction="ACTIVATE_HANDTOOL" posText="action_trafficLightsOn" negText="action_trafficLightsOff" />
+           <sounds>
+               <moving file="map/sounds/keyclick.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+           </sounds>
+     </animatedObject>
+</animatedObjects>

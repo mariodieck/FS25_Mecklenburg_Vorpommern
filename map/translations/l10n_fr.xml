@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>DtP Mario</translationContributors>
+    <texts>
+		<!-- Früchte -->
+		<text name="fillType_rye"										text="Seigle" />
+		<text name="fillType_GreenRye"									text="Seigle vert" />
+		<text name="fillType_carrot"									text="Carottes" />
+		<text name="fillType_poppy"										text="Coquelicot" />
+		<text name="fillType_lavender"									text="Lavande" />
+		<text name="fillType_hops"										text="Houblon" />
+		<text name="fillType_onion"										text="Oignons" />
+		
+		<!-- Allgemeines -->
+		<text name="groundType_concretetilesalpine"						text="Platte 2" />
+		<text name="groundType_plate"									text="Platte 1" />
+		<text name="groundType_grasscliff"								text="Kopfsteinpflaster" />
+		<text name="closedText_Closed"									text="Fermé" />
+        <text name="input_SCREEN_CLICK"									text="changer d'écran" />
+		<text name="modtitle" 											text="Brasserie Stralsund" />
+		<text name="filltype_wheatbeer" 								text="bière de blé" />
+		<text name="filltype_barleybeer" 								text="bière d'orge" />
+		<text name="filltype_honeybeer" 								text="bière au miel " />
+		<text name="filltype_strawberrybeer" 							text="bière à la fraise" />
+		<text name="brewery_factory" 									text="Brasserie Stralsund" />
+		<text name="brewery_sellpoint" 									text="Brasserie - maison de la bière" />
+		<text name="pallet_barleybeer" 									text="Bière d'orge palette" />
+		<text name="pallet_wheatbeer" 									text="Palette bière blanche" />
+		<text name="pallet_honeybeer" 									text="Palette bière au miel" />
+		<text name="pallet_strawberrybeer" 								text="Palette fraise bière" />
+		<text name="brewery_beerPub" 									text="Pub avec bière" />
+		<text name="shopItem_seedFactory"								text="Usine de semences et d'engrais" />
+		<text name="function_seedFactory"								text="Une usine de production de semences ou d'engrais." />
+		
+		<!-- Brückenzug -->
+		<text name="closedText_Bridge"									text="train-pont" />
+		<text name="openBridge"											text="pont ouvert" />
+		<text name="closeBridge"										text="fermer le pont" />
+		
+		<!-- Gossen / Getreidebunker -->
+		<text name="openGosse"											text="gouttière ouverte" />
+		<text name="closeGosse"											text="fermer la gouttière" />
+		
+		<!-- Stecher / Probenehmer  -->
+		<text name="startengraver"										text="Démarrer l'échantillonneur" />
+		<text name="stopengraver"										text="arrêter l'échantillonneur" />
+		
+		<!-- Lichtschalter -->
+		<text name="action_lightSwitchON"								text="lumière allumée" />
+        <text name="action_lightSwitchOFF"								text="lumière éteinte" />	
+		
+		<!-- Tore -->
+		<text name="northGateOpen"										text="porte nord ouverte" />
+		<text name="northGateClosed"									text="Fermer la porte nord" />
+		<text name="southGateOpen"										text="Porte sud ouverte" />
+		<text name="southGateClosed"									text="Fermer la porte sud" />
+		<text name="input_ANIMATED_OBJECT_OPEN_DOOR"  					text="porte ouverte" />
+        <text name="input_ANIMATED_OBJECT_CLOSE_DOOR"  					text="fermer la porte" />
+		<text name="input_ANIMATED_OBJECT_OPEN_ROLLDOOR"   				text="Ouvrir la porte roulante" />
+        <text name="input_ANIMATED_OBJECT_CLOSE_ROLLDOOR"    			text="fermer la porte roulante" />
+		<text name="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR"    	text="Ouvrir la porte roulante électrique" />
+        <text name="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR"    	text="Fermer la porte roulante électrique" />
+		<text name="action_openPipe"  									text="rallonger le tuyau" />
+        <text name="action_closePipe"  									text="rétracter le tuyau" />
+		<text name="action_openWindow"  								text="Ouvrez la fenêtre" />
+        <text name="action_closeWindow"  								text="Ferme la fenêtre" />
+
+		<!-- Blitzer -->
+		<text name="VehicleRadar_Default" 								text="Vous avez été trop flashé à %1dkm/h et devez payer %s." />
+		<text name="VehicleRadar_info" 									text="%s€ pour excès de vitesse" />
+		<text name="action_radarOn" 									text="Désactiver les radars" />
+		<text name="action_radarOff" 									text="Activer le clignotant" />
+		<!-- Ampeln -->
+		<text name="action_trafficLightsOff" 							text="Activer les feux de circulation" />
+		<text name="action_trafficLightsOn" 							text="Désactiver les feux de circulation" />
+		
+		<!-- Fahrzeuge -->
+		<text name="function_haulmTopperOnion"							text="Cet effeuilleur élimine les fanes avant que les oignons ne soient récoltés." />
+
+	</texts>
+</l10n>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Copyright (C) Lampovo Project(Made the shader work), Razor Modding Team(Skinning Error) (21.11.2024) -->
+
 <CustomShader version="5">
     <Parameters>
         <Parameter name="scratches_dirt_snow_wetness" target="scratches_dirt_snow_wetness" type="float4" group="base"                    defaultValue="0.0 0.0 0.0 0.0"       minValue = "0.0 0.0 0.0 0.0"          maxValue = "1.0 1.0 1.0 50.0"/>
@@ -60,9 +62,9 @@
         <UvUsage textureName="mTrackArray"    uvType="custom"/>
     </UvUsages>
     <Textures>
-        <Texture name = "mArraySpecular" group="base"  type = "2dArray" defaultColorProfile = "linearRGB" defaultFilename = "detailArray_specular.png"/>
-        <Texture name = "mArrayNormal"   group="base"  type = "2dArray" defaultColorProfile = "linearRGB" defaultFilename = "detailArray_normal.png"/>
-        <Texture name = "mArrayDiffuse"  group="base"  type = "2dArray" defaultColorProfile = "sRGB"      defaultFilename = "detailArray_diffuse.png"/>
+        <Texture name = "mArraySpecular" group="base"  type = "2dArray" defaultColorProfile = "linearRGB" defaultFilename = "$data/fs22support/shared/detailArray_specular.png"/>
+        <Texture name = "mArrayNormal"   group="base"  type = "2dArray" defaultColorProfile = "linearRGB" defaultFilename = "$data/fs22support/shared/detailArray_normal.png"/>
+        <Texture name = "mArrayDiffuse"  group="base"  type = "2dArray" defaultColorProfile = "sRGB"      defaultFilename = "$data/fs22support/shared/detailArray_diffuse.png"/>
         <Texture name = "mTrackArray"    group="track" type = "2dArray" defaultColorProfile = "linearRGB" />
     </Textures>
     <VertexAttributes>
@@ -1367,14 +1369,14 @@ float3 getMotionPathPos(VS_INPUT In, ObjectParameters& object, float4 mPosition,
 {
     // with skinning support
     float3 mDeformed = In.position.xyz;
-    #if defined( SHAKING )
-        mDeformed = getShakingPos(In, object, object.shaking, cTime_s);
-    #endif
     #if defined( WIND_BENDING )
         mDeformed = bendToWind(In, object, In.position.xyz, object.directionBend, cTime_s);
     #endif
-    #if defined(SKINNING)
-        return skinPoint(mDeformed.xyz, In, instance) - float3(invViewMatrix[0][3], invViewMatrix[1][3], invViewMatrix[2][3]);
+    #if defined( SHAKING )
+        mDeformed = getShakingPos(In, object, object.shaking, cTime_s);
+    #endif
+    #if defined( SKINNING )
+        return skinPoint(mDeformed.xyz, In, instance, object);
     #else
         return mDeformed;
     #endif
@@ -1418,14 +1420,14 @@ float3 getMotionPathPos(VS_INPUT In, ObjectParameters& object, float4 mPosition,
 {
     // with skinning support
     float3 mDeformed = In.position.xyz;
-    #if defined( SHAKING )
-        mDeformed = getShakingPos(In, object, object.prevShaking, cPrevTime_s);
-    #endif
     #if defined( WIND_BENDING )
         mDeformed = bendToWind(In, object, In.position.xyz, object.prevDirectionBend, cPrevTime_s);
     #endif
-    #if defined(SKINNING)
-        return skinPrevPoint(mDeformed.xyz, In, instance) - float3(invViewMatrix[0][3], invViewMatrix[1][3], invViewMatrix[2][3]);
+    #if defined( SHAKING )
+        mDeformed = getShakingPos(In, object, object.prevShaking, cPrevTime_s);
+    #endif
+    #if defined( SKINNING )
+        return skinPrevPoint(mDeformed.xyz, In, instance, object);
     #else
         return mDeformed;
     #endif
@@ -1654,19 +1656,30 @@ float fitRange(float mIn,float mOldMin,float mOldMax ,float mNewMin ,float mNewM
         float3 mAbsNormal   = abs(In.vs.localNormal);
         mAbsNormal /= (mAbsNormal.x + mAbsNormal.y + mAbsNormal.z);
         float2 uvs = mAbsNormal.x > mAbsNormal.y ? (mAbsNormal.x > mAbsNormal.z ? In.vs.texCoordsX : In.vs.texCoordsZ) : (mAbsNormal.y > mAbsNormal.z ? In.vs.texCoordsY : In.vs.texCoordsZ);
-        globals.gDetailSpecular = tex2DSample( mArraySpecular, standardMaterialSampler, uvs, aIndex );
-        globals.gDetailNormal   = tex2DSample( mArrayNormal,   standardMaterialSampler, uvs, aIndex );
-        globals.gDetailDiffuse  = tex2DSample( mArrayDiffuse,  standardMaterialSampler, uvs, aIndex );
+        float4 tempDetailSpecular = tex2DSample(mArraySpecular, standardMaterialSampler, uvs, aIndex);
+        globals.gDetailSpecular = float3(tempDetailSpecular.x, tempDetailSpecular.y, tempDetailSpecular.z);
+        
+        float4 tempDetailNormal = tex2DSample(mArrayNormal, standardMaterialSampler, uvs, aIndex);
+        globals.gDetailNormal = float3(tempDetailNormal.x, tempDetailNormal.y, tempDetailNormal.z);
+        
+        float4 tempDetailDiffuse = tex2DSample(mArrayDiffuse, standardMaterialSampler, uvs, aIndex);
+        globals.gDetailDiffuse = float3(tempDetailDiffuse.x, tempDetailDiffuse.y, tempDetailDiffuse.z);
         // Scratches
-        float3 mScratchesSpecular = tex2DSample( mArraySpecular, standardMaterialSampler, uvs, 8 ); //float3(0.85,1.0,1.0);
-        float3 mScratchesNormal   = float3(0.5,0.5,1.0);
-        globals.gDetailSpecular   = lerp(globals.gDetailSpecular,mScratchesSpecular,globals.gScratchesMask);
-        globals.gDetailNormal     = lerp(globals.gDetailNormal,mScratchesNormal,globals.gScratchesMask);
+        float4 tempScratchesSpecular = tex2DSample(mArraySpecular, standardMaterialSampler, uvs, 8);
+        float3 mScratchesSpecular = float3(tempScratchesSpecular.x, tempScratchesSpecular.y, tempScratchesSpecular.z);
+        float3 mScratchesNormal = float3(0.5, 0.5, 1.0);
+        globals.gDetailSpecular = lerp(globals.gDetailSpecular, mScratchesSpecular, globals.gScratchesMask);
+        globals.gDetailNormal = lerp(globals.gDetailNormal, mScratchesNormal, globals.gScratchesMask);
+        
         // Dirt
-        float3 mDirtSpecular    = tex2DSample( mArraySpecular, standardMaterialSampler, uvs, 15 );
-        float3 mDirtNormal      = tex2DSample( mArrayNormal,   standardMaterialSampler, uvs, 15 );
-        globals.gDetailSpecular = lerp(globals.gDetailSpecular,mDirtSpecular,globals.gDirtMask);
-        globals.gDetailNormal   = lerp(globals.gDetailNormal,mDirtNormal,globals.gDirtMask);
+        float4 tempDirtSpecular = tex2DSample(mArraySpecular, standardMaterialSampler, uvs, 15);
+        float3 mDirtSpecular = float3(tempDirtSpecular.x, tempDirtSpecular.y, tempDirtSpecular.z);
+        
+        float4 tempDirtNormal = tex2DSample(mArrayNormal, standardMaterialSampler, uvs, 15);
+        float3 mDirtNormal = float3(tempDirtNormal.x, tempDirtNormal.y, tempDirtNormal.z);
+        
+        globals.gDetailSpecular = lerp(globals.gDetailSpecular, mDirtSpecular, globals.gDirtMask);
+        globals.gDetailNormal = lerp(globals.gDetailNormal, mDirtNormal, globals.gDirtMask);
     }
     globals.gDetailNormal = 2.0*globals.gDetailNormal - 1.0;
     {

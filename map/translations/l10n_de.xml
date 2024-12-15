@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>DtP Mario</translationContributors>
+    <texts>
+		<!-- Früchte -->
+		<text name="fillType_rye"										text="Roggen" />
+		<text name="fillType_GreenRye"									text="Grünroggen" />
+		<text name="fillType_carrot"									text="Karotten" />
+		<text name="fillType_poppy"										text="Mohn" />
+		<text name="fillType_lavender"									text="Lavendel" />
+		<text name="fillType_hops"										text="Hopfen" />
+		<text name="fillType_onion"										text="Zwiebeln" />
+		<text name="fillType_GreenRyeWindrow"							text="Grünroggenschwad" />
+
+		<!-- Allgemeines -->
+		<text name="groundType_concretetilesalpine"						text="Platte 2" />
+		<text name="groundType_plate"									text="Platte 1" />
+		<text name="groundType_grasscliff"								text="Kopfsteinpflaster" />
+		<text name="closedText_Closed"									text="Geschlossen" />
+        <text name="input_SCREEN_CLICK"									text="Bildschirm umschalten" />
+		<text name="modtitle" 											text="Stralsunder Brauerei" />
+		<text name="filltype_wheatbeer" 								text="Weizenbier" />
+		<text name="filltype_barleybeer" 								text="Gerstenbier" />
+		<text name="filltype_honeybeer" 								text="Honigbier " />
+		<text name="filltype_strawberrybeer" 							text="Erdbeerbier" />
+		<text name="brewery_factory" 									text="Stralsunder Brauerei" />
+		<text name="brewery_sellpoint" 									text="Brauerei - Bierhaus" />
+		<text name="pallet_barleybeer" 									text="Palette Gerstenbier" />
+		<text name="pallet_wheatbeer" 									text="Palette Weizenbier" />
+		<text name="pallet_honeybeer" 									text="Palette Honigbier" />
+		<text name="pallet_strawberrybeer" 								text="Palette Erdbeerbier" />
+		<text name="brewery_beerPub" 									text="Pub w beer" />
+		<text name="action_produktionON" 								text="Produktion starten" />
+		<text name="action_produktionOFF" 								text="Produktion beenden" />
+		<text name="shopItem_seedFactory"								text="Saat- und Düngemittelfabrik" />
+		<text name="function_seedFactory"								text="Eine Fabrik zur Herstellung von Saatgut oder Düngemitteln." />
+
+		<!-- Brückenzug -->
+		<text name="closedText_Bridge"									text="Brückenzug" />
+		<text name="openBridge"											text="Brücke öffnen" />
+		<text name="closeBridge"										text="Brücke schließen" />
+		
+		<!-- Gossen / Getreidebunker -->
+		<text name="openGosse"											text="Gosse öffnen" />
+		<text name="closeGosse"											text="Gosse schließen" />
+		
+		<!-- Stecher / Probenehmer  -->
+		<text name="startengraver"										text="Probenstecher starten" />
+		<text name="stopengraver"										text="Probenstecher stopen" />
+		
+		<!-- Lichtschalter -->
+		<text name="action_lightSwitchON"								text="Licht an" />
+        <text name="action_lightSwitchOFF"								text="Licht aus" />	
+		
+		<!-- Tore -->
+		<text name="northGateOpen"										text="Nordtor öffnen" />
+		<text name="northGateClosed"									text="Nordtor schließen" />
+		<text name="southGateOpen"										text="Südtor öffnen" />
+		<text name="southGateClosed"									text="Südtor schließen" />
+		<text name="input_ANIMATED_OBJECT_OPEN_DOOR"  					text="Tor öffnen" />
+        <text name="input_ANIMATED_OBJECT_CLOSE_DOOR"  					text="Tor schließen" />
+		<text name="input_ANIMATED_OBJECT_OPEN_ROLLDOOR"   				text="Rolltor öffnen" />
+        <text name="input_ANIMATED_OBJECT_CLOSE_ROLLDOOR"    			text="Rolltor schließen" />
+		<text name="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR"    	text="Elektrorolltor öffnen" />
+        <text name="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR"    	text="Elektrorolltor schließen" />
+		<text name="action_openPipe"  									text="Rohr ausfahren" />
+        <text name="action_closePipe"  									text="Rohr einfahren" />
+		<text name="action_openWindow"  								text="Fenster öffnen" />
+        <text name="action_closeWindow"  								text="Fenster schließen" />
+
+		<!-- Blitzer -->
+		<text name="VehicleRadar_Default" 								text="Du wurdest mit %1dkm/h zuviel geblitzt und musst %s bezahlen." />
+		<text name="VehicleRadar_info" 									text="%s€ für zu schnelles Fahren" />
+		<text name="action_radarOn" 									text="Blitzer deaktivieren" />
+		<text name="action_radarOff" 									text="Blitzer aktivieren" />
+		<!-- Ampeln -->
+		<text name="action_trafficLightsOff" 							text="Ampeln aktivieren " />
+		<text name="action_trafficLightsOn" 							text="Ampeln deaktivieren" />
+		
+		<!-- Fahrzeuge -->
+		<text name="function_haulmTopperOnion"							text="Dieser Krautschläger entfernt das Kraut bevor die Zwiebeln geerntet werden können." />
+
+	</texts>
+</l10n>

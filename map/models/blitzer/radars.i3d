@@ -2,72 +2,117 @@
 
 <i3D name="radars.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
   </Asset>
 
   <Files>
-    <File fileId="5" filename="vehicleShader.xml"/>
-    <File fileId="3" filename="$data/shared/default_normal.png"/>
-    <File fileId="4" filename="$data/shared/default_specular.png"/>
-    <File fileId="15" filename="$data/shared/window_diffuse.dds"/>
-    <File fileId="14" filename="$data/shared/window_specular.png"/>
-    <File fileId="9" filename="clearGlass03_diffuse.dds"/>
-    <File fileId="16" filename="holz_diffuse.dds"/>
-    <File fileId="17" filename="holz_normal.dds"/>
-    <File fileId="12" filename="speedCamGlass_diffuse.dds"/>
-    <File fileId="13" filename="../car/speedCamGlass_diffuse.png"/>
-    <File fileId="10" filename="speedCamera.png"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="20" filename="$data/shared/default_specular.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/metallic/clear_diffuse.dds"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/metallic/clear_specular.dds"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.dds"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.dds"/>
+    <File fileId="28" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="23" filename="$data/shared/window_specular.png"/>
+    <File fileId="14" filename="clearGlass03_diffuse.dds"/>
+    <File fileId="27" filename="detailArray_diffuse.png"/>
+    <File fileId="26" filename="detailArray_normal.png"/>
+    <File fileId="25" filename="detailArray_specular.png"/>
+    <File fileId="21" filename="flashLight_emissive.dds"/>
+    <File fileId="31" filename="holz_diffuse.dds"/>
+    <File fileId="32" filename="holz_normal.dds"/>
+    <File fileId="30" filename="speedCamGlass_diffuse.dds"/>
+    <File fileId="18" filename="speedCamera.png"/>
+    <File fileId="24" filename="vehicleShader.xml"/>
+    <File fileId="22" filename="../car/speedCamGlass_diffuse.png"/>
+    <File fileId="13" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_vmask.dds"/>
+    <File fileId="29" filename="$data/shared/window_diffuse.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="acmat_1" materialId="125" specularColor="1 1 0.2">
-      <Texture fileId="10"/>
+    <Material name="acmat_1" materialId="21" specularColor="1 1 0.2">
+      <Texture fileId="18"/>
     </Material>
-    <Material name="Default" materialId="512" diffuseColor="1 1 1 1" alphaBlending="true">
+    <Material name="Default" materialId="26" diffuseColor="1 1 1 1" alphaBlending="true">
     </Material>
-    <Material name="flash_Mat" materialId="635" customShaderId="5" customShaderVariation="staticLight">
-      <Normalmap fileId="3"/>
-      <Glossmap fileId="4"/>
+    <Material name="flash_Mat" materialId="34" customShaderId="24" customShaderVariation="staticLight">
+      <Texture fileId="30"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="mArraySpecular" fileId="25"/>
+      <Custommap name="mArrayNormal" fileId="26"/>
+      <Custommap name="mArrayDiffuse" fileId="27"/>
       <CustomParameter name="colorMat0" value="0 0 0 27"/>
-      <CustomParameter name="lightControl" value="0 0 0 1"/>
     </Material>
-    <Material name="flash_Mat" materialId="636" customShaderId="5" customShaderVariation="staticLight">
-      <Texture fileId="12"/>
-      <Normalmap fileId="3"/>
-      <Glossmap fileId="4"/>
-      <CustomParameter name="colorMat0" value="0 0 0 27"/>
-      <CustomParameter name="lightControl" value="0 0 0 1"/>
+    <Material name="flash_Mat" materialId="13887" diffuseColor="0 0 0 1">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="20"/>
     </Material>
-    <Material name="holz_mat" materialId="718">
-      <Texture fileId="16"/>
-      <Normalmap fileId="17"/>
+    <Material name="flash_Mat" materialId="13890" diffuseColor="1 0 0 1">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Emissivemap fileId="21"/>
     </Material>
-    <Material name="lambert1" materialId="812" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="flashLight_mat" materialId="13760" diffuseColor="0 0 0 1" customShaderId="4">
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
     </Material>
-    <Material name="lense_Mat" materialId="1054" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
-      <Texture fileId="13"/>
-      <Normalmap fileId="3"/>
-      <Glossmap fileId="14"/>
+    <Material name="flashLight_mat" materialId="13838" diffuseColor="1 0 0 1" customShaderId="13" customShaderVariation="staticLight">
+      <CustomParameter name="lightControl" value="10"/>
+      <CustomParameter name="baseColor" value="0 0 0 0"/>
+    </Material>
+    <Material name="holz_mat" materialId="37">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+    </Material>
+    <Material name="lambert1" materialId="38" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lense_Mat" materialId="44" alphaBlending="true" customShaderId="24" customShaderVariation="staticLight">
+      <Texture fileId="22"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="mArraySpecular" fileId="25"/>
+      <Custommap name="mArrayNormal" fileId="26"/>
+      <Custommap name="mArrayDiffuse" fileId="27"/>
       <CustomParameter name="colorMat0" value="0 0.55 0.05 1"/>
       <CustomParameter name="colorMat1" value="0 0 0.02 27"/>
     </Material>
-    <Material name="saeule_mat" materialId="1382" diffuseColor="0.239216 0.239216 0.239216 1" customShaderId="5" customShaderVariation="colorMask">
-      <Normalmap fileId="3"/>
-      <Glossmap fileId="4"/>
-      <CustomParameter name="RDT" value="1 1 0 0"/>
-      <CustomParameter name="colorMat0" value="0.249 0.249 0.249 6"/>
+    <Material name="saeule_mat" materialId="13394" diffuseColor="1 1 1 1" customShaderId="4">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.3 0.3 0.3"/>
     </Material>
-    <Material name="windows_mat" materialId="1617" alphaBlending="true" customShaderId="5">
-      <Texture fileId="9"/>
-      <Normalmap fileId="3"/>
-      <CustomParameter name="RDT" value="1 1 0 0"/>
+    <Material name="windows_mat" materialId="13439" alphaBlending="true">
+      <Texture fileId="14"/>
+      <Normalmap fileId="2"/>
     </Material>
-    <Material name="windowSpeedCar_mat2" materialId="1621" customShaderId="5">
-      <Texture fileId="15"/>
-      <Normalmap fileId="3"/>
-      <Glossmap fileId="14"/>
-      <CustomParameter name="RDT" value="1 0 0 0"/>
+    <Material name="windowSpeedCar_mat2" materialId="13843">
+      <Texture fileId="28"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="windowSpeedCar_mat2" materialId="74" customShaderId="24">
+      <Texture fileId="28"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="mArraySpecular" fileId="25"/>
+      <Custommap name="mArrayNormal" fileId="26"/>
+      <Custommap name="mArrayDiffuse" fileId="27"/>
+    </Material>
+    <Material name="windowSpeedCar_mat2" materialId="13882">
+      <Texture fileId="29"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="23"/>
     </Material>
   </Materials>
 
@@ -75,155 +120,155 @@
   <Shapes externalShapesFile="radars.i3d.shapes">
   </Shapes>
 
-
-  <Dynamics>
-  </Dynamics>
-
   <Scene>
-      <TransformGroup name="radars" nodeId="47643">
-        <TransformGroup name="on_off" nodeId="47644">
-          <TransformGroup name="radar01" translation="360.516 89.724 -481.137" rotation="180 27.038 180" nodeId="47645">
-            <TransformGroup name="radar" translation="0 0 1.52588e-05" rotation="0 -0 2.03555e-13" nodeId="47646">
-              <Shape shapeId="1" name="trigger" translation="-5.59581 1.346 0.0801068" rotation="0 2.451 0" static="true" trigger="true" collisionMask="6291456" nodeId="47647" materialIds="512" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="2" name="speedRadar" kinematic="true" clipDistance="500" nodeId="47648" materialIds="1382" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="3" name="flash" translation="0.00244348 1.60909 0.0614496" scale="3.05599 17.1435 30" clipDistance="300" nodeId="47649" materialIds="635" castsShadows="true" receiveShadows="true"/>
-                <Light name="redLight" translation="0 1.57424 0.124" visibility="false" nodeId="47650" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12">
-                  <Light name="redLight" translation="0 -0.766691 0.016" nodeId="47651" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                  <Light name="redLight" translation="0 -0.766691 -0.25" nodeId="47652" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                  <Light name="redLight" translation="0 0.756146 0.016" nodeId="47653" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                  <Light name="redLight" translation="0 0.756146 -0.25" nodeId="47654" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                  <Light name="redLight" translation="0 -0.00653725 -0.25" nodeId="47655" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                  <Light name="redLight" translation="0 0 -0.0417412" nodeId="47656" type="point" color="2 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="30">
-                    <Light name="redLight" translation="0 -0.766691 0" nodeId="47657" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                    <Light name="redLight" translation="0 -0.766691 -0.135" nodeId="47658" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                    <Light name="redLight" translation="0 0.756146 0" nodeId="47659" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                    <Light name="redLight" translation="0 0.756146 -0.135" nodeId="47660" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                    <Light name="redLight" translation="0 -0.00653725 -0.135" nodeId="47661" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
-                  </Light>
+    <TransformGroup name="radars" nodeId="546">
+      <TransformGroup name="on_off" nodeId="547">
+        <TransformGroup name="radar01" translation="360.516 89.724 -481.137" rotation="180 27.038 180" nodeId="548">
+          <TransformGroup name="radar" translation="0 0 1.52588e-05" rotation="0 -0 2.03555e-13" nodeId="549">
+            <Shape name="trigger" translation="-5.59581 1.346 0.0801068" rotation="0 2.451 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x3e119080" collisionFilterMask="0x3e119080" nodeId="550" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="26"/>
+            <Shape name="speedRadar" shapeId="2" kinematic="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="551" castsShadows="true" receiveShadows="true" materialIds="13394">
+              <Light name="redLight" translation="0 1.57424 0.124" visibility="false" nodeId="553" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12">
+                <Light name="redLight" translation="0 -0.766691 0.016" nodeId="554" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                <Light name="redLight" translation="0 -0.766691 -0.25" nodeId="555" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                <Light name="redLight" translation="0 0.756146 0.016" nodeId="556" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                <Light name="redLight" translation="0 0.756146 -0.25" nodeId="557" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                <Light name="redLight" translation="0 -0.00653725 -0.25" nodeId="558" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                <Light name="redLight" translation="0 0 -0.0417412" nodeId="559" type="point" color="2 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" range="30">
+                  <Light name="redLight" translation="0 -0.766691 0" nodeId="560" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                  <Light name="redLight" translation="0 -0.766691 -0.135" nodeId="561" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                  <Light name="redLight" translation="0 0.756146 0" nodeId="562" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                  <Light name="redLight" translation="0 0.756146 -0.135" nodeId="563" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                  <Light name="redLight" translation="0 -0.00653725 -0.135" nodeId="564" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
                 </Light>
-                <Shape shapeId="4" name="windows" translation="-0.004 -0.008 0" scale="1 1.005 1" clipDistance="250" nodeId="47662" materialIds="1617" castsShadows="true" receiveShadows="true"/>
-              </Shape>
-            </TransformGroup>
-          </TransformGroup>
-          <TransformGroup name="radar02" translation="138.847 92.1223 -894.008" rotation="0 -8.387 1.723e-05" clipDistance="100" nodeId="47663">
-            <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="47664">
-              <Shape shapeId="5" name="trigger" translation="2.62653 1.27078 2.42749" static="true" trigger="true" collisionMask="6291456" nodeId="47665" materialIds="512" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="6" name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" kinematic="true" clipDistance="250" nodeId="47666" materialIds="125" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="3" name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" clipDistance="300" nodeId="47667" materialIds="636" castsShadows="true" receiveShadows="true"/>
-                <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="47668" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="30"/>
-                <Shape shapeId="7" name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" clipDistance="50" nodeId="47669" materialIds="1054" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47670" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47671" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-              </Shape>
-            </TransformGroup>
-          </TransformGroup>
-          <TransformGroup name="radar03" translation="15.7076 92.1171 -879.347" rotation="180 -6.07815 -180" clipDistance="100" nodeId="47672">
-            <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="47673">
-              <Shape shapeId="5" name="trigger" translation="2.62654 1.27078 2.42742" rotation="0 4.26887e-07 -6.10666e-13" static="true" trigger="true" collisionMask="6291456" nodeId="47674" materialIds="512" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="6" name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" kinematic="true" clipDistance="250" nodeId="47675" materialIds="125" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="3" name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" clipDistance="300" nodeId="47676" materialIds="636" castsShadows="true" receiveShadows="true"/>
-                <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="47677" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="30"/>
-                <Shape shapeId="7" name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" clipDistance="50" nodeId="47678" materialIds="1054" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47679" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47680" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-              </Shape>
-            </TransformGroup>
-          </TransformGroup>
-          <TransformGroup name="radar04" translation="29.3709 119.582 -168.988" rotation="180 -4.28394 -180" clipDistance="100" nodeId="47681">
-            <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="47682">
-              <Shape shapeId="5" name="trigger" translation="2.62653 1.27078 2.42749" static="true" trigger="true" collisionMask="6291456" nodeId="47683" materialIds="512" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="6" name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" kinematic="true" clipDistance="250" nodeId="47684" materialIds="125" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="3" name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" clipDistance="300" nodeId="47685" materialIds="636" castsShadows="true" receiveShadows="true"/>
-                <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="47686" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="30"/>
-                <Shape shapeId="7" name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" clipDistance="50" nodeId="47687" materialIds="1054" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47688" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47689" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-              </Shape>
-            </TransformGroup>
-          </TransformGroup>
-          <TransformGroup name="radar05" translation="-1332.98 89.4275 395.544" rotation="-1.33072e-05 7.80684 3.9609e-05" clipDistance="100" nodeId="47690">
-            <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="47691">
-              <Shape shapeId="5" name="trigger" translation="2.62653 1.27078 2.42749" static="true" trigger="true" collisionMask="6291456" nodeId="47692" materialIds="512" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="6" name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" kinematic="true" clipDistance="250" nodeId="47693" materialIds="125" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="3" name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" clipDistance="300" nodeId="47694" materialIds="636" castsShadows="true" receiveShadows="true"/>
-                <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="47695" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="30"/>
-                <Shape shapeId="7" name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" clipDistance="50" nodeId="47696" materialIds="1054" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47697" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47698" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-              </Shape>
-            </TransformGroup>
-          </TransformGroup>
-          <TransformGroup name="radar06" translation="667.741 85.5002 710.503" rotation="-2.01436e-05 49.1186 2.61867e-05" clipDistance="100" nodeId="47699">
-            <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="47700">
-              <Shape shapeId="5" name="trigger" translation="2.62653 1.27078 2.42749" static="true" trigger="true" collisionMask="6291456" nodeId="47701" materialIds="512" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="6" name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" kinematic="true" clipDistance="250" nodeId="47702" materialIds="125" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="3" name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" clipDistance="300" nodeId="47703" materialIds="636" castsShadows="true" receiveShadows="true"/>
-                <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="47704" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="30"/>
-                <Shape shapeId="7" name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" clipDistance="50" nodeId="47705" materialIds="1054" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47706" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" clipDistance="100" nodeId="47707" materialIds="1621" castsShadows="true" receiveShadows="true"/>
-              </Shape>
-            </TransformGroup>
+                <Shape name="flashLight" translation="0.00201416 0.0348511 -0.0653534" rotation="4.07111e-13 -0 2.03555e-13" scale="1 1 1.01" shapeId="3" clipDistance="300" nodeId="13673" castsShadows="true" receiveShadows="true" materialIds="13838"/>
+              </Light>
+              <Shape name="windows" translation="-0.004 -0.008 0" scale="1 1.005 1" shapeId="4" clipDistance="250" nodeId="565" castsShadows="true" receiveShadows="true" materialIds="13439"/>
+              <Shape name="flashLight" translation="0.00195312 1.60909 0.0585327" rotation="4.07111e-13 -0 2.03555e-13" shapeId="3" clipDistance="300" nodeId="13761" castsShadows="true" receiveShadows="true" materialIds="13760"/>
+            </Shape>
           </TransformGroup>
         </TransformGroup>
-        <Shape shapeId="9" name="sheed" translation="349.101 71.332 -458.594" rotation="180 -74.247 -180" static="true" nodeId="47708" materialIds="718" castsShadows="true" receiveShadows="true">
-          <Shape shapeId="10" name="radarControl" translation="-0.000213623 0.0103989 0.308624" rotation="180 1.169 -180" scale="0.224394 0.625364 0.0703108" static="true" trigger="true" collisionMask="11534336" linearDamping="0.5" angularDamping="0.5" nodeId="47709" materialIds="812" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        </Shape>
+        <TransformGroup name="radar02" translation="138.847 92.1223 -894.008" rotation="0 -8.387 1.723e-05" clipDistance="100" nodeId="566">
+          <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="567">
+            <Shape name="trigger" translation="2.62653 1.27078 2.42749" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x3e119080" collisionFilterMask="0x3e119080" nodeId="568" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="26"/>
+            <Shape name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" shapeId="6" kinematic="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="250" nodeId="569" castsShadows="true" receiveShadows="true" materialIds="21">
+              <Shape name="flash" translation="0.256308 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" shapeId="7" clipDistance="300" nodeId="570" castsShadows="true" receiveShadows="true" materialIds="13887"/>
+              <Light name="light" translation="0.363 2.89439 0.0945894" visibility="false" nodeId="571" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" range="30">
+                <Light name="redLight" translation="-4.57764e-05 0 1.52588e-05" rotation="2.03555e-13 -0 7.63333e-14" nodeId="13891" type="point" color="1000 0 0" emitDiffuse="true" emitSpecular="true" range="0.12"/>
+                <Shape name="flash" translation="-0.10553 -0.002388 -0.00370407" rotation="1.12934e-12 90 0" scale="1.239 1.23917 1.23917" shapeId="7" clipDistance="300" nodeId="13884" castsShadows="true" receiveShadows="true" materialIds="13890"/>
+              </Light>
+              <Shape name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" shapeId="8" clipDistance="50" nodeId="572" castsShadows="true" receiveShadows="true" materialIds="44"/>
+              <Shape name="glass" translation="0.277566 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="573" castsShadows="true" receiveShadows="true" materialIds="13843"/>
+              <Shape name="glass" translation="0.277545 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="574" castsShadows="true" receiveShadows="true" materialIds="13882"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="radar03" translation="15.7076 92.1171 -879.347" rotation="180 -6.07815 -180" clipDistance="100" nodeId="575">
+          <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="576">
+            <Shape name="trigger" translation="2.62654 1.27078 2.42742" rotation="0 4.26887e-07 -6.10666e-13" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x3e119080" collisionFilterMask="0x3e119080"  nodeId="577" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="26"/>
+            <Shape name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" shapeId="6" kinematic="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="250" nodeId="578" castsShadows="true" receiveShadows="true" materialIds="21">
+              <Shape name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" shapeId="7" clipDistance="300" nodeId="579" castsShadows="true" receiveShadows="true" materialIds="34"/>
+              <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="580" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" range="30"/>
+              <Shape name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" shapeId="8" clipDistance="50" nodeId="581" castsShadows="true" receiveShadows="true" materialIds="44"/>
+              <Shape name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="582" castsShadows="true" receiveShadows="true" materialIds="74"/>
+              <Shape name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="583" castsShadows="true" receiveShadows="true" materialIds="74"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="radar04" translation="29.3709 119.582 -168.988" rotation="180 -4.28394 -180" clipDistance="100" nodeId="584">
+          <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="585">
+            <Shape name="trigger" translation="2.62653 1.27078 2.42749" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x3e119080" collisionFilterMask="0x3e119080"  nodeId="586" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="26"/>
+            <Shape name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" shapeId="6" kinematic="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="250" nodeId="587" castsShadows="true" receiveShadows="true" materialIds="21">
+              <Shape name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" shapeId="7" clipDistance="300" nodeId="588" castsShadows="true" receiveShadows="true" materialIds="34"/>
+              <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="589" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" range="30"/>
+              <Shape name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" shapeId="8" clipDistance="50" nodeId="590" castsShadows="true" receiveShadows="true" materialIds="44"/>
+              <Shape name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="591" castsShadows="true" receiveShadows="true" materialIds="74"/>
+              <Shape name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="592" castsShadows="true" receiveShadows="true" materialIds="74"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="radar05" translation="-1332.98 89.4275 395.544" rotation="-1.33072e-05 7.80684 3.9609e-05" clipDistance="100" nodeId="593">
+          <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="594">
+            <Shape name="trigger" translation="2.62653 1.27078 2.42749" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x3e119080" collisionFilterMask="0x3e119080"  nodeId="595" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="26"/>
+            <Shape name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" shapeId="6" kinematic="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="250" nodeId="596" castsShadows="true" receiveShadows="true" materialIds="21">
+              <Shape name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" shapeId="7" clipDistance="300" nodeId="597" castsShadows="true" receiveShadows="true" materialIds="34"/>
+              <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="598" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" range="30"/>
+              <Shape name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" shapeId="8" clipDistance="50" nodeId="599" castsShadows="true" receiveShadows="true" materialIds="44"/>
+              <Shape name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="600" castsShadows="true" receiveShadows="true" materialIds="74"/>
+              <Shape name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="601" castsShadows="true" receiveShadows="true" materialIds="74"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="radar06" translation="667.741 85.5002 710.503" rotation="-2.01436e-05 49.1186 2.61867e-05" clipDistance="100" nodeId="602">
+          <TransformGroup name="radar" translation="0 0 -1.71661e-05" rotation="2.03555e-13 0 1.62844e-12" nodeId="603">
+            <Shape name="trigger" translation="2.62653 1.27078 2.42749" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x3e119080" collisionFilterMask="0x3e119080"  nodeId="604" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="26"/>
+            <Shape name="speedCamera02" translation="0.549 -0.171 -0.13891" rotation="0 0 -1.57009e-05" shapeId="6" kinematic="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="250" nodeId="605" castsShadows="true" receiveShadows="true" materialIds="21">
+              <Shape name="flash" translation="0.255449 2.892 0.0906641" rotation="1.603e-12 90 0" scale="1.239 1.23917 1.23917" shapeId="7" clipDistance="300" nodeId="606" castsShadows="true" receiveShadows="true" materialIds="34"/>
+              <Light name="light" translation="0.407176 2.89439 0.0945894" visibility="false" nodeId="607" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" range="30"/>
+              <Shape name="lense" translation="0.257 2.62602 0.0908371" rotation="-0 90 0" scale="1.803 1.80287 1.80287" shapeId="8" clipDistance="50" nodeId="608" castsShadows="true" receiveShadows="true" materialIds="44"/>
+              <Shape name="glass" translation="0.276133 2.62602 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="609" castsShadows="true" receiveShadows="true" materialIds="74"/>
+              <Shape name="glass" translation="0.276133 2.89129 0.0908371" rotation="0 90 0" scale="1.803 1.80287 1.80287" shapeId="9" clipDistance="100" nodeId="610" castsShadows="true" receiveShadows="true" materialIds="74"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
       </TransformGroup>
+      <Shape name="sheed" translation="349.101 75.7937 -458.594" rotation="180 -74.247 -180" shapeId="10" static="true" nodeId="611" castsShadows="true" receiveShadows="true" materialIds="37">
+        <Shape name="radarControl" translation="-0.0033779 0.0103989 0.463692" rotation="180 1.169 -180" scale="0.224394 0.625364 0.0703108" shapeId="11" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" linearDamping="0.5" angularDamping="0.5" nodeId="612" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="38"/>
+      </Shape>
+    </TransformGroup>
   </Scene>
 
   <UserAttributes>
-    <UserAttribute nodeId="47646">
-      <Attribute name="flashLight" type="string" value="1|0"/>
+    <UserAttribute nodeId="549">
+      <Attribute name="flashLight" type="string" value="1|0|6"/>
       <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
-      <Attribute name="realLight" type="string" value="1|1"/>
+      <Attribute name="realLight" type="string" value="1|0"/>
     </UserAttribute>
-    <UserAttribute nodeId="47647">
+    <UserAttribute nodeId="550">
       <Attribute name="costPerKMH" type="integer" value="5"/>
-      <Attribute name="speedLimit" type="integer" value="30"/>
+      <Attribute name="speedLimit" type="integer" value="31"/>
     </UserAttribute>
-    <UserAttribute nodeId="47664">
+    <UserAttribute nodeId="567">
       <Attribute name="flashLight" type="string" value="1|0"/>
       <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
       <Attribute name="realLight" type="string" value="1|1"/>
     </UserAttribute>
-    <UserAttribute nodeId="47665">
-      <Attribute name="costPerKMH" type="integer" value="5"/>
-      <Attribute name="speedLimit" type="integer" value="50"/>
-    </UserAttribute>
-    <UserAttribute nodeId="47673">
-      <Attribute name="flashLight" type="string" value="1|0"/>
-      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
-      <Attribute name="realLight" type="string" value="1|1"/>
-    </UserAttribute>
-    <UserAttribute nodeId="47674">
+    <UserAttribute nodeId="568">
       <Attribute name="costPerKMH" type="integer" value="5"/>
       <Attribute name="speedLimit" type="integer" value="50"/>
     </UserAttribute>
-    <UserAttribute nodeId="47682">
+    <UserAttribute nodeId="576">
       <Attribute name="flashLight" type="string" value="1|0"/>
       <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
       <Attribute name="realLight" type="string" value="1|1"/>
     </UserAttribute>
-    <UserAttribute nodeId="47683">
+    <UserAttribute nodeId="577">
       <Attribute name="costPerKMH" type="integer" value="5"/>
       <Attribute name="speedLimit" type="integer" value="50"/>
     </UserAttribute>
-    <UserAttribute nodeId="47691">
+    <UserAttribute nodeId="585">
       <Attribute name="flashLight" type="string" value="1|0"/>
       <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
       <Attribute name="realLight" type="string" value="1|1"/>
     </UserAttribute>
-    <UserAttribute nodeId="47692">
+    <UserAttribute nodeId="586">
       <Attribute name="costPerKMH" type="integer" value="5"/>
       <Attribute name="speedLimit" type="integer" value="50"/>
     </UserAttribute>
-    <UserAttribute nodeId="47700">
+    <UserAttribute nodeId="594">
       <Attribute name="flashLight" type="string" value="1|0"/>
       <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
       <Attribute name="realLight" type="string" value="1|1"/>
     </UserAttribute>
-    <UserAttribute nodeId="47701">
+    <UserAttribute nodeId="595">
+      <Attribute name="costPerKMH" type="integer" value="5"/>
+      <Attribute name="speedLimit" type="integer" value="50"/>
+    </UserAttribute>
+    <UserAttribute nodeId="603">
+      <Attribute name="flashLight" type="string" value="1|0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.SpeedCamera"/>
+      <Attribute name="realLight" type="string" value="1|1"/>
+    </UserAttribute>
+    <UserAttribute nodeId="604">
       <Attribute name="costPerKMH" type="integer" value="5"/>
       <Attribute name="speedLimit" type="integer" value="50"/>
     </UserAttribute>
