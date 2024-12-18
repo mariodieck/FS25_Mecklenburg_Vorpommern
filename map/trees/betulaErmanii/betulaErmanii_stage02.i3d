@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="betulaErmanii_stage02" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="6" filename="$data/maps/trees/betulaErmanii/betulaErmaniiBranchLOD1_diffuse.png" />
+    <File fileId="7" filename="$data/maps/trees/betulaErmanii/betulaErmaniiBranchLOD1_mask.png" />
+    <File fileId="1" filename="$data/maps/trees/betulaErmanii/betulaErmaniiBranch_diffuse.png" />
+    <File fileId="5" filename="$data/maps/trees/betulaErmanii/betulaErmaniiBranch_mask.png" />
+    <File fileId="2" filename="$data/maps/trees/betulaErmanii/betulaErmaniiBranch_normal.png" />
+    <File fileId="3" filename="$data/maps/trees/betulaErmanii/betulaErmaniiBranch_specular.png" />
+    <File fileId="8" filename="$data/maps/trees/betulaErmanii/betulaErmaniiTrunk_diffuse.png" />
+    <File fileId="12" filename="$data/maps/trees/betulaErmanii/betulaErmaniiTrunk_height.png" />
+    <File fileId="9" filename="$data/maps/trees/betulaErmanii/betulaErmaniiTrunk_normal.png" />
+    <File fileId="10" filename="$data/maps/trees/betulaErmanii/betulaErmaniiTrunk_specular.png" />
+    <File fileId="17" filename="$data/maps/trees/betulaErmanii/betulaErmanii_stage02LOD_depth.png" />
+    <File fileId="13" filename="$data/maps/trees/betulaErmanii/betulaErmanii_stage02LOD_diffuse.png" />
+    <File fileId="18" filename="$data/maps/trees/betulaErmanii/betulaErmanii_stage02LOD_mask.png" />
+    <File fileId="14" filename="$data/maps/trees/betulaErmanii/betulaErmanii_stage02LOD_normal.png" />
+    <File fileId="19" filename="$data/maps/trees/betulaErmanii/betulaErmanii_stage02LOD_seasonalCurve.png" />
+    <File fileId="15" filename="$data/maps/trees/betulaErmanii/betulaErmanii_stage02LOD_specular.png" />
+    <File fileId="16" filename="$data/shaders/billboardSemiOctahedronShader.xml" />
+    <File fileId="4" filename="$data/shaders/treeBranchShader.xml" />
+    <File fileId="11" filename="$data/shaders/treeTrunkShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="betulaErmaniiBranch_mat" materialId="2" customShaderId="4" customShaderVariation="SEASONAL">
+      <CustomParameter name="seasonalTintIntensity" value="0.1 0.16 0.15"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="betulaErmaniiBranchLOD1_mat" materialId="4" specularColor="0 0 0" customShaderId="4" customShaderVariation="SEASONAL">
+      <CustomParameter name="seasonalTintIntensity" value="0.1 0.16 0.15"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="betulaErmaniiTrunk_mat" materialId="1" customShaderId="11" customShaderVariation="customParallax">
+      <Custommap name="mParallaxMap" fileId="12"/>
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="betulaErmanii_stage02LOD_mat" materialId="3" customShaderId="16" customShaderVariation="treeSeasonal">
+      <CustomParameter name="aabbCenter" value="0.259 6.709 0.042 0"/>
+      <CustomParameter name="aabbHalfExtent" value="6.746 7.463 7.591 0"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.1 0.16 0.15"/>
+      <Custommap name="billboardDepth" fileId="17"/>
+      <Custommap name="mMaskMap" fileId="18"/>
+      <Custommap name="mSeasonalCurve" fileId="19"/>
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="betulaErmanii_stage02.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="betulaErmanii_stage02" lockedgroup="true" lodDistance="0 45" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="500" nodeId="1">
+      <Shape name="LOD0" shapeId="1" static="true" density="0.41" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" splitType="27" splitUvs="0 0 0.25 0.125 1" castsShadows="false" receiveShadows="true" materialIds="1" nodeId="2">
+        <Shape name="LOD0Attachments" shapeId="2" castsShadows="false" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="4"/>
+      <TransformGroup name="shadowProxy" nodeId="5">
+        <Shape name="trunk" shapeId="4" castsShadows="true" receiveShadows="false" renderedInViewports="false" materialIds="1" clipDistance="46" nodeId="6">
+          <Shape name="branches" shapeId="5" castsShadows="true" receiveShadows="false" renderedInViewports="false" materialIds="4" nodeId="7"/>
+        </Shape>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

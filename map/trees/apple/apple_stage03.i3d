@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="apple_stage03" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/maps/trees/apple/appleBranch_diffuse.png" />
+    <File fileId="9" filename="$data/maps/trees/apple/appleBranch_mask.png" />
+    <File fileId="6" filename="$data/maps/trees/apple/appleBranch_normal.png" />
+    <File fileId="7" filename="$data/maps/trees/apple/appleBranch_specular.png" />
+    <File fileId="1" filename="$data/maps/trees/apple/appleTrunk_diffuse.png" />
+    <File fileId="4" filename="$data/maps/trees/apple/appleTrunk_height.png" />
+    <File fileId="2" filename="$data/maps/trees/apple/appleTrunk_normal.png" />
+    <File fileId="14" filename="$data/maps/trees/apple/apple_stage03LOD_depth.png" />
+    <File fileId="10" filename="$data/maps/trees/apple/apple_stage03LOD_diffuse.png" />
+    <File fileId="15" filename="$data/maps/trees/apple/apple_stage03LOD_mask.png" />
+    <File fileId="11" filename="$data/maps/trees/apple/apple_stage03LOD_normal.png" />
+    <File fileId="16" filename="$data/maps/trees/apple/apple_stage03LOD_seasonalCurve.png" />
+    <File fileId="12" filename="$data/maps/trees/apple/apple_stage03LOD_specular.png" />
+    <File fileId="13" filename="$data/shaders/billboardSemiOctahedronShader.xml" />
+    <File fileId="8" filename="$data/shaders/treeBranchShader.xml" />
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="appleTrunk_mat" materialId="1" specularColor="0 0 0" customShaderId="3" customShaderVariation="customParallax">
+      <Custommap name="mParallaxMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.25"/>
+    </Material>
+    <Material name="appleBranch_mat" materialId="2" customShaderId="8" customShaderVariation="SEASONAL">
+      <Custommap name="mMaskMap" fileId="9"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="apple_stage03LOD_mat" materialId="3" customShaderId="13" customShaderVariation="treeSeasonal">
+      <CustomParameter name="aabbCenter" value="-0.053 2.963 -0.678 0"/>
+      <CustomParameter name="aabbHalfExtent" value="2.381 3.313 3.332 0"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.05 0.1 0.15"/>
+      <Custommap name="billboardDepth" fileId="14"/>
+      <Custommap name="mMaskMap" fileId="15"/>
+      <Custommap name="mSeasonalCurve" fileId="16"/>
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="apple_stage03.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="apple_stage03" lockedgroup="true" lodDistance="0 40" collision="false" collisionFilterMask="0xfe3ffb83" clipDistance="250" nodeId="1">
+      <Shape name="LOD0" shapeId="1" static="true" density="0.65" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" splitType="26" splitUvs="0 0 0.5 0.0625 1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="2">
+        <Shape name="LOD0Attachments" shapeId="2" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="4"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

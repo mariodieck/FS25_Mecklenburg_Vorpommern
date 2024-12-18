@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="oak_stage05" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="15" filename="$data/maps/trees/oak/oakBark_diffuse.png" />
+    <File fileId="19" filename="$data/maps/trees/oak/oakBark_height.png" />
+    <File fileId="16" filename="$data/maps/trees/oak/oakBark_normal.png" />
+    <File fileId="17" filename="$data/maps/trees/oak/oakBark_specular.png" />
+    <File fileId="6" filename="$data/maps/trees/oak/oakBranchLOD1_diffuse.png" />
+    <File fileId="7" filename="$data/maps/trees/oak/oakBranchLOD1_mask.png" />
+    <File fileId="1" filename="$data/maps/trees/oak/oakBranch_diffuse.png" />
+    <File fileId="5" filename="$data/maps/trees/oak/oakBranch_mask.png" />
+    <File fileId="2" filename="$data/maps/trees/oak/oakBranch_normal.png" />
+    <File fileId="3" filename="$data/maps/trees/oak/oakBranch_specular.png" />
+    <File fileId="12" filename="$data/maps/trees/oak/oak_stage05LOD_depth.png" />
+    <File fileId="8" filename="$data/maps/trees/oak/oak_stage05LOD_diffuse.png" />
+    <File fileId="13" filename="$data/maps/trees/oak/oak_stage05LOD_mask.png" />
+    <File fileId="9" filename="$data/maps/trees/oak/oak_stage05LOD_normal.png" />
+    <File fileId="14" filename="$data/maps/trees/oak/oak_stage05LOD_seasonalCurve.png" />
+    <File fileId="10" filename="$data/maps/trees/oak/oak_stage05LOD_specular.png" />
+    <File fileId="11" filename="$data/shaders/billboardSemiOctahedronShader.xml" />
+    <File fileId="4" filename="$data/shaders/treeBranchShader.xml" />
+    <File fileId="18" filename="$data/shaders/treeTrunkShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="oakBranch_mat" materialId="2" customShaderId="4" customShaderVariation="SEASONAL">
+      <CustomParameter name="seasonalTintIntensity" value="0.10 0.10 0.20"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="oakBranchLOD1_mat" materialId="4" specularColor="0 0 0" customShaderId="4" customShaderVariation="SEASONAL">
+      <CustomParameter name="seasonalTintIntensity" value="0.1 0.16 0.15"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="oak_stage05LOD_mat" materialId="3" customShaderId="11" customShaderVariation="treeSeasonal">
+      <CustomParameter name="aabbCenter" value="0.131 12.039 0.438 0"/>
+      <CustomParameter name="aabbHalfExtent" value="11.342 13.259 13.203 0"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.10 0.10 0.20"/>
+      <Custommap name="billboardDepth" fileId="12"/>
+      <Custommap name="mMaskMap" fileId="13"/>
+      <Custommap name="mSeasonalCurve" fileId="14"/>
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="oakBark_mat" materialId="1" customShaderId="18" customShaderVariation="customParallax">
+      <Custommap name="mParallaxMap" fileId="19"/>
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="oak_stage05.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="oak_stage05" lockedgroup="true" lodDistance="0 70" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="500" nodeId="1">
+      <Shape name="LOD0" shapeId="1" static="true" density="0.41" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" splitType="7" splitUvs="0 0 0.125 0.125 0.5" castsShadows="false" receiveShadows="true" materialIds="1" nodeId="2">
+        <Shape name="LOD0Attachments" shapeId="2" castsShadows="false" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="3" nodeId="4"/>
+      <Shape name="proxyMesh" shapeId="4" castsShadows="true" receiveShadows="false" renderedInViewports="false" materialIds="1" nodeId="5">
+        <Shape name="branch" shapeId="5" castsShadows="true" receiveShadows="false" renderedInViewports="false" doubleSided="true" materialIds="4" nodeId="6"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

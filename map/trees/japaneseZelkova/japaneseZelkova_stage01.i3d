@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="japaneseZelkova_stage01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="6" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaBranchLOD1_diffuse.png" />
+    <File fileId="7" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaBranchLOD1_mask.png" />
+    <File fileId="1" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaBranch_diffuse.png" />
+    <File fileId="5" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaBranch_mask.png" />
+    <File fileId="2" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaBranch_normal.png" />
+    <File fileId="3" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaBranch_specular.png" />
+    <File fileId="8" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaTrunk_diffuse.png" />
+    <File fileId="12" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaTrunk_height.png" />
+    <File fileId="9" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaTrunk_normal.png" />
+    <File fileId="10" filename="$data/maps/trees/japaneseZelkova/japaneseZelkovaTrunk_specular.png" />
+    <File fileId="17" filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01LOD_depth.png" />
+    <File fileId="13" filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01LOD_diffuse.png" />
+    <File fileId="18" filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01LOD_mask.png" />
+    <File fileId="14" filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01LOD_normal.png" />
+    <File fileId="19" filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01LOD_seasonalCurve.png" />
+    <File fileId="15" filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01LOD_specular.png" />
+    <File fileId="16" filename="$data/shaders/billboardSemiOctahedronShader.xml" />
+    <File fileId="4" filename="$data/shaders/treeBranchShader.xml" />
+    <File fileId="11" filename="$data/shaders/treeTrunkShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="japaneseZelkovaBranch_mat" materialId="2" customShaderId="4" customShaderVariation="SEASONAL">
+      <CustomParameter name="seasonalTintIntensity" value="0.1 0.16 0.15"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="japaneseZelkovaBranchLOD1_mat" materialId="4" specularColor="0 0 0" customShaderId="4" customShaderVariation="SEASONAL">
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="japaneseZelkovaTrunk_mat" materialId="1" customShaderId="11" customShaderVariation="customParallax">
+      <Custommap name="mParallaxMap" fileId="12"/>
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="japaneseZelkova_stage01LOD_mat" materialId="3" customShaderId="16" customShaderVariation="treeSeasonal">
+      <CustomParameter name="aabbCenter" value="-0.220 3.118 0.009 0"/>
+      <CustomParameter name="aabbHalfExtent" value="3.005 4.606 4.628 0"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.1 0.16 0.15"/>
+      <Custommap name="billboardDepth" fileId="17"/>
+      <Custommap name="mMaskMap" fileId="18"/>
+      <Custommap name="mSeasonalCurve" fileId="19"/>
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="japaneseZelkova_stage01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="japaneseZelkova_stage01" lockedgroup="true" lodDistance="0 40" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="1">
+      <Shape name="LOD0" shapeId="1" static="true" density="0.41" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" splitType="32" splitUvs="0 0 0.25 0.125 0.8" castsShadows="false" receiveShadows="true" materialIds="1" nodeId="2">
+        <Shape name="LOD0Attachments" shapeId="2" castsShadows="false" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="4"/>
+      <Shape name="shadowProxy" shapeId="4" castsShadows="true" receiveShadows="false" renderedInViewports="false" materialIds="1" clipDistance="41" nodeId="5">
+        <Shape name="branches" shapeId="5" castsShadows="true" receiveShadows="false" renderedInViewports="false" doubleSided="true" materialIds="4" nodeId="6"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

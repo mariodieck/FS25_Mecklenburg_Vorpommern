@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="chineseElmSapling01_planter_risutecSKB240" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="8" filename="$data/maps/trees/chineseElm/saplings/chineseElmSapling_alpha.png" />
+    <File fileId="5" filename="$data/maps/trees/chineseElm/saplings/chineseElmSapling_diffuse.png" />
+    <File fileId="7" filename="$data/maps/trees/chineseElm/saplings/chineseElmSapling_fmask.png" />
+    <File fileId="6" filename="$data/maps/trees/chineseElm/saplings/chineseElmSapling_normal.png" />
+    <File fileId="1" filename="$data/maps/trees/saplings/dummy/planterBox_diffuse.png" />
+    <File fileId="2" filename="$data/maps/trees/saplings/dummy/planterBox_normal.png" />
+    <File fileId="3" filename="$data/maps/trees/saplings/dummy/planterBox_specular.png" />
+    <File fileId="4" filename="$data/shaders/placeableShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="planterBox_mat" materialId="1" customShaderId="4" customShaderVariation="mergeChildren_hideByIndex">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="chineseElmSapling_mat" materialId="2" customShaderId="4" customShaderVariation="mergeChildren_hideByIndex_alphaMap">
+      <Custommap name="alphaMap" fileId="8"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chineseElmSapling01_planter_risutecSKB240.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="chineseElmSaplings" nodeId="1">
+      <Shape name="saplingBoxes" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="2"/>
+      <Shape name="saplings" shapeId="2" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

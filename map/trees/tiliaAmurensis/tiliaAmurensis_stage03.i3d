@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tiliaAmurensis_stage03" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="6" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisBranches_diffuse.png" />
+    <File fileId="10" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisBranches_mask.png" />
+    <File fileId="7" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisBranches_normal.png" />
+    <File fileId="8" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisBranches_specular.png" />
+    <File fileId="1" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisTrunk_diffuse.png" />
+    <File fileId="5" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisTrunk_height.png" />
+    <File fileId="2" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisTrunk_normal.png" />
+    <File fileId="3" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensisTrunk_specular.png" />
+    <File fileId="15" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03LOD_depth.png" />
+    <File fileId="11" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03LOD_diffuse.png" />
+    <File fileId="16" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03LOD_mask.png" />
+    <File fileId="12" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03LOD_normal.png" />
+    <File fileId="17" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03LOD_seasonalCurve.png" />
+    <File fileId="13" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03LOD_specular.png" />
+    <File fileId="14" filename="$data/shaders/billboardSemiOctahedronShader.xml" />
+    <File fileId="9" filename="$data/shaders/treeBranchShader.xml" />
+    <File fileId="4" filename="$data/shaders/treeTrunkShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="tiliaAmurensisTrunk_mat" materialId="1" customShaderId="4" customShaderVariation="customParallax">
+      <Custommap name="mParallaxMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="tiliaAmurensisBranches_mat" materialId="2" customShaderId="9" customShaderVariation="SEASONAL">
+      <CustomParameter name="seasonalTintIntensity" value="0.05 0.1 0.15"/>
+      <Custommap name="mMaskMap" fileId="10"/>
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="tiliaAmurensis_stage03LOD_mat" materialId="3" customShaderId="14" customShaderVariation="treeSeasonal">
+      <CustomParameter name="aabbCenter" value="-0.395 9.686 0.119 0"/>
+      <CustomParameter name="aabbHalfExtent" value="10.246 10.708 10.612 0"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.05 0.1 0.15"/>
+      <Custommap name="billboardDepth" fileId="15"/>
+      <Custommap name="mMaskMap" fileId="16"/>
+      <Custommap name="mSeasonalCurve" fileId="17"/>
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tiliaAmurensis_stage03.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="tiliaAmurensis_stage03" lockedgroup="true" lodDistance="0 55" collision="false" density="0" clipDistance="1800" nodeId="1">
+      <Shape name="LOD0" shapeId="1" static="true" density="0.41" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" splitType="34" splitUvs="0 0 0.25 0.125 0.8" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2">
+        <Shape name="LOD0Attachments" shapeId="2" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="4"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

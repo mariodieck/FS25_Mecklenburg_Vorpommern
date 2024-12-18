@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="tree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_boxelder_stage03</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>$data/maps/trees/boxelder/store_boxelder_stage03.dds</image>
+
+        <price>1200</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>trees</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+        <vertexBufferMemoryUsage>473856</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>92672</indexBufferMemoryUsage>
+        <textureMemoryUsage>8060928</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <brush>
+            <type>tree</type>
+            <category>landscaping</category>
+            <tab>trees</tab>
+            <parameters>
+                <parameter>boxelder</parameter> <!-- tree type name -->
+                <parameter>4</parameter> <!-- stage -->
+            </parameters>
+        </brush>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <!-- Used only for store icon generation and store item. Does not use this i3d reference in-game. -->
+    <base>
+        <filename>$data/maps/trees/boxelder/boxelder_stage03.i3d</filename>
+    </base>
+
+</placeable>

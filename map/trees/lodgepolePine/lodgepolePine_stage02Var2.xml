@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="tree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_lodgepolePine_stage02Var2</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>$data/maps/trees/lodgepolePine/store_lodgepolePine02Var2.dds</image>
+
+        <price>1200</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>trees</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <brush>
+            <type>tree</type>
+            <category>landscaping</category>
+            <tab>trees</tab>
+            <parameters>
+                <parameter>lodgepolePine</parameter> <!-- tree type name -->
+                <parameter>3</parameter> <!-- stage -->
+                <parameter>2</parameter> <!-- variation -->
+            </parameters>
+        </brush>
+    </storeData>
+
+    <!-- Used only for store icon generation and store item. Does not use this i3d reference in-game. -->
+    <base>
+        <filename>$data/maps/trees/lodgepolePine/lodgepolePine_stage02Var2.i3d</filename>
+    </base>
+
+</placeable>

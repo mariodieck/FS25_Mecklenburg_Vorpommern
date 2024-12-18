@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="tree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_oak_stage05</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>$data/maps/trees/oak/store_oak_stage05.dds</image>
+
+        <price>1500</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>trees</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+        <vertexBufferMemoryUsage>783872</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>152832</indexBufferMemoryUsage>
+        <textureMemoryUsage>10158080</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <brush>
+            <type>tree</type>
+            <category>landscaping</category>
+            <tab>trees</tab>
+            <parameters>
+                <parameter>oak</parameter> <!-- tree type name -->
+                <parameter>6</parameter> <!-- stage -->
+            </parameters>
+        </brush>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <!-- Used only for store icon generation and store item. Does not use this i3d reference in-game. -->
+    <base>
+        <filename>$data/maps/trees/oak/oak_stage05.i3d</filename>
+    </base>
+
+</placeable>

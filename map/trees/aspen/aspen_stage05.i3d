@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="aspen_stage05" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/maps/trees/aspen/aspenBranch_diffuse.png" />
+    <File fileId="9" filename="$data/maps/trees/aspen/aspenBranch_mask.png" />
+    <File fileId="6" filename="$data/maps/trees/aspen/aspenBranch_normal.png" />
+    <File fileId="7" filename="$data/maps/trees/aspen/aspenBranch_specular.png" />
+    <File fileId="1" filename="$data/maps/trees/aspen/aspenTrunk_diffuse.png" />
+    <File fileId="4" filename="$data/maps/trees/aspen/aspenTrunk_height.png" />
+    <File fileId="2" filename="$data/maps/trees/aspen/aspenTrunk_normal.png" />
+    <File fileId="14" filename="$data/maps/trees/aspen/aspen_stage05LOD_depth.png" />
+    <File fileId="10" filename="$data/maps/trees/aspen/aspen_stage05LOD_diffuse.png" />
+    <File fileId="15" filename="$data/maps/trees/aspen/aspen_stage05LOD_mask.png" />
+    <File fileId="11" filename="$data/maps/trees/aspen/aspen_stage05LOD_normal.png" />
+    <File fileId="16" filename="$data/maps/trees/aspen/aspen_stage05LOD_seasonalCurve.png" />
+    <File fileId="12" filename="$data/maps/trees/aspen/aspen_stage05LOD_specular.png" />
+    <File fileId="13" filename="$data/shaders/billboardSemiOctahedronShader.xml" />
+    <File fileId="8" filename="$data/shaders/treeBranchShader.xml" />
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="aspenTrunk_mat" materialId="1" specularColor="0 0 0" customShaderId="3" customShaderVariation="customParallax">
+      <Custommap name="mParallaxMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.2"/>
+    </Material>
+    <Material name="aspenBranch_mat" materialId="2" customShaderId="8" customShaderVariation="SEASONAL">
+      <Custommap name="mMaskMap" fileId="9"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="aspen_stage05LOD_mat" materialId="3" customShaderId="13" customShaderVariation="treeSeasonal">
+      <CustomParameter name="aabbCenter" value="0.002 6.131 0.166 0"/>
+      <CustomParameter name="aabbHalfExtent" value="2.496 6.305 6.410 0"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.30 0.30 0.40"/>
+      <Custommap name="billboardDepth" fileId="14"/>
+      <Custommap name="mMaskMap" fileId="15"/>
+      <Custommap name="mSeasonalCurve" fileId="16"/>
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="aspen_stage05.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="aspen_stage05" lockedgroup="true" lodDistance="0 60" collision="false" clipDistance="500" nodeId="1">
+      <Shape name="LOD0" shapeId="1" static="true" density="0.65" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" splitType="25" splitUvs="0 0 1 0.0625 1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="2">
+        <Shape name="LOD0Attachments" shapeId="2" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="2" nodeId="3"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="4"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
