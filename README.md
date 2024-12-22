@@ -30,10 +30,26 @@
 	- Feld 19	Farmland '38'
 	- Feld 20	Farmland '37'
 	- Feld 21	Farmland '50'
-	- Feld 22	Farmland '29'
-	- Feld 23	Farmland '44'
-	- Feld 24	Farmland '45'
-	- Feld 25	Farmland '46'
+	- Feld 22	Farmland '44'
+	- Feld 23	Farmland '45'
+	- Feld 24	Farmland '46'
 	- Feld 25	Farmland '47'
 	- Feld 26	Farmland '29'
 	- Feld 27	Farmland '31'
+	- Feld 28	Farmland '34'
+	- Feld 29	Farmland '33'
+	- Feld 30	Farmland '32'
+	- Feld 31	Farmland '25'
+	- Feld 32	Farmland '24'
+	
+- diverse Felder geglättet
+- alle Bäume eingefügt
+- diverse Decoobjecte hinzugefügt (noch KEINE Collisionen
+- Verkehr hinzugefügt
+	- Nummernschilder für KI-Verkehr angepasst (VR)
+- Fussgänger hinzugefügt
+- BGA verbaut
+- Technikhof verbaut
+- Plattenweg am Technikhof verbaut
+- Kuhhof eingefügt
+	- Wasserplanen ausgetauscht (FS25)	
