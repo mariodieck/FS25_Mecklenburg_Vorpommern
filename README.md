@@ -52,4 +52,13 @@
 - Technikhof verbaut
 - Plattenweg am Technikhof verbaut
 - Kuhhof eingefügt
-	- Wasserplanen ausgetauscht (FS25)	
+- Wasserplanen ausgetauscht (FS25)
+- Windkrafträder verbaut
+- Schweinehof verbaut
+- Dorf verbaut
+- Lager verbaut
+- Brücken Hafen verbaut
+- Verkaufstellen verbaut
+- Zaun Güllelager verbaut
+- Händler Fricke verbaut
+- Tierhändler verbaut	
