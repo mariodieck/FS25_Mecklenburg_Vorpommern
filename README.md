@@ -62,3 +62,4 @@
 - Zaun Güllelager verbaut
 - Händler Fricke verbaut
 - Tierhändler verbaut	
+- Sägewerk verbaut
