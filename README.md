@@ -63,3 +63,11 @@
 - Händler Fricke verbaut
 - Tierhändler verbaut	
 - Sägewerk verbaut
+- Hafen verbaut
+- Spinnerei verbaut
+- Stromkästen verbaut
+- sämtliche Türen / Tore verbaut
+- Kirche verbaut
+- wasserentnahmestelle verbaut
+- tipColis verbaut
+- Wartungsgruben in der Werkstatt nun funktional
