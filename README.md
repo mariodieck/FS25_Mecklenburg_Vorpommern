@@ -71,3 +71,12 @@
 - wasserentnahmestelle verbaut
 - tipColis verbaut
 - Wartungsgruben in der Werkstatt nun funktional
+- Placeable verbaut
+	- Farmhaus
+	- Hundehütte
+	- Kärcher
+	- diverse Tankstellen
+	- diverse Werkstätten
+	- Kuhweide
+		-Fahrsilos
+	- Hühnerstall
