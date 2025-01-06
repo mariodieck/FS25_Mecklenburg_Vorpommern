@@ -1,8 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/weed.xsd">
-    <weed>
-        <infoLayer filename="map/data/infoLayer_weed.png" firstChannel="0" numChannels="1">
-            <blockingState value="1" firstChannel="0" numChannels="1" />
-        </infoLayer>
-    </weed>
-</map>
+version https://git-lfs.github.com/spec/v1
+oid sha256:8192bf171ef7a5128c8f8747c0be02e6b2e2297c641e5f9d22142e60f47136f1
+size 411

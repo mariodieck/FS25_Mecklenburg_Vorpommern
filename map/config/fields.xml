@@ -1,15 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/fields.xsd">
-    <fields>
-        <field fieldId="2" weedState="0">
-            <fruit type="WHEAT" />
-            <ground type="HARVEST_READY" angle="0" />
-            <spray type="NONE" level="0" />
-        </field>
-        <field fieldId="52" weedState="0">
-            <fruit type="WHEAT" growthState="HARVESTREADY"/>
-            <ground type="HARVEST_READY" angle="0" />
-            <spray type="NONE" level="0" />
-        </field>
-    </fields>
-</map>
+version https://git-lfs.github.com/spec/v1
+oid sha256:de81a2104adf050fb7b59b24915f11edb91036e4124bff2c86ab73d7e712e989
+size 647

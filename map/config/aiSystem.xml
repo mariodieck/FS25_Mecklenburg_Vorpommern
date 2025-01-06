@@ -1,4 +1,3 @@
-<aiSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/aiSystem.xsd">
-    <maxSlopeAngle>20</maxSlopeAngle>
-    <vehicleMaxHeight>5</vehicleMaxHeight>
-</aiSystem>
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba9ae9e774526be7515f2aa431518e9bcb5478a863177a42f500e30a38719b55
+size 235

@@ -1,32 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<collectibles achievementName="CollectiblesEU" hotspotThreshold="40">
-
-    <group name="default" dialogText="$l10n_collectible_mapUS_all" dialogIntroText="$l10n_collectible_mapUS_intro" />
-
-    <collectible name="theLeg"               group="default" target="theLeg"               dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="elevatorBuckets"      group="default" target="elevatorBuckets"      dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="binSelectorWheel"     group="default" target="binSelectorWheel"     dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="chalkBoard"           group="default" target="chalkBoard"           dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="deskBell"             group="default" target="deskBell"             dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="grainCleaner"         group="default" target="grainCleaner"         dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="grainElevatorDiagram" group="default" target="grainElevatorDiagram" dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="grainKicker"          group="default" target="grainKicker"          dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="grainScale"           group="default" target="grainScale"           dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="grainSorter"          group="default" target="grainSorter"          dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="manLift"              group="default" target="manLift"              dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="movingGrainGame"      group="default" target="movingGrainGame"      dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="officeDesk"           group="default" target="officeDesk"           dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="steamEngine"          group="default" target="steamEngine"          dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="stove"                group="default" target="stove"                dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="telephone"            group="default" target="telephone"            dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="threshingMachine"     group="default" target="threshingMachine"     dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="wheelBarrowContainer" group="default" target="wheelBarrowContainer" dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="typewriter"           group="default" target="typewriter"           dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="oilLamp"              group="default" target="oilLamp"              dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="grainMeasureBucket"   group="default" target="grainMeasureBucket"   dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="metalGrainScoop"      group="default" target="metalGrainScoop"      dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="flourSifterGrid"      group="default" target="flourSifterGrid"      dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="woodenGrainShovel"    group="default" target="woodenGrainShovel"    dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-    <collectible name="woodenHayFork"        group="default" target="woodenHayFork"        dialogText="$l10n_collectible_mapUS_grainElevatorPart" moneyReward="10000" />
-
-</collectibles>
+version https://git-lfs.github.com/spec/v1
+oid sha256:df19c995a2f82614f0850b06e7c66d71e5da5d435da6b7315bc83267278f12ba
+size 4520
